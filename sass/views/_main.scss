@@ -1,0 +1,80 @@
+
+
+body {
+
+	background-color:#ecf0f1;
+}
+
+#nav{
+
+ background: #ecf0C2;
+ padding: 1%;
+ text-align: right;
+
+
+
+
+	li{
+		display: inline;
+	}
+
+}
+
+#map {
+
+	background-color:$dark_yellow;
+	width: 50%;
+    float:left;
+    height: 100%;
+    position: absolute;
+
+}
+
+h2{
+	text-align: center;
+}
+
+
+
+
+hr{
+	color: grey;
+}
+// IMAGE BIARRITZ
+
+.biarritz{
+float:left;
+width: 20%;
+}
+// BAR DE PROGRESSION 
+.progress{
+	background-image:linear-gradient(60deg, #FF6655, #FFAA77);
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 0,5%;
+	border-radius: 30px;
+	float: left;
+	width: 60%;
+}
+
+// IMAGE MARRAKESH
+
+.marrakesh{
+width: 20%;
+float: left;
+}
+
+
+
+#container {
+
+	background-color:white;
+	width: 50%;
+	margin-left:50%;
+	padding-left: 1%;
+	padding-top: 2%;
+	
+
+
+}
