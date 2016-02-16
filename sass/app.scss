@@ -10,4 +10,23 @@
 @import '_fonts.scss';
 
 // Views import
+@import '_menu.scss';
+
+// Views import
 @import 'views/_main.scss';
+
+.screen{
+  width: 1200px;
+  height: 1920px;
+  background-color: #202847;
+  position: relative;
+  display: flex;
+}
+
+header{}
+
+footer{}
+
+section{
+	flex: 3;
+}
