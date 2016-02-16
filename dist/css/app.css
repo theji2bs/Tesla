@@ -53,49 +53,31 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #ecf0f1; }
+  width: 1920px;
+  background-color: #202847;
+  height: 1200px; }
 
-#nav {
-  background: #ecf0C2;
-  padding: 1%;
-  text-align: right; }
-  #nav li {
-    display: inline; }
+.bar {
+  width: 2px;
+  height: 600px;
+  background-color: blue; }
 
-#map {
-  background-color: #F5D486;
-  width: 50%;
-  float: left;
-  height: 100%;
-  position: absolute; }
+.cont {
+  background-color: grey;
+  height: 100%; }
 
-h2 {
-  text-align: center; }
+.bar1 {
+  width: 1%;
+  height: 500px;
+  background-color: red; }
 
-hr {
-  color: grey; }
+.carte {
+  width: 1%;
+  height: 500px;
+  background-color: blue; }
 
-.biarritz {
-  float: left;
-  width: 20%; }
-
-.progress {
-  background-image: linear-gradient(60deg, #FF6655, #FFAA77);
-  text-align: center;
-  margin-left: 30%;
-  margin-right: 30%;
-  padding: 0,5%;
-  border-radius: 30px;
-  float: left;
-  width: 60%; }
-
-.marrakesh {
-  width: 20%;
-  float: left; }
-
-#container {
-  background-color: white;
-  width: 50%;
-  margin-left: 50%;
-  padding-left: 1%;
-  padding-top: 2%; }
+.bar2 {
+  width: 80%;
+  height: 600px;
+  background-color: green;
+  margin-top: 10px; }
