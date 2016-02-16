@@ -16,17 +16,45 @@
 @import 'views/_main.scss';
 
 .screen{
-  width: 1200px;
-  height: 1920px;
-  background-color: #202847;
-  position: relative;
-  display: flex;
+	width: 1200px;
+	height: 1920px;
+	background-color: #202847;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-header{}
+.content{
+	width: 1200px;
+	z-index: 1;
 
-footer{}
+	nav{
+		width: 80px;
+		height: 1920px;
+		background-color: #666666;
+		flex: 1;
+	}
+	section{
+		margin-left: 120px;
+		flex: 1;
+	}
+}
 
-section{
-	flex: 3;
+header{
+	z-index: 10;
+	top: 0px;
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	background-color: #A91101;
+}
+
+footer{
+	z-index: 10;
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	background-color: #A91101;
+    right: 0px;
+    bottom: 0px;
 }
