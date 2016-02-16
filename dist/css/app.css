@@ -52,32 +52,39 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-body {
-  width: 1920px;
+.screen {
+  width: 1200px;
+  height: 1920px;
   background-color: #202847;
-  height: 1200px; }
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
 
-.bar {
-  width: 2px;
-  height: 600px;
-  background-color: blue; }
+.content {
+  width: 1200px;
+  z-index: 1; }
+  .content nav {
+    width: 80px;
+    height: 1920px;
+    background-color: #666666;
+    flex: 1; }
+  .content section {
+    margin-left: 120px;
+    flex: 1; }
 
-.cont {
-  background-color: grey;
-  height: 100%; }
+header {
+  z-index: 10;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  background-color: #A91101; }
 
-.bar1 {
-  width: 1%;
-  height: 500px;
-  background-color: red; }
-
-.carte {
-  width: 1%;
-  height: 500px;
-  background-color: blue; }
-
-.bar2 {
-  width: 80%;
-  height: 600px;
-  background-color: green;
-  margin-top: 10px; }
+footer {
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  background-color: #A91101;
+  right: 0px;
+  bottom: 0px; }
