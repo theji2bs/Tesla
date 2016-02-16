@@ -5,18 +5,38 @@
 	<meta charset="UTF-8">
 	<title>Tesla</title>
 	<link rel="stylesheet" href="css/app.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
 
 <div class="screen">
 	<header>
-	<?php include 'header.php'; ?>
+		<div class="left">
+		HEURE
+		</div>
+
+		<div class="center">
+		TESLA
+		</div>
+
+		<div class="right">
+			<div class="battery">
+			80%
+			</div>
+			<div class="network">
+			3G
+			</div>
+			<div class="weather">
+			40 C°
+			</div>
+		</div>
 	</header>
 
 	<div class="content">
 		<nav>
-		<?php include 'menu.php'; ?>
+		menu
 		</nav>
 
 		<section class="main">
@@ -25,7 +45,7 @@
 	</div>
 
 	<footer>
-	<?php include 'footer.php'; ?>
+	footer
 	</footer>
 
 </div>

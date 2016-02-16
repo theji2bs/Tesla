@@ -22,7 +22,7 @@ gulp.task('default', function() {
 // App
 gulp.task('js_app', function() {
 
-  return gulp.src('js/app/*.js')
+  return gulp.src('js/*.js')
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);

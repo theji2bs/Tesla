@@ -52,6 +52,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  font-family: Lato, sans-serif; }
+
 .screen {
   width: 1200px;
   height: 1920px;
@@ -75,14 +78,21 @@ html {
 header {
   z-index: 10;
   top: 0px;
-  height: 80px;
+  height: 77px;
   width: 100%;
   position: absolute;
-  background-color: #A91101; }
+  background-color: #A91101;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  header .right div {
+    width: 5%; }
 
 footer {
   z-index: 10;
-  height: 80px;
+  height: 330px;
   width: 100%;
   position: absolute;
   background-color: #A91101;
