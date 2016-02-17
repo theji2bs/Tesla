@@ -2,20 +2,17 @@
 
 	
 	<div class="big-head">
+	qsdfdqsf
 	</div>
 	<div class="mid-left">
+	qsdfqdsf
 	</div>
 	<div class="mid-right">
+	qsdfqsdfqdsfdqsf
 	</div>
 	<div class="big-foot">
+	qsdfqsdfqdsfqsdf
 	</div>
-
-
-
-
-
-	
-<div id="container" style="height: 300px"></div>
 
 
 </section>

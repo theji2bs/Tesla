@@ -12,8 +12,7 @@
 // Views import
 @import '_menu.scss';
 
-// Views import
-@import 'views/_main.scss';
+
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 body{
@@ -58,9 +57,11 @@ body{
 		}
 	}
 	section{
+		width: 1110px;
 		margin-top: 90px;
 		padding: 10px;
 		flex: 1;
+		z-index: 5;
 		display: inline-block;
 		height: 100%;
 	}
@@ -360,15 +361,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-// MENU 
-
-
+// Views import
+@import 'views/_main.scss';
 
