@@ -6,7 +6,7 @@
 	<title>Tesla</title>
 	<link rel="stylesheet" href="css/app.css">
 
-	<script src="js/vendors.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 
 		<script type="text/javascript">
 $(function () {
@@ -88,7 +88,7 @@ $(function () {
 
 </head>
 <body>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+
 
 <div class="screen">
 	<header>
@@ -111,7 +111,7 @@ $(function () {
 
 </div>
 
-
+    <script src="js/vendors.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
