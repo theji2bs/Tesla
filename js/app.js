@@ -1,4 +1,4 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
 
 console.log('Let\'s get things done !');
 
@@ -11,7 +11,8 @@ socket.on('data', function(content) {
     //var shift = data.datasets[0].data.shift();
     //console.log(data.datasets.data);
     //console.log(data.datasets[0].data);
+    
    
 })
 
-});*/
+});
