@@ -34,28 +34,16 @@
 	nav{
 		width: 80px;
 		height: 1920px;
-		padding-top: 90px;
+		padding-top: 130px;
 		background-color: #666666;
 		flex: 1;
-<<<<<<< HEAD
-	
-
-
-
-		
-
-
-
-
-
-=======
 		display: inline-block;
->>>>>>> e9f713a89803e877e5d19ee566f55ba112739d95
 	}
 	section{
 		padding-top: 90px;
 		flex: 1;
 		display: inline-block;
+		height: 100%;
 	}
 }
 
@@ -236,7 +224,8 @@ footer{
 
 .front{
 	
-	color: white;	font-family: 'PT Sans', sans-serif;
+	color: white;	
+	font-family: 'PT Sans', sans-serif;
 	margin-top: -12px; 
 	float: left;
 	padding-left: 35px;
@@ -376,13 +365,6 @@ footer{
 
 
 // MENU 
-
-
-
-.imgmenu{
-	margin-top: 130px;
-	
-}
 
 .imgtaille{
 	fill-color: red;

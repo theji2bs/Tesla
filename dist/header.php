@@ -1,12 +1,8 @@
 
 <div >
 
-<p class="heure">
-
-<script type="text/javascript" language="javascript"> 
-d = new Date(); 
-document.write(d.toLocaleTimeString()); 
-</script></p>
+<p class="heure" id="time">
+</p>
 
 <p class="tesla">
 TESLA

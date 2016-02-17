@@ -22,14 +22,14 @@ gulp.task('default', function() {
 // App
 gulp.task('js_app', function() {
 
-  return gulp.src('js/app/*.js')
+  return gulp.src('js/*.js')
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);
             this.emit('end');
         }}))
         .pipe(concat("app.js"))
-        .pipe(gulp.dest('dist/js/'))
+        .pipe(gulp.dest( 'dist/js/' ))
 
 });
 
@@ -51,13 +51,13 @@ gulp.task('sass', function()
 // Vendors
 gulp.task('js_libs', function() {
 
-  return gulp.src('js/vendor/*.js')
+  return gulp.src('js/vendors/*.js')
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);
             this.emit('end');
         }}))
-        .pipe(concat("vendor.js"))
+        .pipe(concat("vendors.js"))
         .pipe(gulp.dest('dist/js/'))
 
 });
