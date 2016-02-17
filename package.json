@@ -1,21 +1,36 @@
 {
-  "name": "TeslaJurassic",
-  "version": "0.1.0",
-  "description": "Tesla Jurassic World",
-  "main": "server.js",
+  "name": "Couleurs",
+  "version": "1.0.0",
+  "description": "Jeu fonctionnel",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Louis DEBRAINE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecolehetic/P2018-11.git"
+  },
+  "author": "Lucas Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecolehetic/P2018-11/issues"
+  },
+  "homepage": "https://github.com/ecolehetic/P2018-11#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
     "gulp-concat": "^2.6.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.1.1",
     "gulp-watch": "^4.3.5"
+<<<<<<< HEAD
+=======
   },
   "dependencies": {
     "faker": "^3.0.1",
     "socket.io": "^1.4.5"
+>>>>>>> e9f713a89803e877e5d19ee566f55ba112739d95
   }
 }

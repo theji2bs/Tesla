@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Tesla</title>
 	<link rel="stylesheet" href="css/app.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
 	<script src="js/vendors.js"></script>
 
 		<script type="text/javascript">
@@ -92,30 +92,12 @@ $(function () {
 
 <div class="screen">
 	<header>
-		<div class="left">
-		HEURE
-		</div>
-
-		<div class="center">
-		TESLA
-		</div>
-
-		<div class="right">
-			<div class="battery">
-			80%
-			</div>
-			<div class="network">
-			3G
-			</div>
-			<div class="weather">
-			40 C°
-			</div>
-		</div>
+	<?php include 'header.php'; ?>
 	</header>
 
 	<div class="content">
 		<nav>
-		menu
+		<?php include 'menu.php'; ?>
 		</nav>
 
 		
@@ -124,7 +106,7 @@ $(function () {
 	</div>
 
 	<footer>
-	footer
+	<?php include 'footer.php'; ?>
 	</footer>
 
 </div>

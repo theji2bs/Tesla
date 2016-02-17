@@ -4,6 +4,7 @@
 
 
 console.log('Let\'s get things done !');
+<<<<<<< HEAD
 var socket = io.connect('http://localhost:8080');
 
 
@@ -22,3 +23,7 @@ socket.on('data', function(content) {
 
 
 });*/
+=======
+
+});
+>>>>>>> ebfac4544c7e67d1af08418e218660a174238228

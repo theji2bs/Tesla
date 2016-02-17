@@ -1,12 +1,8 @@
 /*$(document).ready(function() {
 
-
-
-
 console.log('Let\'s get things done !');
+
 var socket = io.connect('http://localhost:8080');
-
-
 
 socket.on('data', function(content) {
     console.log(content.number);
@@ -17,8 +13,5 @@ socket.on('data', function(content) {
     //console.log(data.datasets[0].data);
    
 })
-
-
-
 
 });*/
