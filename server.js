@@ -21,7 +21,10 @@ io.sockets.on('connection', function (socket) {
 
 	  	var randomEmail = faker.internet.email();
 	  	var currentTime = new Date();
-	  	var randomNumb = faker.random.number();
+	  	var randomNumb = faker.random.number({
+		    'min': 25,
+		    'max': 100
+		});
 
 	  	var data = {
 		    current_time: currentTime,
