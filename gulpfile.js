@@ -15,14 +15,14 @@ gulp.task('default', function() {
 
   gulp.watch( 'sass/**/*.scss', ['sass']);
 
-  gulp.watch( 'js/vendors/*.js', ['js_libs']);
+  gulp.watch( 'js/vendor/*.js', ['js_libs']);
 
 });
 
 // App
 gulp.task('js_app', function() {
 
-  return gulp.src('js/*.js')
+  return gulp.src('js/app/*.js')
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);
@@ -51,13 +51,13 @@ gulp.task('sass', function()
 // Vendors
 gulp.task('js_libs', function() {
 
-  return gulp.src('js/vendors/*.js')
+  return gulp.src('js/vendor/*.js')
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);
             this.emit('end');
         }}))
-        .pipe(concat("vendors.js"))
+        .pipe(concat("vendor.js"))
         .pipe(gulp.dest('dist/js/'))
 
 });
