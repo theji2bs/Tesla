@@ -20,8 +20,15 @@ io.sockets.on('connection', function (socket) {
 	  setInterval(function(){
 
 	  	var randomEmail = faker.internet.email();
+	  	var currentTime = new Date();
+	  	var randomNumb = faker.random.number();
 
-	      socket.emit('data', 'DATA ENVOI SOCKET OK !' + randomEmail);
+	  	var data = {
+		    current_time: currentTime,
+		    number: randomNumb
+		};
+
+	      socket.emit('data', data);
 
 	  }, 1000);
         

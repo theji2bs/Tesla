@@ -76,7 +76,8 @@ body {
   .content section {
     padding-top: 90px;
     flex: 1;
-    display: inline-block; }
+    display: inline-block;
+    height: 100%; }
 
 header {
   z-index: 10;
