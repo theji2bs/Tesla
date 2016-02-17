@@ -20,9 +20,9 @@
 		<?php include 'menu.php'; ?>
 		</nav>
 
-		<section class="main">
+		
 		<?php include 'views/main.php'; ?>
-		</section>
+		
 	</div>
 
 	<footer>
@@ -32,7 +32,7 @@
 </div>
 
 
-	<script src="js/vendor.js"></script>
+	<script src="js/vendors.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
