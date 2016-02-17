@@ -27,7 +27,8 @@ Membres de l'équipe et la spécialité de chacun:
 		- Cloner le dépôt git
 		- Installer gulp ( en sudo si besoin est) dans le dossier : commande "npm install -g gulp"
 		- Installer les dépendances dans le dossier : "npm install"
-		- Lancer la commmande "gulp" pour compiler tous les fichiers sass et js
+		- Lancer la commmande "gulp build" pour compiler tous les fichiers sass et js
+		- Lancer le serveur qui envois la fausse data "node server.js"
 		- Ouvrez dist/index.php avec mamp
 
 	Développement du site:
