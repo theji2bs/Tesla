@@ -35,6 +35,16 @@
 		height: 1920px;
 		background-color: #666666;
 		flex: 1;
+	
+
+
+
+		
+
+
+
+
+
 	}
 	section{
 		margin-left: 120px;
@@ -169,16 +179,16 @@ footer{
 
 
 .voiture1{
-	height: 5%;
-	width: 5%;
+	height: 4%;
+	width: 4%;
 	padding-top: 70px;
 	margin-left: 15%;
 	
 
 }
 .voiture2{
-	height: 5%;
-	width: 5%;
+	height: 4%;
+	width: 4%;
 	padding-top: 70px;
 	margin-left: 2%;
 	
@@ -198,7 +208,7 @@ footer{
   width:10px;
   height:10px;
  border:2px solid #00D8EF;
- margin-left: 350px;
+ margin-left: 345px;
   float: left;
 }
 .moncercle2{
@@ -222,11 +232,11 @@ footer{
 	color: white;	font-family: 'PT Sans', sans-serif;
 	margin-top: -12px; 
 	float: left;
-	padding-left: 50px;
+	padding-left: 35px;
 }
 
 #rear{
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
 .moncercle3{
@@ -235,7 +245,7 @@ footer{
   width:10px;
   height:10px;
  border:2px solid #00D8EF;
- margin-left: 30px;
+ margin-left: 25px;
   float: left;
 }
 .moncercle4{
@@ -256,7 +266,7 @@ footer{
   width:10px;
   height:10px;
  border:2px solid #00D8EF;
- margin-left: 55px;
+ margin-left: 40px;
   float: left;
 }
 .moncercle6{
@@ -268,3 +278,116 @@ footer{
  margin-left: 3px;
   float: left;
 }
+
+
+
+.container-on-off {
+	background-color:#272F4E;
+	width: 100px;
+	border-radius: 50px;
+	height: 35px;
+	margin-left: 950px;
+	  margin-top: -52px;
+	  color: white;
+
+
+	.right  {
+		float: right;
+		
+		border-radius: 50%;
+		padding: 10px;
+		height: 45px;
+		width: auto;
+		margin-top: -60px;
+	}
+	.left {
+		float: left;
+		padding: 10px;
+		height: 45px;
+		width: auto;
+		
+		border-radius: 50%;
+		border: 3px solid red;
+		margin-top: -58px;
+
+		background-color: rgba(0, 0, 43, 0.5);
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.moncercle22{
+  
+  border-radius:50%;
+  width:50px;
+  height:50px;
+ border:2px solid #00D8EF; 
+ margin-left: 3px;
+  float: left;
+  text-align: center;
+  margin-top: -80px;
+  margin-left: 200px;
+}
+
+.moncercle23{
+  
+  width:100px;
+  height:50px;
+  background-color: orange;
+ margin-left: 3px;
+  float: left;
+  text-align: center;
+  margin-top: -80px;
+  margin-left: 240px;
+  border-radius:50%;
+
+  
+}
+.txtcercle{
+	color:#FFF;
+	padding-top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// MENU 
+
+
+
+.imgmenu{
+	margin-top: 130px;
+	
+}
+
+.imgtaille{
+	fill-color: red;
+	height: 30px;
+	width: 30px;
+	margin-left: 30%;
+}
+.marge{
+	margin-top: 30px;
+}
+.hrr{
+	background-color: red;
+	margin-top: 30px;
+}
+
