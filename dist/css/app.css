@@ -302,19 +302,6 @@ footer {
   width: 100%;
   margin-bottom: 10px; }
 
-<<<<<<< HEAD
-.main .mid-left {
-  background-color: #FFFFFF;
-  width: 542px;
-  margin-bottom: 10px;
-  display: inline-block; }
-
-.main .mid-right {
-  background-color: #FFFFFF;
-  width: 543px;
-  margin-bottom: 10px;
-  display: inline-block; }
-=======
 .main .graph {
   display: flex;
   justify-content: center; }
@@ -324,6 +311,10 @@ footer {
     margin-bottom: 10px;
     display: inline-block; }
   .main .graph .mid-right {
+    background-color: #FFFFFF;
+    width: 543px;
+    margin-bottom: 10px;
+    display: inline-block;
     background: url("../assets/img/pochette.jpg") no-repeat;
     background-position: center center;
     background-size: 50%;
@@ -348,7 +339,6 @@ footer {
       background-color: red;
       width: 10%;
       height: auto; }
->>>>>>> 537610d3d7df11491ac070892cb23317670c3857
 
 .main .big-foot {
   background-color: #FFFFFF;
