@@ -2,10 +2,10 @@
 
 	
 	<div class="big-head">
-	qsdfdqsf
+ 	 map
 	</div>
 	<div class="mid-left">
-	qsdfqdsf
+	<div id="container" style="width:100%; height:400px;"></div>
 	</div>
 	<div class="mid-right">
 	qsdfqsdfqdsfdqsf
