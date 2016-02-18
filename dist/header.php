@@ -18,7 +18,7 @@ TESLA
 </p>
 
 
-<img src="assets/img/signal.svg" alt=""class="img3" >
+<img src="assets/img/weather.svg" alt=""class="img3" >
 <p class="meteo">
 35°
 </p>
