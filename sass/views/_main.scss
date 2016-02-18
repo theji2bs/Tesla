@@ -1,3 +1,74 @@
 .main{
-	
+
+	.big-head{
+		background-color: #FFFFFF;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.graph {
+		display: flex;
+		justify-content: center;
+
+
+	.mid-left{
+		background-color: #FFFFFF;
+		width: 50%;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+	.mid-right{
+	    background:url("../assets/img/pochette.jpg") no-repeat;
+	    background-position:center center;
+	    background-size:50%;
+		width: 50%;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-around;
+		align-items:center;
+		height: auto;
+
+		.player{
+			 margin-left: 20px;
+
+		}
+		
+		.play{
+
+			
+
+			width: 100px;
+			height: 100px;
+
+
+
+
+		}
+		.next{
+			
+
+			width: 25px;
+			height: 25px;
+		
+		}
+		.prev{
+		
+
+			width: 25px;
+			height: 25px;
+
+
+
+		}
+
+		.pmenu{
+			background-color: red;
+			width: 10%;
+			height: auto;
+		}
+	}
+	}
+	.big-foot{
+		background-color: #FFFFFF;
+		width: 100%;
+	}
 }
