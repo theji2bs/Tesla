@@ -47,8 +47,9 @@
 </div>
 
 <div class="numpad">
-	<p>06 88 99 ... ...</p>
+	<p>... ... ... ... ...</p> 
 </div>
+<span class="del-phone-number">DELETE</span>
 
 	<div class="one">
 	<div class="number">1</div>

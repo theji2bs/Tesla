@@ -13,18 +13,9 @@ $(document).ready(function(){
 	    }, 100);
 	    
 
-var socket = io.connect('http://localhost:8080');
-socket.on('data', function(content) {
-    console.log(content.number);
-    //data.datasets[0].data.push(content.number);
-    //delete data.datasets[0].data[0];
-    //var shift = data.datasets[0].data.shift();
-    //console.log(data.datasets.data);
-    //console.log(data.datasets[0].data);
-   
-})
+	var socket = io.connect('http://localhost:8080');
 
-        // Hightchart real time
+
         Highcharts.setOptions({
             global: {
                 useUTC: false
@@ -110,11 +101,40 @@ socket.on('data', function(content) {
             }]
         });
 
-
     // Phone widget
-    function notify() {
-      alert( "clicked" );
+    //hiddenBox.show();
+      var currentNumb = [];
+
+    function numberWithSpace(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
-    $( ".number" ).on( "click", notify );
+    
+    $( ".number" ).on( "click", function( event ) {
+        if(currentNumb.length < 10){
+          var getNumb = $(this).text();
+          //console.log(getNumb);
+          currentNumb.push(getNumb);
+
+          console.log();
+          //var length = $(".numpad > p").val().length;
+          //console.log(length);
+
+          var goodNumbers = numberWithSpace(currentNumb.join(''));
+
+
+
+          $(".numpad > p").text(goodNumbers);
+        }
+    });
+
+     $( ".del-phone-number" ).on( "click", function( event ) {
+        if(goodNumbers != []){
+        var goodNumbers = [];
+
+        $(".numpad > p").text("... ... ... ... ...");
+        }
+    });
+    
+
 
 });
