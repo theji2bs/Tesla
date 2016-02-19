@@ -337,5 +337,102 @@ footer {
       height: auto; }
 
 .main .big-foot {
-  background-color: #FFFFFF;
-  width: 100%; }
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  border: solid 2px; }
+  .main .big-foot .sidebar {
+    width: 6%;
+    height: 450px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    margin-left: 15px; }
+  .main .big-foot .imgsidebar {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px; }
+  .main .big-foot .txtphone {
+    color: white; }
+  .main .big-foot .one {
+    display: flex; }
+  .main .big-foot .two {
+    display: flex; }
+  .main .big-foot .tree {
+    display: flex; }
+  .main .big-foot .four {
+    display: flex; }
+  .main .big-foot .ok {
+    display: flex; }
+  .main .big-foot .pad {
+    margin-left: 2%;
+    margin-top: 1%; }
+  .main .big-foot .number {
+    margin: 10px;
+    width: 60px;
+    background: #FF0000;
+    height: 60px;
+    text-align: center;
+    border-radius: 100px;
+    padding-top: 20px;
+    background: transparent;
+    border: solid 2px;
+    border-color: white; }
+  .main .big-foot .onee {
+    border: solid 3px;
+    border-color: #FFB414; }
+  .main .big-foot .txtpad {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 20px; }
+  .main .big-foot .orange {
+    color: #FFB414; }
+  .main .big-foot .numpad {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2em; }
+  .main .big-foot .historique {
+    margin-left: 60px;
+    margin-top: 90px; }
+  .main .big-foot .petit {
+    font-size: 0,2em; }
+  .main .big-foot .losange {
+    width: 70px;
+    height: 70px;
+    margin-top: 0px;
+    margin-left: 30px; }
+  .main .big-foot .contact {
+    display: flex; }
+  .main .big-foot .cont {
+    margin-top: 20px;
+    margin-left: 20px; }
+  .main .big-foot .contactcontenu {
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    border-left: solid 3px;
+    border-right: solid 3px;
+    border-color: #4F5A7A;
+    width: 48%;
+    height: 450px;
+    padding-top: 40px; }
+  .main .big-foot .bar {
+    width: 3px;
+    height: 40px;
+    background: red;
+    margin-left: 120px;
+    margin-top: 20px; }
+  .main .big-foot .iconegauche {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px; }
+  .main .big-foot .icons {
+    margin-top: 20px;
+    margin-right: 10px; }
+  .main .big-foot .iconedroite {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px; }
