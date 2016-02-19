@@ -28,6 +28,7 @@ $(document).ready(function(){
             },
             chart: {
                 type: 'spline',
+                backgroundColor: '',
                 animation: Highcharts.svg, // don't animate in old IE
                 marginRight: 10,
                 events: {
@@ -95,7 +96,8 @@ $(document).ready(function(){
                         });
                     }
                     return data;
-                }())
+                }()),
+                color: '#00e2f3'
             }]
         });
 

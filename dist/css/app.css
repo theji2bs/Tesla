@@ -306,7 +306,6 @@ footer {
   display: flex;
   justify-content: center; }
   .main .graph .mid-left {
-    background-color: #FFFFFF;
     width: 50%;
     margin-bottom: 10px;
     display: inline-block; }
@@ -381,10 +380,21 @@ footer {
     padding-top: 20px;
     background: transparent;
     border: solid 2px;
-    border-color: white; }
-  .main .big-foot .onee {
+    border-color: white;
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
+  .main .big-foot .number:hover {
     border: solid 3px;
-    border-color: #FFB414; }
+    color: #FFB414;
+    border-color: #FFB414;
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
   .main .big-foot .txtpad {
     margin-left: 20px;
     display: flex;

@@ -52,8 +52,8 @@
 
 	<div class="one">
 	<div class="number">1</div>
-	<div class="number ">2</div>
-	<div class="number onee">3</div>
+	<div class="number">2</div>
+	<div class="number">3</div>
 	
 	</div>
 	<div class="two">
