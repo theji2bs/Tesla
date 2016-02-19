@@ -7,7 +7,7 @@
 
 	<div class="graph">
 	<div class="mid-left">
-	<div id="container" style="width:100%; height:400px;"></div>
+	<div id="container"></div>
 	</div>
 
 
@@ -23,7 +23,7 @@
 
 
 	</div>
-</div>
+	</div>
 	<div class="big-foot">
 	
 <div class="ok">	

@@ -4,3 +4,9 @@
 # Node.
 node_modules
 npm-debug.log
+
+dist/js/app.js
+dist/js/vendors.js
+
+dist/css/app.css
+dist/css/main.css

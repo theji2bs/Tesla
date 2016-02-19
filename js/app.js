@@ -13,14 +13,7 @@ $(document).ready(function(){
 	    }, 100);
 	    
 
-
 	var socket = io.connect('http://localhost:8080');
-
-
-
-
-
-
 
 
         Highcharts.setOptions({
