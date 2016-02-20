@@ -31,4 +31,9 @@ $(document).ready(function(){
 
     
 
+    // Show different elements of the page
+    $( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    
+
 });

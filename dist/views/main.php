@@ -1,4 +1,4 @@
-<section class="main">
+<section id="dash">
 
 	
 	<div class="big-head">
