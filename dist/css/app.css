@@ -157,30 +157,157 @@ footer {
   height: 300px;
   width: 100%;
   position: absolute;
-  background-color: #A91101;
+  background-color: transparent;
   right: 0px;
   bottom: 0px; }
+
+.footerbas {
+  background: transparent;
+  margin-left: 80px;
+  margin-bottom: 2px;
+  margin-bottom: 50px; }
+
+.plus {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: solid 2px white;
+  padding-top: 10px; }
+
+.moins {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: solid 2px white;
+  padding-top: 10px;
+  margin-left: 300px; }
+
+.contour {
+  height: 70px;
+  width: 70px;
+  border: solid 2px red;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 55px;
+  margin-top: -15px; }
+
+.milieu {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: solid 2px white;
+  padding-top: 9px;
+  margin-left: 70px;
+  background-color: #1F274F;
+  position: absolute; }
+
+.contour2 {
+  height: 70px;
+  width: 70px;
+  border: solid 2px red;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 155px;
+  margin-top: -15px; }
+
+.milieu2 {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: solid 2px white;
+  padding-top: 9px;
+  margin-left: 170px;
+  background-color: #1F274F;
+  position: absolute; }
+
+.tiret {
+  height: 2px;
+  background-color: white;
+  width: 300px;
+  margin-left: 140px;
+  margin-top: 73px;
+  position: absolute; }
+
+.tiret2 {
+  height: 2px;
+  background-color: white;
+  width: 300px;
+  margin-left: 840px;
+  margin-top: 73px;
+  position: absolute; }
+
+.power1 {
+  height: 30px;
+  width: 30px;
+  margin-left: 510px;
+  margin-top: -40px;
+  position: absolute; }
+
+.power2 {
+  height: 30px;
+  width: 30px;
+  margin-left: 560px;
+  margin-top: -40px;
+  position: absolute; }
+
+.boutonv {
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex; }
+
+.droitev {
+  margin-left: 700px;
+  margin-top: -90px; }
+
+.powe {
+  margin-left: 550px;
+  position: absolute;
+  margin-top: -5px; }
+
+.sync {
+  margin-left: 500px;
+  position: absolute;
+  margin-top: -5px; }
+
+.divvolume {
+  background-color: #272F4E;
+  width: 100px;
+  border-radius: 50px;
+  height: 35px;
+  margin-left: 950px;
+  margin-top: -52px;
+  color: white; }
 
 .voiture {
   height: 8%;
   width: 8%;
   padding-top: 70px;
-  margin-left: 5%; }
+  margin-left: 10%; }
 
 .voiture1 {
   height: 4%;
   width: 4%;
   padding-top: 70px;
-  margin-left: 15%; }
+  margin-left: 200px; }
 
 .voiture2 {
   height: 4%;
   width: 4%;
   padding-top: 70px;
-  margin-left: 2%; }
+  margin-left: 25px; }
+
+.voiture3 {
+  height: 4%;
+  width: 4%;
+  padding-top: 70px;
+  margin-left: 28px; }
 
 .control {
-  margin-left: 80px;
+  margin-left: 140px;
   color: white;
   font-family: 'PT Sans', sans-serif; }
 
@@ -189,7 +316,7 @@ footer {
   width: 10px;
   height: 10px;
   border: 2px solid #00D8EF;
-  margin-left: 345px;
+  margin-left: 420px;
   float: left; }
 
 .moncercle2 {
@@ -211,7 +338,7 @@ footer {
   font-family: 'PT Sans', sans-serif;
   margin-top: -12px;
   float: left;
-  padding-left: 35px; }
+  padding-left: 45px; }
 
 #rear {
   padding-left: 30px; }
@@ -302,7 +429,8 @@ footer {
 #dash .big-head {
   background-color: #FFFFFF;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  height: 500px; }
 
 #dash .graph {
   display: flex;
