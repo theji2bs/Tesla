@@ -167,6 +167,8 @@ footer{
 	background-color: transparent;
     right: 0px;
     bottom: 0px;
+}
+
 
 
 
@@ -307,23 +309,7 @@ background-color:#272F4E;
 	  margin-top: -52px;
 	  color: white;
 
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-}
-
-
 
 
 
@@ -354,6 +340,7 @@ background-color:#272F4E;
 	
 
 }
+
 .voiture3{
 	height: 4%;
 	width: 4%;
@@ -363,10 +350,10 @@ background-color:#272F4E;
 
 }
 
-
 .control{
-	margin-left:140px;
-	color: white;	font-family: 'PT Sans', sans-serif;
+	margin-left: 140px;
+	color: white;	
+	font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -451,7 +438,40 @@ background-color:#272F4E;
 
 
 
+.container-on-off {
+	background-color:#272F4E;
+	width: 100px;
+	border-radius: 50px;
+	height: 35px;
+	margin-left: 950px;
+	  margin-top: -52px;
+	  color: white;
 
+
+	.right  {
+		float: right;
+		
+		border-radius: 50%;
+		padding: 10px;
+		height: 45px;
+		width: auto;
+		margin-top: -60px;
+	}
+	.left {
+		float: left;
+		padding: 10px;
+		height: 45px;
+		width: auto;
+		
+		border-radius: 50%;
+		border: 3px solid red;
+		margin-top: -58px;
+
+		background-color: rgba(0, 0, 43, 0.5);
+
+
+	}
+}
 
 
 

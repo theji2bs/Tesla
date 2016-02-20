@@ -126,8 +126,7 @@
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Bubble",
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            mp3: "assets/sound/jurassic-world-music.mp3"
           });
         },
         cssSelectorAncestor: "#jp_container_1",
@@ -142,7 +141,7 @@
           duration: ".jp-duration",
           title: ".jp-title",
         },
-        supplied: "m4a, oga",
+        supplied: "mp3",
         useStateClassSkin: true,
         smoothPlayBar: true,
         keyEnabled: true,

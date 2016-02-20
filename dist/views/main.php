@@ -2,28 +2,7 @@
 
 	
 	<div class="big-head">
- 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 	 map
 	</div>
 
 	<div class="graph">
