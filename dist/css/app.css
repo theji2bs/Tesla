@@ -157,30 +157,141 @@ footer {
   height: 300px;
   width: 100%;
   position: absolute;
-  background-color: #A91101;
+  background-color: transparent;
   right: 0px;
   bottom: 0px; }
+  footer .footerbas {
+    background: transparent;
+    margin-left: 80px;
+    margin-bottom: 2px;
+    margin-bottom: 50px; }
+  footer .plus {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px; }
+  footer .moins {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-left: 300px; }
+  footer .contour {
+    height: 70px;
+    width: 70px;
+    border: solid 2px red;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: -15px; }
+  footer .milieu {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 9px;
+    margin-left: 70px;
+    background-color: #1F274F;
+    position: absolute; }
+  footer .contour2 {
+    height: 70px;
+    width: 70px;
+    border: solid 2px red;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: -15px; }
+  footer .milieu2 {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 9px;
+    margin-left: 170px;
+    background-color: #1F274F;
+    position: absolute; }
+  footer .tiret {
+    height: 2px;
+    background-color: white;
+    width: 300px;
+    margin-left: 140px;
+    margin-top: 73px;
+    position: absolute; }
+  footer .tiret2 {
+    height: 2px;
+    background-color: white;
+    width: 300px;
+    margin-left: 840px;
+    margin-top: 73px;
+    position: absolute; }
+  footer .power1 {
+    height: 30px;
+    width: 30px;
+    margin-left: 510px;
+    margin-top: -40px;
+    position: absolute; }
+  footer .power2 {
+    height: 30px;
+    width: 30px;
+    margin-left: 560px;
+    margin-top: -40px;
+    position: absolute; }
+  footer .boutonv {
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex; }
+  footer .droitev {
+    margin-left: 700px;
+    margin-top: -90px; }
+  footer .powe {
+    margin-left: 550px;
+    position: absolute;
+    margin-top: -5px; }
+  footer .sync {
+    margin-left: 500px;
+    position: absolute;
+    margin-top: -5px; }
+  footer .divvolume {
+    background-color: #272F4E;
+    width: 100px;
+    border-radius: 50px;
+    height: 35px;
+    margin-left: 950px;
+    margin-top: -52px;
+    color: white; }
 
 .voiture {
   height: 8%;
   width: 8%;
   padding-top: 70px;
-  margin-left: 5%; }
+  margin-left: 10%; }
 
 .voiture1 {
   height: 4%;
   width: 4%;
   padding-top: 70px;
-  margin-left: 15%; }
+  margin-left: 200px; }
 
 .voiture2 {
   height: 4%;
   width: 4%;
   padding-top: 70px;
-  margin-left: 2%; }
+  margin-left: 25px; }
+
+.voiture3 {
+  height: 4%;
+  width: 4%;
+  padding-top: 70px;
+  margin-left: 28px; }
 
 .control {
-  margin-left: 80px;
+  margin-left: 140px;
   color: white;
   font-family: 'PT Sans', sans-serif; }
 
@@ -189,7 +300,7 @@ footer {
   width: 10px;
   height: 10px;
   border: 2px solid #00D8EF;
-  margin-left: 345px;
+  margin-left: 420px;
   float: left; }
 
 .moncercle2 {
@@ -211,7 +322,7 @@ footer {
   font-family: 'PT Sans', sans-serif;
   margin-top: -12px;
   float: left;
-  padding-left: 35px; }
+  padding-left: 45px; }
 
 #rear {
   padding-left: 30px; }
@@ -248,31 +359,6 @@ footer {
   margin-left: 3px;
   float: left; }
 
-.container-on-off {
-  background-color: #272F4E;
-  width: 100px;
-  border-radius: 50px;
-  height: 35px;
-  margin-left: 950px;
-  margin-top: -52px;
-  color: white; }
-  .container-on-off .right {
-    float: right;
-    border-radius: 50%;
-    padding: 10px;
-    height: 45px;
-    width: auto;
-    margin-top: -60px; }
-  .container-on-off .left {
-    float: left;
-    padding: 10px;
-    height: 45px;
-    width: auto;
-    border-radius: 50%;
-    border: 3px solid red;
-    margin-top: -58px;
-    background-color: rgba(0, 0, 43, 0.5); }
-
 .moncercle22 {
   border-radius: 50%;
   width: 50px;
@@ -302,7 +388,8 @@ footer {
 #dash .big-head {
   background-color: #FFFFFF;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  height: 500px; }
 
 #dash .graph {
   display: flex;
