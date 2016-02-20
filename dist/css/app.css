@@ -328,6 +328,10 @@ footer {
     .main .graph .mid-right .play {
       width: 100px;
       height: 100px; }
+    .main .graph .mid-right .pause {
+      width: 100px;
+      height: 100px;
+      display: none; }
     .main .graph .mid-right .next {
       width: 25px;
       height: 25px; }
@@ -381,20 +385,17 @@ footer {
     background: transparent;
     border: solid 2px;
     border-color: white;
-    -webkit-transition: background-color 0.5s linear;
-    -moz-transition: background-color 0.5s linear;
-    -ms-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear; }
+    transition: all 0.5s ease; }
   .main .big-foot .number:hover {
     border: solid 3px;
     color: #FFB414;
     border-color: #FFB414;
-    -webkit-transition: background-color 0.5s linear;
-    -moz-transition: background-color 0.5s linear;
-    -ms-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear; }
+    transition: all 0.5s ease; }
+  .main .big-foot .number:click {
+    border: solid 3px;
+    color: #FFB414;
+    border-color: #FFB414;
+    transition: all 0.5s ease; }
   .main .big-foot .txtpad {
     margin-left: 20px;
     display: flex;
@@ -450,3 +451,12 @@ footer {
     width: 40px;
     height: 40px;
     margin-left: 30px; }
+
+.tirix {
+  z-index: 15; }
+
+#tirix {
+  display: none;
+  background-color: #FFFFFF;
+  height: 500px;
+  width: 500px; }

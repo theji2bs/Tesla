@@ -10,14 +10,16 @@
 	<div id="container"></div>
 	</div>
 
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 
-
-	<div class="mid-right playeur">
+	<div id="jp_container_1" class="mid-right playeur">
 		
-
-
+	
 		<img src="assets/img/previous-button.svg" class="prev">
-		<img src="assets/img/play-circle.svg" class="play">
+		<div class="player_action">
+			<img src="assets/img/play-circle.svg" class="play">
+			<img src="assets/img/pause-button.svg" class="pause">
+		</div>
 		<img src="assets/img/next-button.svg" class="next">
 
 

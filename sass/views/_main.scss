@@ -35,16 +35,16 @@
 
 		}
 		
+		.player_action{
+		}
 		.play{
-
-			
-
 			width: 100px;
 			height: 100px;
-
-
-
-
+		}
+		.pause{
+			width: 100px;
+			height: 100px;
+			display: none;
 		}
 		.next{
 			
@@ -137,11 +137,7 @@ color:white;
     background: transparent;
     border: solid 2px;
     border-color:white;
-    -webkit-transition: background-color 0.5s linear;
-	-moz-transition: background-color 0.5s linear;
-	-ms-transition: background-color 0.5s linear;
-	-o-transition: background-color 0.5s linear;
-	transition: background-color 0.5s linear;
+    transition: all 0.5s ease;
 }
 
 .number:hover{
@@ -149,11 +145,15 @@ color:white;
 	border: solid 3px;
 	color: #FFB414;
 	border-color:#FFB414;
-	-webkit-transition: background-color 0.5s linear;
-	-moz-transition: background-color 0.5s linear;
-	-ms-transition: background-color 0.5s linear;
-	-o-transition: background-color 0.5s linear;
-	transition: background-color 0.5s linear;
+	transition: all 0.5s ease;
+}
+
+.number:click{
+	
+	border: solid 3px;
+	color: #FFB414;
+	border-color:#FFB414;
+	transition: all 0.5s ease;
 }
 .txtpad{
 	margin-left: 20px;
@@ -255,3 +255,5 @@ padding-top:40px;
 
 
 }
+
+
