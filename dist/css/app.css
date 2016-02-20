@@ -97,15 +97,17 @@ body {
     width: 1110px;
     margin-top: 90px;
     padding: 10px;
+    display: none;
     flex: 1;
     z-index: 5;
-    display: inline-block;
+    float: right;
     height: 100%; }
 
 header {
   z-index: 10;
   top: 0px;
   height: 80px;
+  display: none;
   width: 100%;
   position: absolute; }
   header .heure {
@@ -297,20 +299,23 @@ footer {
   color: #FFF;
   padding-top: 30%; }
 
-.main .big-head {
+#dash .big-head {
   background-color: #FFFFFF;
   width: 100%;
   margin-bottom: 10px; }
 
-.main .graph {
+#dash .graph {
   display: flex;
   justify-content: center; }
-  .main .graph .mid-left {
-    background-color: #FFFFFF;
+  #dash .graph .mid-left {
     width: 50%;
     margin-bottom: 10px;
     display: inline-block; }
-  .main .graph .mid-right {
+  #dash .graph .mid-right {
+    background-color: #FFFFFF;
+    width: 543px;
+    margin-bottom: 10px;
+    display: inline-block;
     background: url("../assets/img/pochette.jpg") no-repeat;
     background-position: center center;
     background-size: 50%;
@@ -320,22 +325,138 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: auto; }
-    .main .graph .mid-right .player {
+    #dash .graph .mid-right .player {
       margin-left: 20px; }
-    .main .graph .mid-right .play {
+    #dash .graph .mid-right .play {
       width: 100px;
       height: 100px; }
-    .main .graph .mid-right .next {
+    #dash .graph .mid-right .pause {
+      width: 100px;
+      height: 100px;
+      display: none; }
+    #dash .graph .mid-right .next {
       width: 25px;
       height: 25px; }
-    .main .graph .mid-right .prev {
+    #dash .graph .mid-right .prev {
       width: 25px;
       height: 25px; }
-    .main .graph .mid-right .pmenu {
+    #dash .graph .mid-right .pmenu {
       background-color: red;
       width: 10%;
       height: auto; }
 
-.main .big-foot {
+#dash .big-foot {
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  border: solid 2px; }
+  #dash .big-foot .sidebar {
+    width: 6%;
+    height: 450px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    margin-left: 15px; }
+  #dash .big-foot .imgsidebar {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px; }
+  #dash .big-foot .txtphone {
+    color: white; }
+  #dash .big-foot .one {
+    display: flex; }
+  #dash .big-foot .two {
+    display: flex; }
+  #dash .big-foot .tree {
+    display: flex; }
+  #dash .big-foot .four {
+    display: flex; }
+  #dash .big-foot .ok {
+    display: flex; }
+  #dash .big-foot .pad {
+    margin-left: 2%;
+    margin-top: 1%; }
+  #dash .big-foot .number {
+    margin: 10px;
+    width: 60px;
+    background: #FF0000;
+    height: 60px;
+    text-align: center;
+    border-radius: 100px;
+    padding-top: 20px;
+    background: transparent;
+    border: solid 2px;
+    border-color: white;
+    transition: all 0.5s ease; }
+  #dash .big-foot .number:hover {
+    border: solid 3px;
+    color: #FFB414;
+    border-color: #FFB414;
+    transition: all 0.5s ease; }
+  #dash .big-foot .number:click {
+    border: solid 3px;
+    color: #FFB414;
+    border-color: #FFB414;
+    transition: all 0.5s ease; }
+  #dash .big-foot .txtpad {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 20px; }
+  #dash .big-foot .orange {
+    color: #FFB414; }
+  #dash .big-foot .numpad {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2em; }
+  #dash .big-foot .historique {
+    margin-left: 60px;
+    margin-top: 90px; }
+  #dash .big-foot .petit {
+    font-size: 0,2em; }
+  #dash .big-foot .losange {
+    width: 70px;
+    height: 70px;
+    margin-top: 0px;
+    margin-left: 30px; }
+  #dash .big-foot .contact {
+    display: flex; }
+  #dash .big-foot .cont {
+    margin-top: 20px;
+    margin-left: 20px; }
+  #dash .big-foot .contactcontenu {
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    border-left: solid 3px;
+    border-right: solid 3px;
+    border-color: #4F5A7A;
+    width: 48%;
+    height: 450px;
+    padding-top: 40px; }
+  #dash .big-foot .bar {
+    width: 3px;
+    height: 40px;
+    background: red;
+    margin-left: 120px;
+    margin-top: 20px; }
+  #dash .big-foot .iconegauche {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px; }
+  #dash .big-foot .icons {
+    margin-top: 20px;
+    margin-right: 10px; }
+  #dash .big-foot .iconedroite {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px; }
+
+#tirix {
   background-color: #FFFFFF;
-  width: 100%; }
+  z-index: 5;
+  position: absolute;
+  margin-left: 90px;
+  top: 0; }

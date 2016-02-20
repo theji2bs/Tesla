@@ -11,7 +11,7 @@ gulp.task('build', ['sass','js_app', 'js_libs']);
 // Watch changments
 gulp.task('default', function() {
 
-  gulp.watch( 'js/*.js', ['js_app']);
+  gulp.watch( 'js/**/*.js', ['js_app']);
 
   gulp.watch( 'sass/**/*.scss', ['sass']);
 
@@ -22,7 +22,7 @@ gulp.task('default', function() {
 // App
 gulp.task('js_app', function() {
 
-  return gulp.src('js/*.js')
+  return gulp.src(['js/*.js', 'js/views/*.js'])
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);

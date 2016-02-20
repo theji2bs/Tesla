@@ -26,6 +26,8 @@
 
 		
 		<?php include 'views/main.php'; ?>
+
+		<?php include 'views/tirix.php'; ?>
 		
 	</div>
 
