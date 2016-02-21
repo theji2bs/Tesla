@@ -32,6 +32,16 @@
 
 		<?php include 'views/tirix.php'; ?>
 		
+		<?php include 'views/gps.php'; ?>
+
+		<?php include 'views/contacts.php'; ?>
+
+		<?php include 'views/cellphone.php'; ?>
+
+		<?php include 'views/mail.php'; ?>
+
+		<?php include 'views/settings.php'; ?>
+
 	</div>
 
 	<footer>

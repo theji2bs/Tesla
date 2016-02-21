@@ -29,14 +29,65 @@ $(document).ready(function(){
        
     })
 
-    
+    // Initialisation of router
+    var route = '';
 
     // Show different elements of the page
     $( "#dash" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
     
 
 });
+// Base router
+
+function showCellphone() {
+        $( "#cellphone" ).fadeIn('slow');
+
+}
+function hideCellphone() {
+        $( "#cellphone" ).fadeOut('slow');
+}
+
+$( ".nav-cellphone" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideCellphone()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showCellphone()
+	  	var route = '#cellphone';
+	  	
+  }
+
+});
+
+// Base router
+
+function showContacts() {
+        $( "#contacts" ).fadeIn('slow');
+}
+function hideContacts() {
+        $( "#contacts" ).fadeOut('slow');
+}
+
+$( ".nav-contacts" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideContacts()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showContacts()
+  }
+
+});
+
 
 
         Highcharts.setOptions({
@@ -201,6 +252,85 @@ $(document).ready(function(){
     }
     $( ".play" ).on( "click", widgetPlay );
     $( ".pause" ).on( "click", widgetPause );
+// Base router
+
+function showGps() {
+        $( "#gps" ).fadeIn('slow');
+}
+function hideGps() {
+        $( "#gps" ).fadeOut('slow');
+}
+
+$( ".nav-gps" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideGps()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showGps()
+  }
+
+});
+
+// Base router
+
+function showMail() {
+        $( "#mail" ).fadeIn('slow');
+}
+function hideMail() {
+        $( "#mail" ).fadeOut('slow');
+}
+
+$( "nav > div > .nav-mail" ).on( "click", function() {
+
+	var actualActive = $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active');
+	console.log(actualActive);
+
+	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			
+		  	console.log('testok');
+	}
+
+  if( $( this ).hasClass('active') ){ 
+		
+		$( this ).removeClass("active");
+	  	hideMail()
+	}
+
+  else{
+	  	$( this ).addClass("active");
+	  	showMail()
+  }
+
+});
+
+// Base router
+
+function showSettings() {
+        $( "#settings" ).fadeIn('slow');
+}
+function hideSettings() {
+        $( "#settings" ).fadeOut('slow');
+}
+
+$( ".voiture" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideSettings()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showSettings()
+  }
+
+});
+
 // Base router
 
 function showTirix() {
