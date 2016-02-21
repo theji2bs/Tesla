@@ -153,6 +153,7 @@ header {
     float: left; }
 
 footer {
+  display: none;
   z-index: 10;
   height: 300px;
   width: 100%;

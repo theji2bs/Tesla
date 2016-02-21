@@ -25,15 +25,18 @@ $(document).ready(function(){
         //var shift = data.datasets[0].data.shift();
         //console.log(data.datasets.data);
         //console.log(data.datasets[0].data);
+
+
         
        
     })
 
     
-
-    // Show different elements of the page
-    $( "#dash" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
+    // Show different elements of the page on loading
+    $( "header" ).fadeIn(1000); // Header
+    $( "nav" ).fadeIn(1000); // Header
+    $( "footer" ).fadeIn(3000); // Header
+    $( "#dash" ).fadeIn(3000); // Dashboard
     
 
 });

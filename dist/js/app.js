@@ -25,15 +25,25 @@ $(document).ready(function(){
         //var shift = data.datasets[0].data.shift();
         //console.log(data.datasets.data);
         //console.log(data.datasets[0].data);
+
+
         
        
     })
 
     
 
+<<<<<<< HEAD
     // Show different elements of the page
     $( "#dash" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
+=======
+    // Show different elements of the page on loading
+    $( "header" ).fadeIn(1000); // Header
+    $( "nav" ).fadeIn(1000); // Header
+    $( "footer" ).fadeIn(3000); // Header
+    $( "#dash" ).fadeIn(3000); // Dashboard
+>>>>>>> 97a50d20e35eacff807d8cfc0d76a5979e4f20d2
     
 
 });
