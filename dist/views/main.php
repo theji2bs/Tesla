@@ -2,7 +2,7 @@
 
 	
 	<div class="big-head">
- 	 map
+ 	 map
 	</div>
 
 	<div class="graph">
