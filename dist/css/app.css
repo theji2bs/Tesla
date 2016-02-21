@@ -288,6 +288,9 @@ footer {
   padding-top: 70px;
   margin-left: 10%; }
 
+.barhr {
+  width: 85%; }
+
 .voiture1 {
   height: 4%;
   width: 4%;
@@ -440,38 +443,62 @@ footer {
     margin-bottom: 10px;
     display: inline-block; }
   #dash .graph .mid-right {
-    background-color: #FFFFFF;
+    background-color: transparent;
     width: 543px;
     margin-bottom: 10px;
-    display: inline-block;
-    background: url("../assets/img/pochette.jpg") no-repeat;
-    background-position: center center;
-    background-size: 50%;
     width: 50%;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto; }
-    #dash .graph .mid-right .player {
-      margin-left: 20px; }
+    height: auto;
+    border: solid 2px red; }
+    #dash .graph .mid-right .sidebar2 {
+      width: 50px;
+      height: 450px;
+      background-color: rgba(0, 0, 255, 0.05);
+      background: rgba(0, 0, 255, 0.05);
+      margin-left: 60px; }
+    #dash .graph .mid-right .imgsidebar2 {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: 30px; }
+    #dash .graph .mid-right .bplayer {
+      display: flex;
+      background: url("../assets/img/pochette.jpg") no-repeat;
+      background-position: center center;
+      background-size: 70%;
+      background-position: 60% 50%;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: -130px; }
     #dash .graph .mid-right .play {
       width: 100px;
-      height: 100px; }
+      height: 100px;
+      margin-left: 50px; }
     #dash .graph .mid-right .pause {
       width: 100px;
       height: 100px;
-      display: none; }
+      display: none;
+      margin-left: 50px; }
     #dash .graph .mid-right .next {
+      margin-left: 90px;
       width: 25px;
       height: 25px; }
     #dash .graph .mid-right .prev {
       width: 25px;
-      height: 25px; }
+      height: 25px;
+      margin-left: 20px;
+      margin-right: 50px; }
     #dash .graph .mid-right .pmenu {
       background-color: red;
       width: 10%;
       height: auto; }
+    #dash .graph .mid-right .txtpad2 {
+      margin-left: 20px;
+      display: flex;
+      margin-top: 20px; }
+    #dash .graph .mid-right .blue {
+      color: blue; }
 
 #dash .big-foot {
   background-color: transparent;
@@ -548,6 +575,26 @@ footer {
     height: 70px;
     margin-top: 0px;
     margin-left: 30px; }
+  #dash .big-foot .phonebutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px red;
+    padding: 6px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: #202946; }
+  #dash .big-foot .hrphone {
+    height: 2px;
+    width: 170px;
+    margin-left: -40px;
+    margin-top: -30px; }
+  #dash .big-foot .callerphone {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: solid 2px red; }
   #dash .big-foot .contact {
     display: flex; }
   #dash .big-foot .cont {
@@ -563,7 +610,7 @@ footer {
     border-color: #4F5A7A;
     width: 48%;
     height: 450px;
-    padding-top: 40px; }
+    padding-top: -10px; }
   #dash .big-foot .bar {
     width: 3px;
     height: 40px;
