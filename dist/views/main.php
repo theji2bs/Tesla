@@ -6,10 +6,10 @@
 	</div>
 
 	<div class="graph">
-	<div class="mid-left">
-	<div id="container"></div>
-	</div>
-
+		<div class="mid-left">
+		<div id="container"></div>
+		</div>
+	
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 
 	<div id="jp_container_1" class="mid-right playeur">

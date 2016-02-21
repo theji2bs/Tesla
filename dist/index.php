@@ -25,7 +25,10 @@
 		</nav>
 
 		
+
 		<?php include 'views/main.php'; ?>
+
+		<?php include 'views/warning.php'; ?>
 
 		<?php include 'views/tirix.php'; ?>
 		

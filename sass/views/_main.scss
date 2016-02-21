@@ -12,24 +12,25 @@
 
 
 	.mid-left{
-		width: 50%;
+		width: 545px;
 		margin-bottom: 10px;
 		display: inline-block;
+		border: solid 2px;
 	}
 	.mid-right{
 		background-color: #FFFFFF;
-		width: 543px;
+		width: 545px;
 		margin-bottom: 10px;
 		display: inline-block;
 	    background:url("../assets/img/pochette.jpg") no-repeat;
 	    background-position:center center;
 	    background-size:50%;
-		width: 50%;
 		margin-bottom: 10px;
 		display: flex;
 		justify-content: space-around;
-		align-items:center;
+		align-items: center;
 		height: auto;
+		border: solid 2px;
 
 		.player{
 			 margin-left: 20px;
