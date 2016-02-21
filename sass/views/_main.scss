@@ -4,14 +4,17 @@
     top: 0;
 
 	.big-head{
-		background-color: #FFFFFF;
+		background:url("../assets/img/map.png") no-repeat;
 		width: 100%;
 		margin-bottom: 10px;
 		height: 500px;
+		
+	    background-size:100%;
 	}
 	.graph {
 		display: flex;
 		justify-content: center;
+		border: solid 2px red;
 		
 
 
@@ -20,6 +23,23 @@
 		margin-bottom: 10px;
 		display: inline-block;
 	}
+
+
+
+
+.blue{
+	color: blue;
+	margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
 	.mid-right{
 		background-color: transparent;
 		width: 543px;
@@ -31,22 +51,24 @@
 		
 		height: auto;
 		border:solid 2px red;
+		margin-left: 50px;
+
 
 
 
 .sidebar2{
-		width: 50px;
+		width: 70px;
 		height: 450px;
 		background-color: rgba(0, 0, 255, 0.05);
 		background: rgba(0, 0, 255, 0.05);
-		margin-left:60px;
+		margin-right:80px;
 
 
 	}
 	.imgsidebar2{
 		width: 30px;
 		height: 30px;
-		margin-left: 10px;
+		margin-left: 20px;
 		margin-top: 30px;
 
 
@@ -61,12 +83,13 @@
 		.bplayer{
 			display: flex;
 			background:url("../assets/img/pochette.jpg") no-repeat;
-	    background-position:center center;
-	    background-size:70%;
-	    background-position: 60% 50%;
-        justify-content: space-around;
+	    background-position: 50% 50%; 
+	    background-size:80%;
+	    
+
 		align-items:center;
-		margin-left: -130px;
+		margin-left: -160px;
+		margin-right: 30px;
 
 		}
 		
@@ -114,7 +137,7 @@
 
 
 .txtpad2{
-margin-left: 20px;
+margin-left:-60px;
 display: flex;
 margin-top: 20px;
 
@@ -124,12 +147,18 @@ margin-top: 20px;
 	color:blue;
 }
 
-
-
-
+.musiclec{
+	margin-left: -250px;
+	margin-top: 380px;
+	text-align: center;
+}
 
 
 	}
+
+
+
+
 	}
 	.big-foot{
 		background-color: transparent;
