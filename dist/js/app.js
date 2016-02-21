@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     // Show different elements of the page
     $( "#dash" ).fadeIn('slow'); // Dashboard
-    //$( "#warning" ).fadeIn('slow'); // Dashboard
+    //$( "#settings" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
     $( "nav" ).fadeIn('slow'); // Header
     
@@ -348,6 +348,12 @@ $( ".voiture" ).on( "click", function() {
 	  	showSettings()
 	  	route = '#settings';
   }
+
+});
+
+$( "#settings > .close" ).on( "click", function() {
+
+  hideSettings()
 
 });
 

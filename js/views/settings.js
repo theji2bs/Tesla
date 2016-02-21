@@ -26,3 +26,9 @@ $( ".voiture" ).on( "click", function() {
   }
 
 });
+
+$( "#settings > .close" ).on( "click", function() {
+
+  hideSettings()
+
+});

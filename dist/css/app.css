@@ -809,3 +809,237 @@ footer {
   position: absolute;
   width: 100%;
   top: 0; }
+  #settings .close {
+    position: absolute;
+    margin-left: 55px; }
+    #settings .close .close_button {
+      width: 80px;
+      height: 80px; }
+  #settings .lights_control {
+    margin-top: 35px;
+    width: 650px;
+    height: 260px;
+    margin-left: 474px;
+    margin-right: 70px; }
+    #settings .lights_control .header {
+      width: 100%;
+      margin-bottom: 30px; }
+      #settings .lights_control .header h1 {
+        display: inline-block; }
+      #settings .lights_control .header h2 {
+        display: inline-block; }
+    #settings .lights_control .state {
+      width: 100%;
+      height: 75px;
+      border: 2px solid #4F5A7A;
+      display: flex;
+      justify-content: nowrap;
+      background-color: #010C2F;
+      margin-bottom: 30px; }
+      #settings .lights_control .state div {
+        width: 100%;
+        font-size: 16pt;
+        text-align: center;
+        line-height: 74px; }
+        #settings .lights_control .state div p {
+          vertical-align: middle; }
+      #settings .lights_control .state .active {
+        border: 1px solid #00D8EF;
+        background-color: rgba(0, 216, 239, 0.2); }
+    #settings .lights_control .options {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      #settings .lights_control .options div {
+        width: 100%;
+        font-size: 16pt;
+        text-align: center;
+        line-height: 74px;
+        border: 2px solid #4F5A7A; }
+        #settings .lights_control .options div p {
+          vertical-align: middle; }
+      #settings .lights_control .options .active {
+        border: 1px solid #4F5A7A;
+        background-color: rgba(255, 219, 45, 0.9);
+        color: #1F2749; }
+      #settings .lights_control .options .drl {
+        margin-right: 30px; }
+      #settings .lights_control .options .fog {
+        margin-right: 30px; }
+      #settings .lights_control .options .dome {
+        margin-right: 30px; }
+  #settings .car .lights {
+    position: absolute;
+    top: 100px;
+    left: 100px; }
+    #settings .car .lights img {
+      width: 323px;
+      height: 323px; }
+  #settings .car svg {
+    position: absolute;
+    left: 380px;
+    top: 365px; }
+  #settings .car .car_skeleton {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around; }
+  #settings .lock {
+    font-size: 16px; }
+    #settings .lock .front {
+      position: absolute;
+      top: 470px;
+      left: 470px;
+      width: 240px;
+      height: 120px; }
+      #settings .lock .front .title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px; }
+        #settings .lock .front .title h1 {
+          margin-bottom: 10px; }
+      #settings .lock .front .icon {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background-color: rgba(241, 48, 79, 0.3);
+        border: 2px solid #f1304f;
+        text-align: center;
+        line-height: 55px; }
+        #settings .lock .front .icon img {
+          width: 25px;
+          height: auto;
+          vertical-align: sub; }
+    #settings .lock .left {
+      position: absolute;
+      top: 840px;
+      left: 240px;
+      width: 140px;
+      height: 55px; }
+      #settings .lock .left .title {
+        text-align: right;
+        float: left;
+        margin-top: 7px;
+        margin-bottom: 15px;
+        display: block;
+        line-height: 14px; }
+        #settings .lock .left .title h1 {
+          margin-bottom: 10px; }
+      #settings .lock .left .icon {
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background-color: rgba(241, 48, 79, 0.3);
+        border: 2px solid #f1304f;
+        text-align: center;
+        line-height: 55px; }
+        #settings .lock .left .icon img {
+          width: 25px;
+          height: auto;
+          vertical-align: sub; }
+    #settings .lock .leftbar {
+      position: absolute;
+      top: 865px;
+      left: 380px;
+      width: 72px;
+      height: 2px;
+      background-color: #00D8EF; }
+    #settings .lock .right {
+      position: absolute;
+      top: 840px;
+      left: 837px;
+      width: 150px;
+      height: 55px; }
+      #settings .lock .right .title {
+        text-align: left;
+        float: right;
+        margin-top: 7px;
+        margin-bottom: 15px;
+        display: block;
+        line-height: 14px; }
+        #settings .lock .right .title h1 {
+          margin-bottom: 10px; }
+      #settings .lock .right .icon {
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background-color: rgba(241, 48, 79, 0.3);
+        border: 2px solid #f1304f;
+        text-align: center;
+        line-height: 55px; }
+        #settings .lock .right .icon img {
+          width: 25px;
+          height: auto;
+          vertical-align: sub; }
+    #settings .lock .rightbar {
+      position: absolute;
+      top: 865px;
+      left: 765px;
+      width: 72px;
+      height: 2px;
+      background-color: #00D8EF; }
+    #settings .lock .back {
+      position: absolute;
+      top: 1105px;
+      left: 492px;
+      width: 240px;
+      height: 120px; }
+      #settings .lock .back .title {
+        text-align: center;
+        width: 100%; }
+        #settings .lock .back .title h1 {
+          margin-bottom: 10px; }
+      #settings .lock .back .icon {
+        margin: auto;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        background-color: rgba(241, 48, 79, 0.3);
+        border: 2px solid #f1304f;
+        text-align: center;
+        line-height: 55px; }
+        #settings .lock .back .icon img {
+          width: 25px;
+          height: auto;
+          vertical-align: sub; }
+  #settings .menu {
+    position: absolute;
+    top: 1190px;
+    left: 52px;
+    width: 160px;
+    height: 235px;
+    display: flex;
+    justify-content: space-around; }
+    #settings .menu .aside {
+      height: 214px;
+      border: 1px solid #4F5A7A;
+      margin-right: 20px; }
+      #settings .menu .aside ul {
+        padding-top: 10px;
+        width: 50px; }
+        #settings .menu .aside ul li {
+          height: 48px;
+          text-align: center;
+          line-height: 48px; }
+          #settings .menu .aside ul li img {
+            width: 25px;
+            height: auto;
+            vertical-align: sub; }
+        #settings .menu .aside ul .active {
+          background-color: rgba(0, 216, 239, 0.6); }
+    #settings .menu .content ul {
+      padding-top: 10px; }
+      #settings .menu .content ul li {
+        font-size: 16px;
+        height: 48px;
+        line-height: 48px;
+        vertical-align: middle; }
+      #settings .menu .content ul .active {
+        color: #00D8EF; }

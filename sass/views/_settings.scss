@@ -1,10 +1,358 @@
 #settings{
-	
 	background-color: rgba(32, 41, 70, 1);
     z-index: 100;
     position: absolute;
    	width: 100%;
     top: 0;
+
+    .close{
+    	position: absolute;
+		margin-left: 55px;
+
+    	.close_button{
+    		width: 80px;
+    		height: 80px;
+    	}
+    }
+    .lights_control{
+    	margin-top: 35px;
+		//background-color: #000000;
+		width: 650px;
+		height: 260px;
+		margin-left: 474px;
+		margin-right: 70px;
+    	.header{
+    		width: 100%;
+    		margin-bottom: 30px;
+
+			h1{
+				display: inline-block;
+			}
+			h2{
+				display: inline-block;
+			}
+    	}
+    	.state{
+    		width: 100%;
+    		height: 75px;
+    		border: 2px solid #4F5A7A;
+    		display: flex;
+    		justify-content: nowrap;
+    		background-color: #010C2F;
+    		margin-bottom: 30px;
+
+    		div{
+    			width: 100%;
+    			font-size: 16pt;
+    			text-align: center;
+    			line-height:74px;
+
+    			p{
+    				vertical-align:middle;
+    			}
+    		}
+    		.active{
+				border: 1px solid #00D8EF;
+				background-color: rgba(0, 216, 239, 0.2);
+    		}
+			.off{}
+    		.parking{}
+    		.auto{}
+    		.on{}
+    	}
+    	.options{
+    		width: 100%;
+    		display: flex;
+    		justify-content: space-between;
+    		div{
+    			width: 100%;
+    			font-size: 16pt;
+    			text-align: center;
+    			line-height:74px;
+    			border: 2px solid #4F5A7A;
+
+    			p{
+    				vertical-align:middle;
+    			}
+    		}
+
+			.active{
+				border: 1px solid #4F5A7A;
+				background-color: rgba(255, 219, 45, 0.9);
+				color: #1F2749;
+    		}
+    		.drl{
+    			margin-right: 30px;
+    		}
+    		.fog{
+    			margin-right: 30px;
+    		}
+    		.dome{
+    			margin-right: 30px;
+    		}
+    		.ambient{}
+    	}
+    }
+
+    .car{
+
+    	.lights{
+    		position: absolute;
+    		top: 100px;
+    		left: 100px;
+
+
+    		img{
+    			width: 323px;
+    			height: 323px;
+    		}
+    	}
+
+    	svg{
+    		position: absolute;
+    		left: 380px;
+    		top: 365px;
+    	}
+
+    	.car_skeleton{
+    		margin-top: 100px;
+    		display: flex;
+    		justify-content: space-around;
+
+    		.skeleton{
+
+    		}
+    	}
+    }
+
+    .lock{
+    	font-size: 16px;
+
+    	.front{
+    		position: absolute;
+			top: 470px;
+			left: 470px;
+			width: 240px;
+			height: 120px;
+
+    		.title{
+    			text-align: center;
+    			width: 100%;
+    			margin-bottom: 15px;
+
+    			h1{
+    				margin-bottom: 10px;
+    			}
+    			h2{}
+    		}
+    		.icon{
+
+    			margin: auto;
+    			width: 50px;
+    			height: 50px;
+    			border-radius: 50%;
+				display: block;
+				background-color: rgba(241, 48, 79, 0.3);
+				border: 2px solid rgba(241, 48, 79, 100);
+			    text-align: center;
+			    line-height: 55px;
+
+    			img{
+    				width: 25px;
+    				height: auto;
+    				vertical-align: sub;
+    			}
+    		}
+    	}
+    	.left{
+    		position: absolute;
+		    top: 840px;
+		    left: 240px;
+		    width: 140px;
+		    height: 55px;
+			
+    		.title{
+    			text-align: right;
+    			float: left;
+    			margin-top: 7px;
+    			
+    			margin-bottom: 15px;
+    			display: block;
+    			line-height: 14px;
+
+    			h1{
+    				margin-bottom: 10px;
+    			}
+    			h2{}
+    		}
+    		.icon{
+
+    			float: right;
+    			width: 50px;
+    			height: 50px;
+    			border-radius: 50%;
+				//margin-right: 75px;
+				display: block;
+				background-color: rgba(241, 48, 79, 0.3);
+				border: 2px solid rgba(241, 48, 79, 100);
+			    text-align: center;
+			    line-height: 55px;
+
+    			img{
+    				width: 25px;
+    				height: auto;
+    				vertical-align: sub;
+    			}
+    		}
+    	}
+    	.leftbar{
+    		position: absolute;
+		    top: 865px;
+		    left: 380px;
+		    width: 72px;
+		    height: 2px;
+		    background-color: #00D8EF;
+    	}
+    	.right{
+    		position: absolute;
+		    top: 840px;
+		    left: 837px;
+		    width: 150px;
+		    height: 55px;
+			
+    		.title{
+    			text-align: left;
+    			float: right;
+    			margin-top: 7px;
+    			
+    			margin-bottom: 15px;
+    			display: block;
+    			line-height: 14px;
+
+    			h1{
+    				margin-bottom: 10px;
+    			}
+    			h2{}
+    		}
+    		.icon{
+
+    			float: left;
+    			width: 50px;
+    			height: 50px;
+    			border-radius: 50%;
+				//margin-right: 15px;
+				display: block;
+				background-color: rgba(241, 48, 79, 0.3);
+				border: 2px solid rgba(241, 48, 79, 100);
+			    text-align: center;
+			    line-height: 55px;
+
+    			img{
+    				width: 25px;
+    				height: auto;
+    				vertical-align: sub;
+    			}
+    		}
+    	}
+    	.rightbar{
+    		position: absolute;
+		    top: 865px;
+		    left: 765px;
+		    width: 72px;
+		    height: 2px;
+		    background-color: #00D8EF;
+    	}
+    	.back{
+    		position: absolute;
+			top: 1105px;
+			left: 492px;
+			width: 240px;
+			height: 120px;
+
+    		.title{
+    			text-align: center;
+    			width: 100%;
+    			
+
+    			h1{
+    				margin-bottom: 10px;
+    			}
+    			h2{}
+    		}
+    		.icon{ 
+    			margin: auto;
+    			margin-bottom: 15px;
+    			width: 50px;
+    			height: 50px;
+    			border-radius: 50%;
+				display: block;
+				background-color: rgba(241, 48, 79, 0.3);
+				border: 2px solid rgba(241, 48, 79, 100);
+			    text-align: center;
+			    line-height: 55px;
+
+    			img{
+    				width: 25px;
+    				height: auto;
+    				vertical-align: sub;
+    			}
+    		}
+    	}
+
+    }
+
+    .menu{
+    	position: absolute;
+    	top: 1190px;
+		left: 52px;
+    	width: 160px;
+    	height: 235px;
+	    display: flex;
+	    justify-content: space-around;
+
+    	.aside{
+    		
+    		height: 214px;
+    		border: 1px solid #4F5A7A;
+    		margin-right: 20px;
+    		ul{
+				padding-top: 10px;
+				width: 50px;
+
+    			li{
+					height: 48px;
+					text-align: center;
+					line-height:48px;
+
+    				img{
+    					width: 25px;
+    					height: auto;
+    					vertical-align: sub;
+    				}
+    			}
+    			.active{
+    				background-color: rgba(0, 216, 239, 0.6);
+    			}
+    		}
+    	}
+    	.content{
+
+
+    		ul{
+    			padding-top: 10px;
+
+    			li{
+					font-size: 16px;
+    				height: 48px;
+    				line-height: 48px;
+					vertical-align:middle;
+    			}
+    			.active{
+    				color: #00D8EF;
+    			}
+    		}
+    	}
+    }
 }
 
 
