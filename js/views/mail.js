@@ -11,7 +11,8 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 
 	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			$( route ).fadeOut('slow');
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
 	}
 
   if( $( this ).hasClass('active') ){ 
@@ -23,7 +24,7 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showMail()
-	  	route = '#mail';
+	  	route = 'mail';
   }
 
 });

@@ -7,11 +7,12 @@ function hideContacts() {
         $( "#contacts" ).fadeOut('slow');
 }
 
-$( ".nav-contacts" ).on( "click", function() {
+$( "nav > div > .nav-contacts" ).on( "click", function() {
 
 	if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			$( route ).fadeOut('slow');
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
 	}
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -22,7 +23,7 @@ $( ".nav-contacts" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showContacts()
-	  	route = '#contacts';
+	  	route = 'contacts';
   }
 
 });

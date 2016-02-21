@@ -2,17 +2,17 @@
 
 function showCellphone() {
         $( "#cellphone" ).fadeIn('slow');
-
 }
 function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
 }
 
-$( ".nav-cellphone" ).on( "click", function() {
+$( "nav > div > .nav-cellphone" ).on( "click", function() {
 
 	if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			$( route ).fadeOut('slow');
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
 	}
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -23,7 +23,7 @@ $( ".nav-cellphone" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showCellphone()
-	  	route = '#cellphone';
+	  	route = 'cellphone';
 
   }
 

@@ -6,7 +6,7 @@ function showSettings() {
         
 }
 function hideSettings() {
-	$( "#settings" ).fadeOut('fast');
+		$( "#settings" ).fadeOut('fast');
 		$( "nav" ).fadeIn('fast'); // Header
         
     	
@@ -22,6 +22,7 @@ $( ".voiture" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showSettings()
+	  	route = '#settings';
   }
 
 });

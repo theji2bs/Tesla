@@ -7,11 +7,12 @@ function hideGps() {
         $( "#gps" ).fadeOut('slow');
 }
 
-$( ".nav-gps" ).on( "click", function() {
+$( "nav > div > .nav-gps" ).on( "click", function() {
 
 	if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			$( route ).fadeOut('slow');
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
 	}
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -22,7 +23,7 @@ $( ".nav-gps" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showGps()
-	  	route = '#gps';
+	  	route = 'gps';
   }
 
 });
