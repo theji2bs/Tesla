@@ -1,14 +1,62 @@
-<section id="warning">
 
+<section id="warning">	
 	<div class="box">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec libero ac enim viverra suscipit. Mauris molestie nunc augue, at interdum lorem lobortis nec. Curabitur vestibulum felis mi, lobortis tempus lorem porta eget. Fusce pharetra massa et dui luctus auctor. Quisque hendrerit euismod erat nec congue. Donec sagittis eu metus eget dignissim. Vestibulum a mollis odio. Suspendisse tincidunt ornare felis, vel vehicula ligula auctor quis. Sed sagittis ante semper, ultrices lorem at, semper metus. Duis tincidunt nunc id ipsum feugiat facilisis. Donec sed erat in ipsum hendrerit venenatis. In rhoncus metus mi, nec elementum quam aliquet sed. Sed ac nunc lectus. Proin ac hendrerit tellus, nec fermentum felis.</p>
+	
+		<div class="tiroir1">
+			<img src="assets/img/Danger.svg" alt="danger">
+			<p class"titre" >WARNING</p>
+		</div>
 
-	<p>Donec ex nunc, sagittis vel sagittis eget, porta nec ligula. Proin bibendum ligula id orci fringilla pretium. Ut ac ligula felis. Morbi eleifend facilisis metus, a tempus turpis viverra ac. Fusce finibus lorem dui, a posuere felis vehicula quis. Praesent imperdiet euismod libero, et elementum purus tempor nec. Maecenas pulvinar erat tincidunt luctus ornare. Donec vitae risus ac lorem imperdiet dictum non euismod ipsum. Vivamus aliquet pellentesque urna, a commodo quam volutpat non. Pellentesque at mauris nec mi malesuada convallis.</p>
+		<div class="tiroir2">
 
-	<p>Duis pharetra dictum magna pellentesque fringilla. Mauris eget pharetra nibh. Integer eu aliquet tellus. Quisque aliquet ultricies fringilla. Quisque et nisi diam. Morbi metus orci, interdum ut mauris non, ullamcorper porta nibh. Vivamus lobortis interdum nisi, vitae hendrerit nunc fermentum in.
+			<div class="type1">
+				<h2>ANIMAL:</h2>
+				<div>
+					<img src="assets/img/trex.svg" class="trex" >
+					<p>T-REX</p><p class="red">DETECTED</p>
+				</div>
+			</div>
 
-	Duis fringilla elementum turpis non molestie. Aliquam convallis ligula nec ex pharetra, vel ultrices dui finibus. Proin condimentum lorem eget eros luctus semper. Phasellus at aliquam ligula. Ut tincidunt sit amet nisl in tincidunt. Curabitur nec leo tempus, vehicula diam id, placerat magna. Duis hendrerit condimentum purus vel elementum. Donec gravida mollis ligula eu auctor. Etiam vitae eleifend turpis. Morbi auctor facilisis euismod. Nam lacinia eleifend sem in condimentum. Aenean ultrices lacus vel libero pretium, quis sodales augue gravida. Maecenas ac nulla id lectus dapibus varius.</p>
+			<div class="type2">
+				<h2>DANGEROUSNESS:</h2>
+				
+				 <div id="bar-1" class="bar-main-container azure">
+				    <div class="wrap">
+					    <div class="bar-container">
+					        <div class="bar"></div>
+					      </div>
+					    <div class="bar-percentage" data-percentage="95"></div>
+				    </div>
+				  </div>
 
-	<p>Morbi at efficitur eros. Sed gravida ipsum sem, vitae aliquet lectus eleifend quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec fringilla orci. In sed odio at mi bibendum convallis. Ut sit amet dapibus diam, at auctor lorem. Quisque et magna venenatis nibh sagittis facilisis. Mauris a faucibus ligula. Fusce non arcu at arcu tincidunt gravida vel tincidunt arcu. Vivamus eget erat in lacus imperdiet elementum. Donec metus turpis, tincidunt at facilisis nec, dapibus a risus. Etiam sem dui, placerat non varius id, consectetur ac urna. Sed congue, risus nec ornare porttitor, nunc tellus consectetur sapien, sed ultrices odio enim at enim. Ut ac vestibulum nisl.</p>
+			</div>
+			
+
+		</div>
+
+		<div class="tiroir3">
+
+			<div class="infos">
+				<img src="assets/img/arrows.svg" class="arrows" >
+				<p>EMERGENCY SHOTDOWN</p>
+			</div>
+
+			<div class="infos">
+				<img src="assets/img/arrows.svg" class="arrows" >
+				<p>LOCK DOORS AND WINDOWS</p>
+			</div>
+
+			<div class="infos">
+				<img src="assets/img/arrows.svg" class="arrows" >
+				<p>APPROACH ACTION GROUP</p>
+			</div>
+
+
+		</div>
+
+		<div class="tiroir4">  
+			<p>PLEASE, DO NOT PANIC, STAY IN THE CAR. A TEAM IS ON THE WAY.</p>
+		</div>
+
 	</div>
 </section>
