@@ -2,7 +2,7 @@
 
 	
 	<div class="big-head">
- 	 map
+ 	 map
 	</div>
 
 	<div class="graph">
@@ -16,9 +16,6 @@
 </div>
 
 	
-
-
-
 	<div id="jp_container_1" class="mid-right playeur">
 		
 
@@ -33,7 +30,7 @@
 <div class="txtpad2">
 	
 	<p class="blue">MUSIC</p> &nbsp; &nbsp;
-	<p>Jurassic</p>
+	<p>Jurassic</p> &nbsp;
 	<p> World</p>
 
 </div>

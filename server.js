@@ -25,15 +25,10 @@ io.sockets.on('connection', function (socket) {
 		    'min': 25,
 		    'max': 100
 		});
-		var randomNetwork = faker.random.number({
-		    'min': 1,
-		    'max': 3
-		});
 
 	  	var data = {
 		    current_time: currentTime,
-		    number: randomNumb,
-		    network: randomNetwork
+		    number: randomNumb
 		};
 
 	      socket.emit('data', data);

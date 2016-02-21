@@ -36,7 +36,10 @@
 <div class="moncercle6 cercle"></div>
 
 
-
+<div class="container-on-off">
+	<p class="left">On</p>
+	<p class="right">Off</p>
+</div>
 
 <!-- <div class="moncercle22  "><p class="txtcercle">On</p></div>
 <div class="moncercle23  "><p class="txtcercle">Off</p></div> -->

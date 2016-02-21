@@ -25,21 +25,79 @@ $(document).ready(function(){
         //var shift = data.datasets[0].data.shift();
         //console.log(data.datasets.data);
         //console.log(data.datasets[0].data);
-
-
         
        
     })
 
-    
-    // Show different elements of the page on loading
-    $( "header" ).fadeIn(1000); // Header
-    $( "nav" ).fadeIn(1000); // Header
-    $( "footer" ).fadeIn(3000); // Header
-    $( "#dash" ).fadeIn(3000); // Dashboard
+    // Initialisation of router
+    var route = '';
+
+    // Show different elements of the page
+    $( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
     
 
 });
+// Base router
+
+function showCellphone() {
+        $( "#cellphone" ).fadeIn('slow');
+}
+function hideCellphone() {
+        $( "#cellphone" ).fadeOut('slow');
+}
+
+$( "nav > div > .nav-cellphone" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideCellphone()
+	}
+  else{
+  		if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
+	  	$( this ).addClass("active");
+	  	showCellphone()
+	  	route = 'cellphone';
+
+  }
+
+});
+
+// Base router
+
+function showContacts() {
+        $( "#contacts" ).fadeIn('slow');
+}
+function hideContacts() {
+        $( "#contacts" ).fadeOut('slow');
+}
+
+$( "nav > div > .nav-contacts" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideContacts()
+	}
+  else{
+  		if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
+	  	$( this ).addClass("active");
+	  	showContacts()
+	  	route = 'contacts';
+  }
+
+});
+
 
 
         Highcharts.setOptions({
@@ -206,6 +264,94 @@ $(document).ready(function(){
     $( ".pause" ).on( "click", widgetPause );
 // Base router
 
+function showGps() {
+        $( "#gps" ).fadeIn('slow');
+}
+function hideGps() {
+        $( "#gps" ).fadeOut('slow');
+}
+
+$( "nav > div > .nav-gps" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideGps()
+	}
+  else{
+  		if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
+	  	$( this ).addClass("active");
+	  	showGps()
+	  	route = 'gps';
+  }
+
+});
+
+// Base router
+
+function showMail() {
+        $( "#mail" ).fadeIn('slow');
+}
+function hideMail() {
+        $( "#mail" ).fadeOut('slow');
+}
+
+$( "nav > div > .nav-mail" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ 
+		
+		$( this ).removeClass("active");
+	  	hideMail()
+	}
+
+  else{
+	  	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active");
+		}
+	  	$( this ).addClass("active");
+	  	showMail()
+	  	route = 'mail';
+  }
+
+});
+
+// Base router
+
+function showSettings() {
+		$( "nav" ).fadeOut('fast'); // Header
+        $( "#settings" ).fadeIn('slow');
+        
+}
+function hideSettings() {
+		$( "#settings" ).fadeOut('fast');
+		$( "nav" ).fadeIn('fast'); // Header
+        
+    	
+}
+
+$( ".voiture" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideSettings()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showSettings()
+	  	route = '#settings';
+  }
+
+});
+
+// Base router
+
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
 }
@@ -213,16 +359,47 @@ function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
 }
 
-$( ".nav-tirix" ).on( "click", function() {
+$( "nav > div > .nav-tirix" ).on( "click", function() {
+
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
 	  	hideTirix()
+
+	}
+  else{
+	  	if( $( 'nav > div > img[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active");
+		}
+	  	$( this ).addClass("active");
+	  	showTirix()
+	  	route = 'tirix';
+  }
+
+});
+
+// Base router
+
+function showWarning() {
+        $( "#warning" ).fadeIn('slow');
+}
+function hideWarning() {
+        $( "#warning" ).fadeOut('slow');
+}
+
+$( ".nav-warning" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideWarning()
 	}
   else{
 	  	$( this ).addClass("active");
-	  	showTirix()
+	  	showWarning()
   }
 
 });
