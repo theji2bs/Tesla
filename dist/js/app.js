@@ -50,18 +50,17 @@ function hideCellphone() {
 
 $( "nav > div > .nav-cellphone" ).on( "click", function() {
 
-	if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
-
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
 	  	hideCellphone()
 	}
   else{
+  		if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showCellphone()
 	  	route = 'cellphone';
@@ -81,18 +80,17 @@ function hideContacts() {
 
 $( "nav > div > .nav-contacts" ).on( "click", function() {
 
-	if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
-
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
 	  	hideContacts()
 	}
   else{
+  		if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showContacts()
 	  	route = 'contacts';
@@ -275,18 +273,17 @@ function hideGps() {
 
 $( "nav > div > .nav-gps" ).on( "click", function() {
 
-	if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
-
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
 	  	hideGps()
 	}
   else{
+  		if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showGps()
 	  	route = 'gps';
@@ -305,12 +302,6 @@ function hideMail() {
 
 $( "nav > div > .nav-mail" ).on( "click", function() {
 
-	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
-
   if( $( this ).hasClass('active') ){ 
 		
 		$( this ).removeClass("active");
@@ -318,6 +309,11 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 	}
 
   else{
+	  	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showMail()
 	  	route = 'mail';
@@ -365,17 +361,19 @@ function hideTirix() {
 
 $( "nav > div > .nav-tirix" ).on( "click", function() {
 
-  if( $( 'nav > div > img[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
 	  	hideTirix()
+
 	}
   else{
+	  	if( $( 'nav > div > img[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showTirix()
 	  	route = 'tirix';

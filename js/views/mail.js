@@ -9,12 +9,6 @@ function hideMail() {
 
 $( "nav > div > .nav-mail" ).on( "click", function() {
 
-	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
-	}
-
   if( $( this ).hasClass('active') ){ 
 		
 		$( this ).removeClass("active");
@@ -22,6 +16,11 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 	}
 
   else{
+	  	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active");
+		}
 	  	$( this ).addClass("active");
 	  	showMail()
 	  	route = 'mail';
