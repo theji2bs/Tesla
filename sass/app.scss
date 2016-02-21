@@ -36,7 +36,6 @@ body{
 
 
 	nav{
-		display: none;
 		width: 80px;
 		height: 1920px;
 		padding-top: 130px;
@@ -45,6 +44,7 @@ body{
         background: -moz-linear-gradient(#202946, #151D35, #020D2D); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#202946, #151D35, #020D2D); /* Standard syntax */
 		flex: 1;
+		display: inline-block;
 		.imgtaille{
 			fill-color: red;
 			height: 30px;
@@ -68,7 +68,7 @@ body{
 		z-index: 5;
 		float: right;
 		//display: inline-block;
-		height: 1500px;
+		height: 100%;
 	}
 }
 
@@ -326,7 +326,6 @@ background-color:#272F4E;
 	width: 85%;
 }
 
-
 .voiture1{
 	height: 4%;
 	width: 4%;
@@ -521,12 +520,6 @@ background-color:#272F4E;
 
 
 // Views import
-@import 'views/_warning.scss';
 @import 'views/_main.scss';
 @import 'views/_tirix.scss';
-@import 'views/_gps.scss';
-@import 'views/_contacts.scss';
-@import 'views/_cellphone.scss';
-@import 'views/_mail.scss';
-@import 'views/_settings.scss';
 
