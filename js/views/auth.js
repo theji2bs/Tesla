@@ -1,36 +1,31 @@
 // Base router
 
-function showSettings() {
+function showAuth() {
 		$( "nav" ).fadeOut('fast'); // Header
 		$( "#dash" ).fadeOut('fast'); // Header
-        $( "#settings" ).fadeIn('slow');
+        $( "#auth" ).fadeIn('slow');
         
 }
-function hideSettings() {
-		$( "#settings" ).fadeOut('fast');
+function hideAuth() {
+		$( "#auth" ).fadeOut('fast');
 		$( "nav" ).fadeIn('fast'); // Header
 		$( "#dash" ).fadeIn('fast'); // Header
         
     	
 }
 
-$( ".voiture" ).on( "click", function() {
+$( ".tesla" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
-	  	hideSettings()
+	  	hideAuth()
 	}
   else{
 	  	$( this ).addClass("active");
-	  	showSettings()
-	  	route = '#settings';
+	  	showAuth()
+	  	route = '#auth';
   }
 
 });
 
-$( "#settings > .close" ).on( "click", function() {
-
-  hideSettings()
-
-});

@@ -26,7 +26,7 @@
 		<?php include 'menu.php'; ?>
 		</nav>
 
-		
+		<?php include 'views/auth.php'; ?>
 
 		<?php include 'views/main.php'; ?>
 

@@ -33,13 +33,46 @@ $(document).ready(function(){
     var route = '';
 
     // Show different elements of the page
-    $( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
     
 
 });
+// Base router
+
+function showAuth() {
+		$( "nav" ).fadeOut('fast'); // Header
+		$( "#dash" ).fadeOut('fast'); // Header
+        $( "#auth" ).fadeIn('slow');
+        
+}
+function hideAuth() {
+		$( "#auth" ).fadeOut('fast');
+		$( "nav" ).fadeIn('fast'); // Header
+		$( "#dash" ).fadeIn('fast'); // Header
+        
+    	
+}
+
+$( ".tesla" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideAuth()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showAuth()
+	  	route = '#auth';
+  }
+
+});
+
+
 // Base router
 
 function showCellphone() {
@@ -319,43 +352,6 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 	  	showMail()
 	  	route = 'mail';
   }
-
-});
-
-// Base router
-
-function showSettings() {
-		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
-        $( "#settings" ).fadeIn('slow');
-        
-}
-function hideSettings() {
-		$( "#settings" ).fadeOut('fast');
-		$( "nav" ).fadeIn('fast'); // Header
-		$( "#dash" ).fadeIn('fast'); // Header
-        
-    	
-}
-
-$( ".voiture" ).on( "click", function() {
-
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-		$( this ).removeClass("active");
-	  	hideSettings()
-	}
-  else{
-	  	$( this ).addClass("active");
-	  	showSettings()
-	  	route = '#settings';
-  }
-
-});
-
-$( "#settings > .close" ).on( "click", function() {
-
-  hideSettings()
 
 });
 

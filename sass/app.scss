@@ -167,6 +167,7 @@ footer{
 	z-index: 10;
 	height: 300px;
 	width: 100%;
+	display: none;
 	position: absolute;
 	background-color: transparent;
     right: 0px;
@@ -525,6 +526,7 @@ background-color:#272F4E;
 
 
 // Views import
+@import 'views/_auth.scss';
 @import 'views/_warning.scss';
 @import 'views/_main.scss';
 @import 'views/_tirix.scss';

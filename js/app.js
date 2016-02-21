@@ -33,10 +33,11 @@ $(document).ready(function(){
     var route = '';
 
     // Show different elements of the page
-    $( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
     
 
 });
