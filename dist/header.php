@@ -5,7 +5,8 @@
 </p>
 
 <p class="tesla">
-TESLA
+<img src="assets/img/logot.svg" alt=""class="logot" >
+
 </p>
 <img src="assets/img/battery.svg" alt=""class="img1" >
 <p class="batterie">

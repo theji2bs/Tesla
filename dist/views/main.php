@@ -2,7 +2,7 @@
 
 	
 	<div class="big-head">
- 	 map
+ 
 	</div>
 
 	<div class="graph">
@@ -29,7 +29,7 @@
 
 <div class="txtpad2">
 	
-	<p class="blue">MUSIC</p> &nbsp; &nbsp;
+	<p class="blue">MUSIC</p> &nbsp; &nbsp;  &nbsp;  &nbsp;
 	<p>Jurassic</p> &nbsp;
 	<p> World</p>
 
@@ -45,6 +45,14 @@
 		<img src="assets/img/next-button.svg" class="next">
 
 
+
+
+</div>
+<div class="musiclec">
+	
+	<p>Jurassic Wordl</p>
+	<p> Jurassic</p> 
+	<p> 01:23</p>
 </div>
 	</div>
 
