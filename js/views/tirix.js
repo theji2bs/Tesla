@@ -17,6 +17,7 @@ $( ".nav-tirix" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showTirix()
+	  	route = '#tirix';
   }
 
 });

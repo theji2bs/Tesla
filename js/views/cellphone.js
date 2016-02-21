@@ -10,6 +10,11 @@ function hideCellphone() {
 
 $( ".nav-cellphone" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -18,8 +23,8 @@ $( ".nav-cellphone" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showCellphone()
-	  	var route = '#cellphone';
-	  	
+	  	route = '#cellphone';
+
   }
 
 });

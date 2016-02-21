@@ -9,6 +9,11 @@ function hideContacts() {
 
 $( ".nav-contacts" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -17,6 +22,7 @@ $( ".nav-contacts" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showContacts()
+	  	route = '#contacts';
   }
 
 });

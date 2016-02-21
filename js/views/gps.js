@@ -9,6 +9,11 @@ function hideGps() {
 
 $( ".nav-gps" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -17,6 +22,7 @@ $( ".nav-gps" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showGps()
+	  	route = '#gps';
   }
 
 });

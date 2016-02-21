@@ -1,10 +1,15 @@
 // Base router
 
 function showSettings() {
+		$( "nav" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
+        
 }
 function hideSettings() {
-        $( "#settings" ).fadeOut('slow');
+	$( "#settings" ).fadeOut('fast');
+		$( "nav" ).fadeIn('fast'); // Header
+        
+    	
 }
 
 $( ".voiture" ).on( "click", function() {

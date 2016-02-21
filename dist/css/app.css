@@ -638,5 +638,5 @@ footer {
   background-color: #202946;
   z-index: 100;
   position: absolute;
-  margin-left: 90px;
+  width: 100%;
   top: 0; }

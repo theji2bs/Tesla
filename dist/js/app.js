@@ -51,6 +51,11 @@ function hideCellphone() {
 
 $( ".nav-cellphone" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -59,8 +64,8 @@ $( ".nav-cellphone" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showCellphone()
-	  	var route = '#cellphone';
-	  	
+	  	route = '#cellphone';
+
   }
 
 });
@@ -76,6 +81,11 @@ function hideContacts() {
 
 $( ".nav-contacts" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -84,6 +94,7 @@ $( ".nav-contacts" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showContacts()
+	  	route = '#contacts';
   }
 
 });
@@ -263,6 +274,11 @@ function hideGps() {
 
 $( ".nav-gps" ).on( "click", function() {
 
+	if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( route ).fadeOut('slow');
+	}
+
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
@@ -271,6 +287,7 @@ $( ".nav-gps" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showGps()
+	  	route = '#gps';
   }
 
 });
@@ -286,13 +303,9 @@ function hideMail() {
 
 $( "nav > div > .nav-mail" ).on( "click", function() {
 
-	var actualActive = $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active');
-	console.log(actualActive);
-
 	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-			
-		  	console.log('testok');
+			$( route ).fadeOut('slow');
 	}
 
   if( $( this ).hasClass('active') ){ 
@@ -304,6 +317,7 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showMail()
+	  	route = '#mail';
   }
 
 });
@@ -311,10 +325,15 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 // Base router
 
 function showSettings() {
+		$( "nav" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
+        
 }
 function hideSettings() {
-        $( "#settings" ).fadeOut('slow');
+	$( "#settings" ).fadeOut('fast');
+		$( "nav" ).fadeIn('fast'); // Header
+        
+    	
 }
 
 $( ".voiture" ).on( "click", function() {
@@ -350,6 +369,7 @@ $( ".nav-tirix" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showTirix()
+	  	route = '#tirix';
   }
 
 });
