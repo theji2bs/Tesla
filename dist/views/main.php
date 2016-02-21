@@ -7,6 +7,8 @@
 
 	<div class="graph">
 	<div class="mid-left">
+				 <p class="blue">ENERGY requirement</p>
+
 	<div id="container"></div>
 	</div>
 
