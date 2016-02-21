@@ -1,4 +1,7 @@
 #dash{
+	position: absolute;
+    margin-left: 90px;
+    top: 0;
 
 	.big-head{
 		background-color: #FFFFFF;
@@ -28,7 +31,6 @@
 		
 		height: auto;
 		border:solid 2px red;
-
 
 
 
@@ -62,7 +64,6 @@
 	    background-position:center center;
 	    background-size:70%;
 	    background-position: 60% 50%;
-
         justify-content: space-around;
 		align-items:center;
 		margin-left: -130px;
@@ -343,5 +344,4 @@ padding-top:-10px;
 
 
 }
-
 
