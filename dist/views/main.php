@@ -2,19 +2,41 @@
 
 	
 	<div class="big-head">
- 	 map
+ 	 map
 	</div>
 
 	<div class="graph">
-		<div class="mid-left">
-		<div id="container"></div>
-		</div>
-	
-<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div class="mid-left">
+	<div id="container"></div>
+	</div>
 
+<div id="jquery_jplayer_1" class="jp-jplayer">
+	
+
+</div>
+
+	
 	<div id="jp_container_1" class="mid-right playeur">
 		
+
+<div class="sidebar2">
+
+	<img src="assets/img/favoris.svg" class="imgsidebar2">
+		<img src="assets/img/move.svg" class="imgsidebar2">
+		<img src="assets/img/number.svg" class="imgsidebar2">
+
+</div>
+
+<div class="txtpad2">
 	
+	<p class="blue">MUSIC</p> &nbsp; &nbsp;
+	<p>Jurassic</p> &nbsp;
+	<p> World</p>
+
+</div>
+
+	<div class="bplayer playeur">
+
 		<img src="assets/img/previous-button.svg" class="prev">
 		<div class="player_action">
 			<img src="assets/img/play-circle.svg" class="play">
@@ -23,8 +45,17 @@
 		<img src="assets/img/next-button.svg" class="next">
 
 
-
+</div>
 	</div>
+
+
+
+
+
+
+
+
+
 	</div>
 	<div class="big-foot">
 	
@@ -90,7 +121,12 @@
 		<br><br>
 	<p class="strong">Martin Maillot</p>
 	<p class="petit">+0633445566<</p>
+		
+	<div class="callerphone">
+			<img src="assets/img/phone.svg" class="phonebutton">
+<hr class="hrphone">
 
+		</div>	
 </div>
 
 
@@ -112,6 +148,23 @@
 
 	</div>
 
+<hr class="barhr">
+	<div class="contact">
+		<div class="los">
+	<img src="assets/img/hexagone.svg" class="losange">
+		</div>
+	<div class="cont">
+	<p class="strong">Martin Maillot</p>
+	<p class="petit">+0633445566</p>
+    </div>
+    <div class="bar"></div>
+		<div class="icons">
+		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/message.svg" class="iconedroite">
+		</div>
+
+	</div>
+<hr class="barhr">
 
 	<div class="contact">
 		<div class="los">
@@ -128,24 +181,7 @@
 		</div>
 
 	</div>
-
-
-	<div class="contact">
-		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
-		</div>
-	<div class="cont">
-	<p class="strong">Martin Maillot</p>
-	<p class="petit">+0633445566</p>
-    </div>
-    <div class="bar"></div>
-		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
-		<img src="assets/img/message.svg" class="iconedroite">
-		</div>
-
-	</div>
-
+	<hr class="barhr">
 
 	<div class="contact">
 		<div class="los">
@@ -162,7 +198,7 @@
 		</div>
 
 	</div>
-
+	<hr class="barhr">
 
 	<div class="contact">
 		<div class="los">
