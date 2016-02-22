@@ -28,3 +28,11 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
   }
 
 });
+
+		
+$(document).ready(function() {
+	$('.ball, .ball1').removeClass('stop');	    
+		$('.trigger').click(function() {
+				$('.ball, .ball1').toggleClass('stop');
+		});
+});

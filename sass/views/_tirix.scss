@@ -1,97 +1,197 @@
 #tirix{
 	
-	background-color: rgba(32, 41, 70, 0.7);
+	background: url("../assets/img/Background.png");
     z-index: 20;
     position: absolute; 
     margin-left: 90px;
     top: 0;
 
+    .containerlogo{
+    	    width: 1100px;
+		    height: 500px;
+		    margin-left: -50px;
+   			padding-top: 100px;
+
+   		.inactive{
+
+   			img{
+	   			width: 20%;
+			    position: absolute;
+			    margin-left: 496px;
+			    margin-top: 41px
+	   		}
+
+	    	.ball {
+				background-color: rgba(0,0,0,0);
+				border:5px solid rgba(0,183,229,0.0);
+				opacity:.9;
+				border-top:10px solid rgba(0,0,0,0);
+				border-left:1px solid rgba(0,0,0,0);
+				border-radius:150px;
+				box-shadow: 0 0 35px #2187e7;
+				width:300px;
+				height:300px;
+			    margin-top: -5px;
+	    		margin-left: 457px;
+	    		transition: all 0.5s ease;
+			}
+
+			.ball1 {
+				background-color: rgba(0,0,0,0);
+				border:3px dashed rgba(255,255,255,0.9);
+				opacity:.9;
+				border-radius:175px;
+				width:350px;
+				height:350px;
+			    margin-top: -324px;
+	    		margin-left: 431px;
+				top:-50px;
+				transition: all 0.5s ease;
+			}
+
+			.ball2 {
+				background-color: rgba(0,0,0,0);
+				border:5px solid rgba(0,183,229,0.0);
+				opacity:.9;
+				border-top:1px solid rgba(0,0,0,0);
+				border-left:10px solid rgba(0,0,0,0);
+				border-radius:125px;
+				box-shadow: 0 0 15px #2187e7; 
+				width:250px;
+				height:250px;
+				margin-top: -251px;
+	    		margin-left: 481px;
+				position:relative;
+				top:-50px;
+				transition: all 0.5s ease;
+			}
+   		}	
+   		.active{
+
+   			img{
+	   			width: 20%;
+			    position: absolute;
+			    margin-left: 496px;
+			    margin-top: 41px
+	   		}
+
+	    	.ball {
+				background-color: rgba(0,0,0,0);
+				border:5px solid rgba(0,183,229,0.9);
+				opacity:.9;
+				border-top:10px solid rgba(0,0,0,0);
+				border-left:1px solid rgba(0,0,0,0);
+				border-radius:150px;
+				box-shadow: 0 0 35px #2187e7;
+				width:300px;
+				height:300px;
+			    margin-top: -5px;
+	    		margin-left: 457px;
+				-moz-animation:spinoff 4s infinite linear;
+				-webkit-animation:spinoff 4s infinite linear;
+				transition: all 0.5s ease;
+			}
+
+			.ball1 {
+				background-color: rgba(0,0,0,0);
+				border:3px dashed rgba(255,255,255,0.9);
+				opacity:.9;
+				border-radius:175px;
+				width:350px;
+				height:350px;
+			    margin-top: -324px;
+	    		margin-left: 431px;
+				top:-50px;
+				-moz-animation:spin 10s infinite linear;
+				-webkit-animation:spin 10s infinite linear;
+				transition: all 0.5s ease;
+			}
+
+			.ball2 {
+				background-color: rgba(0,0,0,0);
+				border:5px solid rgba(0,183,229,0.9);
+				opacity:.9;
+				border-top:1px solid rgba(0,0,0,0);
+				border-left:10px solid rgba(0,0,0,0);
+				border-radius:125px;
+				box-shadow: 0 0 15px #2187e7; 
+				width:250px;
+				height:250px;
+				margin-top: -251px;
+	    		margin-left: 481px;
+				position:relative;
+				top:-50px;
+				-moz-animation:spin 2s infinite linear;
+				-webkit-animation:spin 2s infinite linear;
+				transition: all 0.5s ease;
+			}
+
+			@-moz-keyframes spin {
+				0% { -moz-transform:rotate(0deg); }
+				50% { -moz-transform:rotate(360deg); }
+			}
+			@-moz-keyframes spinoff {
+				0% { -moz-transform:rotate(0deg); }
+				50% { -moz-transform:rotate(-360deg); }
+			}
+			@-webkit-keyframes spin {
+				0% { -webkit-transform:rotate(0deg); }
+				100% { -webkit-transform:rotate(360deg); }
+			}
+			@-webkit-keyframes spinoff {
+				0% { -webkit-transform:rotate(0deg); }
+				100% { -webkit-transform:rotate(-360deg); }
+			}
+   		}	
+    }
+    
+    .contenu{
+
+		
+    	.instruction{
+		    margin: 10px;
+		    height: 100px;
+		    padding-left: 190px;
+
+    		.triximg1{
+			width: 70px;
+			height: 70px;
+			margin-left: 5%;
+			margin-top: 5%;
+			}
+
+			.texttrex{
+			margin-left: 16%;
+    		margin-top: -5%;
+			}
+
+    	}
+
+
+
+    	.steak{
+
+			width: 90px;
+			height: 90px;
+			border: solid 3px red;
+			border-radius: 50%;
+			margin-left: 512px;
+			margin-top: 20px;
+		}
+
+		.texttrex1{
+			margin-left: 490px;
+			margin-top: 350px;
+		}
+
+		.triximg2{
+			width: 70px;
+			height: 70px;
+			margin-left: 9px;
+    		margin-top: 10px;
+		}
+    }
 }
 
 
 
-.triximg{
-	width: 130px;
-	height: 130px;
-	margin-left: 20%;
-	margin-top: 20%;
-
-
-}
-
-.one1{
-
-	width: 300px;
-	height: 300px;
-	border-radius:50%;
-	border: dashed 2px red;
-	margin-left: 35%;
-	margin-top: 10%;
-
-}
-
-
-.one2{
-
-
-	width: 260px;
-	height: 260px;
-	border-radius:50%;
-	border: solid 2px white;
-	background-color: blue;
-	margin-left: 6%;
-	margin-top: 6%;
-	
-}
-
-
-.one3{
-
-	width: 210px;
-	height: 210px;
-	border-radius:50%;
-	border: solid 3px white;
-	background-color: blue;
-	margin-left: 9%;
-	margin-top: 9%;
-	
-}
-
-
-
-.triximg1{
-	width: 70px;
-	height: 70px;
-	margin-left: 5%;
-	margin-top: 5%;
-
-
-}
-.texttrex{
-margin-left: 12%;
-margin-top: -5%;
-}
-
-.steak{
-
-	width: 90px;
-	height: 90px;
-	border: solid 3px red;
-	border-radius: 50%;
-	margin-left: 48%;
-	margin-top: 20px;
-}
-
-.texttrex1{
-margin-left: 46%;
-margin-top: 500px;
-}
-
-.triximg2{
-	width: 70px;
-	height: 70px;
-	margin-left: 8%;
-	margin-top: 15%;
-
-
-}
