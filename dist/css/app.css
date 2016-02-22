@@ -699,25 +699,41 @@ footer {
     background-size: 100%; }
   #dash .graph {
     display: flex;
-    justify-content: center;
-    border: solid 2px red; }
+    justify-content: center; }
+    #dash .graph #container {
+      margin-top: -400px; }
     #dash .graph .mid-left {
-      width: 50%;
+      width: 620px;
       margin-bottom: 10px;
-      display: inline-block; }
+      border: solid 2px red; }
+      #dash .graph .mid-left .sidebar2 {
+        width: 70px;
+        height: 450px;
+        background-color: rgba(0, 0, 255, 0.05);
+        background: rgba(0, 0, 255, 0.05);
+        margin-right: 80px; }
+      #dash .graph .mid-left .imgsidebar2 {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        margin-top: 30px; }
+      #dash .graph .mid-left .blue1 {
+        color: blue;
+        margin-left: 80px;
+        margin-top: -430px;
+        position: absolute; }
     #dash .graph .blue {
       color: blue;
-      margin-top: 10px; }
+      margin-left: 15px; }
     #dash .graph .mid-right {
       background-color: transparent;
-      width: 543px;
+      width: 593px;
       margin-bottom: 10px;
-      width: 50%;
       margin-bottom: 10px;
       display: flex;
       height: auto;
       border: solid 2px red;
-      margin-left: 50px; }
+      margin-left: 10px; }
       #dash .graph .mid-right .sidebar2 {
         width: 70px;
         height: 450px;
@@ -946,6 +962,24 @@ footer {
 .texttrex {
   margin-left: 12%;
   margin-top: -5%; }
+
+.steak {
+  width: 90px;
+  height: 90px;
+  border: solid 3px red;
+  border-radius: 50%;
+  margin-left: 48%;
+  margin-top: 20px; }
+
+.texttrex1 {
+  margin-left: 46%;
+  margin-top: 500px; }
+
+.triximg2 {
+  width: 70px;
+  height: 70px;
+  margin-left: 8%;
+  margin-top: 15%; }
 
 #gps {
   background-color: rgba(32, 41, 70, 0.7);

@@ -6,10 +6,24 @@
 	</div>
 
 	<div class="graph">
-	<div class="mid-left">
-				 <p class="blue">ENERGY requirement</p>
 
-	<div id="container"></div>
+	<div class="mid-left">
+
+
+		<div class="sidebar2">
+
+	<img src="assets/img/favoris.svg" class="imgsidebar2">
+		<img src="assets/img/move.svg" class="imgsidebar2">
+		<img src="assets/img/number.svg" class="imgsidebar2">
+
+</div>
+<p class="blue1">ENERGY requirement</p>
+
+<div id="container" style="width:440px; height:350px; margin-left:100px;">
+
+	
+</div>
+
 	</div>
 
 <div id="jquery_jplayer_1" class="jp-jplayer">

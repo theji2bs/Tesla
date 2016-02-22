@@ -49,13 +49,18 @@
 
 	
 
-	
-<div class="text">
 
+<p class="texttrex1">DONNER UN STEAK</p>	
+
+
+
+<div class="steak">
+
+<img src="assets/img/steak.svg" class="triximg2">
 </div>
 
 
-</div>
+
 
 
 
