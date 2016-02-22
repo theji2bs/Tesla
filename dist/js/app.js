@@ -117,7 +117,7 @@ $( "nav > div > .nav-cellphone" ).on( "click", function() {
 	  	hideCellphone()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active");
@@ -147,7 +147,7 @@ $( "nav > div > .nav-contacts" ).on( "click", function() {
 	  	hideContacts()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active");
@@ -340,7 +340,7 @@ $( "nav > div > .nav-gps" ).on( "click", function() {
 	  	hideGps()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active");
@@ -370,7 +370,7 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 	}
 
   else{
-	  	if( $( 'nav > div > img[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div > div[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active");
@@ -648,7 +648,7 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 	}
   else{
-	  	if( $( 'nav > div > img[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active");

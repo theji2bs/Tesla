@@ -15,7 +15,7 @@ $( "nav > div > .nav-gps" ).on( "click", function() {
 	  	hideGps()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active");

@@ -15,7 +15,7 @@ $( "nav > div > .nav-cellphone" ).on( "click", function() {
 	  	hideCellphone()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active");

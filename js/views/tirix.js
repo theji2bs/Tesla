@@ -17,7 +17,7 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 	}
   else{
-	  	if( $( 'nav > div > img[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active");
