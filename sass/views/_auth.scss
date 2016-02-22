@@ -32,17 +32,34 @@
     .body{
     	width:1180px;
     	height:1220px;
-    	margin-left: 142px; 
+    	margin-left: 130px; 
 
-    	.Authentification{
-    		width: 75%;
-    	}
+
+    	#egg {
+		   display:block;
+		   width: 900px;
+		   height: 1200px;
+		   background-color: rgba(30, 40, 71, 0.3);
+		   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+		   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+		   box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+		   padding-left:25px;
+		   padding-top: 170px;
+
+		   img{
+		   		width:90%;
+    		}
+
+		}
+
+    	
 
     }
 
     .footer{
 		width:1180px;
     	height:280px;
+    	margin-top: 100px;
 
     	.instru{
 			margin-left: 299px;
@@ -52,16 +69,7 @@
 		    font-weight: bold;
     	}
 
-    	.container{
-    		margin-left: 420px;
-
-
-	    	/*@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
-			@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
-
-
-			}
-			/* Global Button Styles */
+    	
 			a.animated-button:link, a.animated-button:visited {
 				position: relative;
 				display: block;
@@ -126,6 +134,8 @@
 			/* Victoria Buttons */
 			a.animated-button.victoria-three {
 				border: 2px solid #00ffff;
+				width:200px;
+				margin-right:508px;
 			}
 			a.animated-button.victoria-three:after {
 				background: rgba(0, 255, 255, 0.2);
