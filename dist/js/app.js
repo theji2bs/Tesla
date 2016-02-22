@@ -36,12 +36,12 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
-    //$( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
+    $( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -660,6 +660,13 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 });
 
+		
+$(document).ready(function() {
+	$('.ball, .ball1').removeClass('stop');	    
+		$('.trigger').click(function() {
+				$('.ball, .ball1').toggleClass('stop');
+		});
+});
 // Base router
 
 function showWarning() {
