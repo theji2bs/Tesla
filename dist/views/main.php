@@ -67,7 +67,7 @@
 	
 	<p>Jurassic Wordl</p>
 	<p> Jurassic</p> 
-	<p class=".jp-current-time"> 00:00</p>
+	<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
 </div>
 	</div>
 
