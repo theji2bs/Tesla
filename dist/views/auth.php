@@ -6,7 +6,10 @@
 </div>
 
 <div class="body">
-	<img src="assets/img/Main.png" class="Authentification" alt="Main">
+	<div id="egg">
+		<img src="assets/img/Main.svg" class="Authentification" alt="Main">
+	</div>
+	
 </div>
 
 <div class="footer">
