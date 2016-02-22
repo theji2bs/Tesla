@@ -8,18 +8,12 @@
 			<h1>Lights</h1> <h2>Headlights</h2>
 		</div>
 		<div class="state">
-			<div class="off">
-				<p>OFF</p>
-			</div>
-			<div class="parking">
-				<p>PARKING</p>
-			</div>
-			<div class="auto active">
-				<p>AUTO</p>
-			</div>
-			<div class="on">
-				<p>ON</p>
-			</div>
+			<ul>
+				<li class="off">OFF</li>
+				<li class="parking">PARKING</li>
+				<li class="auto active">AUTO</li>
+				<li class="on">ON</li>
+			</ul>
 		</div>
 		<div class="options">
 			<div class="drl active">
@@ -49,6 +43,7 @@
 			</div>
 		</div>
 		<div class="left">
+			<div class="bar"></div>
 			<div class="title">
 				<h1>Left Door</h1>
 				<h2>Unlocked</h2>
@@ -57,8 +52,9 @@
 				<img src="assets/img/Deverrouillage.svg" alt="light-preview" class="light_preview" />
 			</div>
 		</div>
-		<div class="leftbar"></div>
+		
 		<div class="right">
+			<div class="bar"></div>
 			<div class="title">
 				<h1>Right Door</h1>
 				<h2>Locked</h2>
@@ -67,7 +63,7 @@
 				<img src="assets/img/Verrouillage.svg" alt="light-preview" class="light_preview" />
 			</div>
 		</div>
-		<div class="rightbar"></div>
+
 		<div class="back">
 			<div class="icon">
 				<img src="assets/img/Verrouillage.svg" alt="light-preview" class="light_preview" />
@@ -83,8 +79,8 @@
 		<div class="lights">
 			<img src="assets/img/Light-preview.svg" alt="light-preview" class="light_preview" />
 		</div>
-		<svg height="125" width="125">
-		  <line x1="0" y1="0" x2="110" y2="110" style="stroke:rgb(0,216,239);stroke-width:2"></line>
+		<svg height="100" width="100">
+		  <line x1="0" y1="0" x2="100" y2="100" style="stroke:rgb(0,216,239);stroke-width:2"></line>
 		</svg>
 		<div class="car_skeleton">
 			<img src="assets/img/Car.svg" alt="close" class="skeleton" />

@@ -33,11 +33,12 @@ $(document).ready(function(){
     var route = '';
 
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
-    //$( "#settings" ).fadeIn('slow'); // Dashboard
+    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#settings" ).fadeIn('slow'); // Dashboard
     $( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
+    //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -361,6 +362,10 @@ function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
 		$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
+
+
+
+
         
 }
 function hideSettings() {
@@ -386,11 +391,56 @@ $( ".voiture" ).on( "click", function() {
 
 });
 
-$( "#settings > .close" ).on( "click", function() {
+$( "#settings > .options" ).on( "click", function() {
 
   hideSettings()
 
 });
+
+
+// Lights controls
+
+// Switch
+
+
+// Options
+ $( ".fog" ).on( "click", function() {
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("active");
+	}
+  else{
+	  	$( this ).addClass("active");
+  }
+});
+
+ $( ".drl" ).on( "click", function() {
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("active");
+	}
+  else{
+	  	$( this ).addClass("active");
+  }
+});
+
+ $( ".dome" ).on( "click", function() {
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("active");
+	}
+  else{
+	  	$( this ).addClass("active");
+  }
+});
+
+  $( ".ambient" ).on( "click", function() {
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("active");
+	}
+  else{
+	  	$( this ).addClass("active");
+  }
+});
+
+
 
 // Base router
 

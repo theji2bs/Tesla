@@ -892,20 +892,28 @@ footer {
       width: 100%;
       height: 75px;
       border: 2px solid #4F5A7A;
-      display: flex;
-      justify-content: nowrap;
       background-color: #010C2F;
       margin-bottom: 30px; }
-      #settings .lights_control .state div {
+      #settings .lights_control .state ul {
         width: 100%;
         font-size: 16pt;
         text-align: center;
-        line-height: 74px; }
-        #settings .lights_control .state div p {
-          vertical-align: middle; }
+        line-height: 70px;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between; }
+        #settings .lights_control .state ul li {
+          display: block;
+          vertical-align: middle;
+          width: 100%; }
       #settings .lights_control .state .active {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         border: 1px solid #00D8EF;
-        background-color: rgba(0, 216, 239, 0.2); }
+        background-color: rgba(0, 216, 239, 0.2);
+        transition: all 0.5s ease; }
     #settings .lights_control .options {
       width: 100%;
       display: flex;
@@ -915,13 +923,15 @@ footer {
         font-size: 16pt;
         text-align: center;
         line-height: 74px;
-        border: 2px solid #4F5A7A; }
+        border: 2px solid #4F5A7A;
+        transition: all 0.5s ease; }
         #settings .lights_control .options div p {
           vertical-align: middle; }
       #settings .lights_control .options .active {
         border: 1px solid #4F5A7A;
         background-color: rgba(255, 219, 45, 0.9);
-        color: #1F2749; }
+        color: #1F2749;
+        transition: all 0.5s ease; }
       #settings .lights_control .options .drl {
         margin-right: 30px; }
       #settings .lights_control .options .fog {
@@ -948,7 +958,7 @@ footer {
     #settings .lock .front {
       position: absolute;
       top: 470px;
-      left: 470px;
+      left: 455px;
       width: 240px;
       height: 120px; }
       #settings .lock .front .title {
@@ -974,8 +984,8 @@ footer {
     #settings .lock .left {
       position: absolute;
       top: 840px;
-      left: 240px;
-      width: 140px;
+      left: 217px;
+      width: 225px;
       height: 55px; }
       #settings .lock .left .title {
         text-align: right;
@@ -1000,18 +1010,17 @@ footer {
           width: 25px;
           height: auto;
           vertical-align: sub; }
-    #settings .lock .leftbar {
-      position: absolute;
-      top: 865px;
-      left: 380px;
-      width: 72px;
-      height: 2px;
-      background-color: #00D8EF; }
+      #settings .lock .left .bar {
+        margin-top: 25px;
+        float: right;
+        width: 72px;
+        height: 2px;
+        background-color: #00D8EF; }
     #settings .lock .right {
       position: absolute;
       top: 840px;
-      left: 837px;
-      width: 150px;
+      left: 760px;
+      width: 225px;
       height: 55px; }
       #settings .lock .right .title {
         text-align: left;
@@ -1036,17 +1045,17 @@ footer {
           width: 25px;
           height: auto;
           vertical-align: sub; }
-    #settings .lock .rightbar {
-      position: absolute;
-      top: 865px;
-      left: 765px;
-      width: 72px;
-      height: 2px;
-      background-color: #00D8EF; }
+      #settings .lock .right .bar {
+        margin-top: 25px;
+        float: left;
+        display: inline-block;
+        width: 72px;
+        height: 2px;
+        background-color: #00D8EF; }
     #settings .lock .back {
       position: absolute;
       top: 1105px;
-      left: 492px;
+      left: 480px;
       width: 240px;
       height: 120px; }
       #settings .lock .back .title {
