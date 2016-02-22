@@ -32,12 +32,15 @@ $(document).ready(function(){
     // Initialisation of router
     var route = '';
 
+    // Initialisation of switchs
+    var switchSettingsLights = '';
+
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
-    //$( "#settings" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
+    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#settings" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
@@ -422,8 +425,68 @@ $( "#settings > .close" ).on( "click", function() {
 
 
 // Lights controls
-
+switchSettingsLights = 'off';
 // Switch
+ $( ".off" ).on( "click", function() {
+
+ 		if( $( '.lights_control > .state > ul > li[class!="off"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( "." + switchSettingsLights ).removeClass("active");
+			$( this ).addClass("active");
+			$( ".light_preview" ).fadeOut('fast');
+			$( ".light_preview" ).fadeOut( "fast", function() {
+			    $( ".light_preview" ).attr( "src", "assets/img/Light_Off.svg" );
+				
+			  });
+			$( ".light_preview" ).fadeIn('fast');
+		  	switchSettingsLights = 'off';
+		  	console.log(switchSettingsLights);
+
+		}
+  
+});
+
+ $( ".parking" ).on( "click", function() {
+ 		if( $( '.lights_control > .state > ul > li[class!="parking"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( "." + switchSettingsLights ).removeClass("active");
+			$( this ).addClass("active");
+			$( ".light_preview" ).fadeOut( "fast", function() {
+			    $( ".light_preview" ).attr( "src", "assets/img/Light_Parking.svg" );
+				
+			  });
+			$( ".light_preview" ).fadeIn('fast');
+		  	switchSettingsLights = 'parking';
+		  	console.log(switchSettingsLights);
+		}
+  
+});
+
+ $( ".auto" ).on( "click", function() {
+ 		if( $( '.lights_control > .state > ul > li[class!="auto"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( "." + switchSettingsLights ).removeClass("active");
+			$( this ).addClass("active");
+		  	switchSettingsLights = 'auto';
+		  	console.log(switchSettingsLights);
+		}
+});
+
+ $( ".on" ).on( "click", function() {
+ 		if( $( '.lights_control > .state > ul > li[class!="on"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( "." + switchSettingsLights ).removeClass("active");
+			$( this ).addClass("active");
+			$( ".light_preview" ).fadeOut( "fast", function() {
+			    $( ".light_preview" ).attr( "src", "assets/img/Light_On.svg" );
+			  });
+			$( ".light_preview" ).fadeIn('fast');
+		  	switchSettingsLights = 'on';
+		  	console.log(switchSettingsLights);
+		}
+});
+
+
 
 
 // Options
@@ -463,6 +526,21 @@ $( "#settings > .close" ).on( "click", function() {
   }
 });
 
+
+// Menu
+ $( ".on" ).on( "click", function() {
+ 		if( $( '.lights_control > .state > ul > li[class!="on"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( "." + switchSettingsLights ).removeClass("active");
+			$( this ).addClass("active");
+			$( ".light_preview" ).fadeOut( "fast", function() {
+			    $( ".light_preview" ).attr( "src", "assets/img/Light_On.svg" );
+			  });
+			$( ".light_preview" ).fadeIn('fast');
+		  	switchSettingsLights = 'on';
+		  	console.log(switchSettingsLights);
+		}
+});
 
 
 // Base router
