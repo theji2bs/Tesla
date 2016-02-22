@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Tesla</title>
 	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/ducksboard/gridster.js/master/dist/jquery.gridster.css">
  <script src="js/vendors.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 

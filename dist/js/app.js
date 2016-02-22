@@ -159,7 +159,14 @@ $( "nav > div > .nav-contacts" ).on( "click", function() {
 
 });
 
-
+    $(".gridster ul").gridster({
+        widget_margins: [10, 10],
+        widget_selector: "div",
+        min_cols: 2,
+        max_cols: 2,
+        max_size_x: 2,
+        widget_base_dimensions: [140, 140]
+    });
 
         Highcharts.setOptions({
             global: {
