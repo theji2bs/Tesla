@@ -36,11 +36,11 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    //$( "#auth" ).fadeIn('slow'); // Dashboard
-    $( "#settings" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
+    $( "#auth" ).fadeIn('slow'); // Dashboard
+    //$( "#settings" ).fadeIn('slow'); // Dashboard
+    //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
@@ -601,7 +601,6 @@ function hideWarning() {
 
 $( ".nav-warning" ).on( "click", function() {
 
-$( ".nav-warning" ).on( "click", function() {});
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -611,6 +610,7 @@ $( ".nav-warning" ).on( "click", function() {});
   else{
 	  	$( this ).addClass("active");
 	  	showWarning()
+	  	
   }
 
 });

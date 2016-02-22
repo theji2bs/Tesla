@@ -25,7 +25,6 @@ function hideWarning() {
 
 $( ".nav-warning" ).on( "click", function() {
 
-$( ".nav-warning" ).on( "click", function() {});
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -35,6 +34,7 @@ $( ".nav-warning" ).on( "click", function() {});
   else{
 	  	$( this ).addClass("active");
 	  	showWarning()
+	  	
   }
 
 });
