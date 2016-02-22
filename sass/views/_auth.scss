@@ -1,9 +1,147 @@
-#settings{
+#auth{
 	//background-color: rgba(32, 41, 70, 1);
     z-index: 100;
     position: absolute;
    	width: 100%;
     top: 0;
+    margin-left: 0;
+
+    .header{
+    	width:1180px;
+    	height:300px;
+    	
+
+
+
+    	img{
+    		width: 35%;
+		    padding-left: 250px;
+		    margin-left: 240px;
+		}
+
+		p{
+			margin-left: 503px;
+		    padding-top: 0px;
+		    font-size: 130%;
+		    letter-spacing: 2px;
+		    font-weight: bold;
+		}
+
+    }
+
+    .body{
+    	width:1180px;
+    	height:1220px;
+    	margin-left: 142px; 
+
+    	.Authentification{
+    		width: 75%;
+    	}
+
+    }
+
+    .footer{
+		width:1180px;
+    	height:280px;
+
+    	.instru{
+			margin-left: 299px;
+		    padding-top: 0px;
+		    font-size: 130%;
+		    letter-spacing: 2px;
+		    font-weight: bold;
+    	}
+
+    	.container{
+    		margin-left: 420px;
+
+
+	    	@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+			@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+			}
+			/* Global Button Styles */
+			a.animated-button:link, a.animated-button:visited {
+				position: relative;
+				display: block;
+				margin: 30px auto 0;
+				padding: 14px 15px;
+				color: #fff;
+				font-size:14px;
+				font-weight: bold;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				overflow: hidden;
+				letter-spacing: .08em;
+				border-radius: 0;
+				text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			a.animated-button:link:after, a.animated-button:visited:after {
+				content: "";
+				position: absolute;
+				height: 0%;
+				left: 50%;
+				top: 50%;
+				width: 150%;
+				z-index: -1;
+				-webkit-transition: all 0.75s ease 0s;
+				-moz-transition: all 0.75s ease 0s;
+				-o-transition: all 0.75s ease 0s;
+				transition: all 0.75s ease 0s;
+			}
+			a.animated-button:link:hover, a.animated-button:visited:hover {
+				color: #FFF;
+				text-shadow: none;
+			}
+			a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+				height: 450%;
+			}
+			a.animated-button:link, a.animated-button:visited {
+				position: relative;
+				display: block;
+				margin: 30px auto 0;
+				padding: 14px 15px;
+				color: #fff;
+				font-size:14px;
+				border-radius: 0;
+				font-weight: bold;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				overflow: hidden;
+				letter-spacing: .08em;
+				text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+
+			/* Victoria Buttons */
+			a.animated-button.victoria-three {
+				border: 2px solid #00ffff;
+			}
+			a.animated-button.victoria-three:after {
+				background: rgba(0, 255, 255, 0.2);
+				opacity: .5;
+				-moz-transform: translateX(-50%) translateY(-50%);
+				-ms-transform: translateX(-50%) translateY(-50%);
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+			}
+			a.animated-button.victoria-three:hover:after {
+				height: 140%;
+				opacity: 1;
+			}
+
+		}	
+
 }
 
 
