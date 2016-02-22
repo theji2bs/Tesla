@@ -40,10 +40,10 @@
 		<div class="front">
 			<div class="title">
 				<h1>Front Trunk</h1>
-				<h2>Locked</h2>
+				<h2>Unlocked</h2>
 			</div>
 			<div class="icon">
-				<img src="assets/img/Verrouillage.svg" alt="light-preview" class="light_preview" />
+				<img src="assets/img/Deverrouillage.svg" alt="light-preview" />
 			</div>
 		</div>
 		<div class="left">
@@ -53,7 +53,7 @@
 				<h2>Unlocked</h2>
 			</div>
 			<div class="icon">
-				<img src="assets/img/Deverrouillage.svg" alt="light-preview" class="light_preview" />
+				<img src="assets/img/Deverrouillage.svg" alt="light-preview" />
 			</div>
 		</div>
 		
@@ -61,20 +61,20 @@
 			<div class="bar"></div>
 			<div class="title">
 				<h1>Right Door</h1>
-				<h2>Locked</h2>
+				<h2>Unlocked</h2>
 			</div>
 			<div class="icon">
-				<img src="assets/img/Verrouillage.svg" alt="light-preview" class="light_preview" />
+				<img src="assets/img/Deverrouillage.svg" alt="light-preview" />
 			</div>
 		</div>
 
 		<div class="back">
 			<div class="icon">
-				<img src="assets/img/Verrouillage.svg" alt="light-preview" class="light_preview" />
+				<img src="assets/img/Deverrouillage.svg" alt="light-preview" />
 			</div>
 			<div class="title">
 				<h1>Back Door</h1>
-				<h2>Locked</h2>
+				<h2>Unlocked</h2>
 			</div>
 		</div>
 	</div>
@@ -83,8 +83,8 @@
 		<div class="lights">
 			<img src="assets/img/Light_Off.svg" alt="light-preview" class="light_preview" />
 		</div>
-		<svg height="100" width="100">
-		  <line x1="0" y1="0" x2="100" y2="100" style="stroke:rgb(0,216,239);stroke-width:2"></line>
+		<svg height="110" width="110">
+		  <line x1="0" y1="0" x2="110" y2="110" style="stroke:rgb(0,216,239);stroke-width:2"></line>
 		</svg>
 		<div class="car_skeleton">
 			<img src="assets/img/Car.svg" alt="close" class="skeleton" />

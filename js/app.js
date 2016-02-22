@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	var socket = io.connect('http://localhost:8080');
     socket.on('data', function(content) {
-        console.log(content.number);
+        //console.log(content.number);
         //data.datasets[0].data.push(content.number);
         //delete data.datasets[0].data[0];
         //var shift = data.datasets[0].data.shift();

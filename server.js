@@ -34,6 +34,21 @@ io.sockets.on('connection', function (socket) {
 	      socket.emit('data', data);
 
 	  }, 1000);
+
+	  	  // in interval emit the monitoring report.
+	  setInterval(function(){
+	  	var randomNumb = faker.random.number({
+		    'min': 0,
+		    'max': 2
+		});
+
+	  	var data = {
+		    auto: randomNumb
+		};
+
+	      socket.emit('lights-auto', data);
+
+	  }, 3000);
         
 });
 

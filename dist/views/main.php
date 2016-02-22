@@ -9,7 +9,7 @@
 	<div class="mid-left">
 				 <p class="blue">ENERGY requirement</p>
 
-	<div id="container"></div>
+	<div id="container" style="width:440px; height:500px;"></div>
 	</div>
 
 <div id="jquery_jplayer_1" class="jp-jplayer">

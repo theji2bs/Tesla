@@ -1058,8 +1058,8 @@ footer {
       height: 323px; }
   #settings .car svg {
     position: absolute;
-    left: 380px;
-    top: 365px; }
+    left: 370px;
+    top: 352px; }
   #settings .car .car_skeleton {
     margin-top: 100px;
     display: flex;
@@ -1084,10 +1084,11 @@ footer {
         height: 50px;
         border-radius: 50%;
         display: block;
-        background-color: rgba(241, 48, 79, 0.3);
-        border: 2px solid #f1304f;
+        background-color: rgba(0, 216, 239, 0.3);
+        border: 2px solid #00D8EF;
         text-align: center;
-        line-height: 55px; }
+        line-height: 55px;
+        transition: all .5s ease; }
         #settings .lock .front .icon img {
           width: 25px;
           height: auto;
@@ -1113,10 +1114,11 @@ footer {
         height: 50px;
         border-radius: 50%;
         display: block;
-        background-color: rgba(241, 48, 79, 0.3);
-        border: 2px solid #f1304f;
+        background-color: rgba(0, 216, 239, 0.3);
+        border: 2px solid #00D8EF;
         text-align: center;
-        line-height: 55px; }
+        line-height: 55px;
+        transition: all .5s ease; }
         #settings .lock .left .icon img {
           width: 25px;
           height: auto;
@@ -1126,7 +1128,8 @@ footer {
         float: right;
         width: 72px;
         height: 2px;
-        background-color: #00D8EF; }
+        background-color: #00D8EF;
+        transition: all .5s ease; }
     #settings .lock .right {
       position: absolute;
       top: 840px;
@@ -1148,10 +1151,11 @@ footer {
         height: 50px;
         border-radius: 50%;
         display: block;
-        background-color: rgba(241, 48, 79, 0.3);
-        border: 2px solid #f1304f;
+        background-color: rgba(0, 216, 239, 0.3);
+        border: 2px solid #00D8EF;
         text-align: center;
-        line-height: 55px; }
+        line-height: 55px;
+        transition: all .5s ease; }
         #settings .lock .right .icon img {
           width: 25px;
           height: auto;
@@ -1162,7 +1166,8 @@ footer {
         display: inline-block;
         width: 72px;
         height: 2px;
-        background-color: #00D8EF; }
+        background-color: #00D8EF;
+        transition: all .5s ease; }
     #settings .lock .back {
       position: absolute;
       top: 1105px;
@@ -1181,14 +1186,22 @@ footer {
         height: 50px;
         border-radius: 50%;
         display: block;
-        background-color: rgba(241, 48, 79, 0.3);
-        border: 2px solid #f1304f;
+        background-color: rgba(0, 216, 239, 0.3);
+        border: 2px solid #00D8EF;
         text-align: center;
-        line-height: 55px; }
+        line-height: 55px;
+        transition: all .5s ease; }
         #settings .lock .back .icon img {
           width: 25px;
           height: auto;
           vertical-align: sub; }
+    #settings .lock .lock .icon {
+      background-color: rgba(241, 48, 79, 0.3);
+      border: 2px solid #f1304f;
+      transition: all .2s ease; }
+    #settings .lock .lock .bar {
+      background-color: #f1304f;
+      transition: all .5s ease; }
   #settings .menu {
     position: absolute;
     top: 1190px;
