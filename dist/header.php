@@ -1,5 +1,5 @@
 
-<div >
+<div>
 
 <p class="heure" id="time">
 </p>
