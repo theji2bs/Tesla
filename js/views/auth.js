@@ -1,18 +1,28 @@
 // Base router
 
 function showAuth() {
-		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
+		$( "header" ).fadeOut('slow'); // Header
+		$( "nav" ).fadeOut('slow'); // Nav
+		$( "footer" ).fadeOut('slow'); // Footer
+		$( "#dash" ).fadeOut('slow'); // Header
         $( "#auth" ).fadeIn('slow');
-        
 }
+
 function hideAuth() {
-		$( "#auth" ).fadeOut('fast');
-		$( "nav" ).fadeIn('fast'); // Header
-		$( "#dash" ).fadeIn('fast'); // Header
-        
-    	
+		$( "#auth" ).fadeOut('slow'); // Auth
+		$( "header" ).fadeIn('slow'); // Header
+		$( "nav" ).fadeIn('slow'); // Nav
+		$( "footer" ).fadeIn('slow'); // Footer
+		$( "#dash" ).fadeIn('slow'); // Header 
 }
+
+
+
+//$( "#settings" ).fadeIn('slow'); // Dashboard
+    //$( "header" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
+    //$( "#dash" ).fadeIn('slow'); // Dashboard
 
 $( ".tesla" ).on( "click", function() {
 
@@ -28,4 +38,17 @@ $( ".tesla" ).on( "click", function() {
   }
 
 });
+
+$( ".unlock" ).on( "click", function() {
+
+	  	hideAuth()
+
+});
+
+$( ".power2" ).on( "click", function() {
+
+	  	showAuth()
+
+});
+
 

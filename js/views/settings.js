@@ -33,7 +33,7 @@ $( ".voiture" ).on( "click", function() {
 
 });
 
-$( "#settings > .options" ).on( "click", function() {
+$( "#settings > .close" ).on( "click", function() {
 
   hideSettings()
 
