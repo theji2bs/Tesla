@@ -36,12 +36,12 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    $( "#tirix" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
-    $( "#dash" ).fadeIn('slow'); // Dashboard
+    //$( "header" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
+    //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
