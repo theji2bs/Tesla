@@ -1,3 +1,3 @@
 <section id="mail">
-	<h1>mail</h1>
+	<img src="assets/img/Email.png" class="Email" alt="Main">
 </section>
