@@ -33,13 +33,13 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
+    //$( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
-    //$( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "nav" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
+    $( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -129,36 +129,6 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 
 });
 
-// Base router
-
-function showContacts() {
-        $( "#contacts" ).fadeIn('slow');
-}
-function hideContacts() {
-        $( "#contacts" ).fadeOut('slow');
-}
-
-$( "nav > .nav-contacts" ).on( "click", function() {
-
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-		$( this ).removeClass("active").addClass("inactive");
-	  	hideContacts()
-	}
-  else{
-  		if( $( 'nav > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active").addClass("inactive");
-		}
-	  	$( this ).removeClass("inactive").addClass("active");
-	  	showContacts()
-	  	route = 'contacts';
-  }
-
-});
-
-
 
 
 // Phone widget
@@ -194,6 +164,38 @@ var currentNumb = [];
             }
         });
     });
+
+// Base router
+
+function showContacts() {
+        $( "#contacts" ).fadeIn('slow');
+}
+function hideContacts() {
+        $( "#contacts" ).fadeOut('slow');
+}
+
+$( "nav > .nav-contacts" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active").addClass("inactive");
+	  	hideContacts()
+	}
+  else{
+  		if( $( 'nav > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
+		}
+	  	$( this ).removeClass("inactive").addClass("active");
+	  	showContacts()
+	  	route = 'contacts';
+  }
+
+});
+
+
+
 
 
 
