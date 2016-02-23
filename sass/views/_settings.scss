@@ -53,7 +53,7 @@
             right:40px;
             margin-left: 20px;
             margin-top: 10px;
-            color: #F1304E;
+            color: #00C5DD;
             transition: all ease 0.5s;
         }
         .on{
@@ -62,7 +62,7 @@
             right:45px;
             margin-left: 20px;
             margin-top: 10px;
-            color: #00C5DD;
+            color: #F1304E;
             transition: all ease 0.5s;
         }
     }
@@ -106,8 +106,7 @@
             right:40px;
             margin-left: 20px;
             margin-top: 10px;
-            color: #F1304E;
-            transition: all ease 0.5s;
+            color: #00C5DD;
         }
         .on{
             position:absolute;
@@ -116,8 +115,7 @@
             text-align: center;
             margin-left: 20px;
             margin-top: 10px;
-            color: #00C5DD;
-            transition: all ease 0.5s;
+            color: #F1304E;
         }
     }
     .lights_control{
@@ -133,9 +131,13 @@
 
 			h1{
 				display: inline-block;
+                font-size: 16pt;
+                margin-right: 10px;
 			}
 			h2{
 				display: inline-block;
+                margin-top: 3px;
+                color: #465070;
 			}
     	}
     	.state{
@@ -147,7 +149,7 @@
 
     		ul{
     			width: 100%;
-    			font-size: 16pt;
+    			font-size: 13pt;
     			text-align: center;
     			line-height:70px;
                 transition: all 0.5s ease;
@@ -181,7 +183,7 @@
     		justify-content: space-between;
     		div{
     			width: 100%;
-    			font-size: 16pt;
+    			font-size: 13pt;
     			text-align: center;
     			line-height:74px;
     			border: 2px solid #4F5A7A;
@@ -236,9 +238,6 @@
     		display: flex;
     		justify-content: space-around;
 
-    		.skeleton{
-
-    		}
     	}
     }
 
