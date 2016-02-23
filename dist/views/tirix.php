@@ -1,5 +1,6 @@
 <section id="tirix">
 
+<h1>TI-RIX</h1>
 
 
 <div class="containerlogo">
@@ -10,6 +11,7 @@
 	    <div class="ball2"></div>
     </div>
 </div>
+<h2 class="touchandtalk">TOUCH TI-RIX AND TALK</h2>
 
 <div class="contenu">
 
@@ -19,9 +21,9 @@
 	</div>	
 
 
-	<div id="2" class="instruction">
-		<img src="assets/img/hexagone1.svg" class="triximg1">
-		<p class="texttrex">Bonjour Mr Dupont, vous êtes très appaitissant aujourd'hui </p>
+	<div id="2" class="instruction user">
+		<img src="assets/img/hexagone2.svg" class="triximg1">
+		<p class="texttrex">Quel est le programme de la matinée ?</p>
 	</div>	
 
 	<div id="3" class="instruction">

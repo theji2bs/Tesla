@@ -23,7 +23,7 @@
 	</header>
 
 	<div class="content">
-		<nav>
+		<nav id="menunav">
 		<?php include 'menu.php'; ?>
 		</nav>
 
