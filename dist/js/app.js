@@ -37,11 +37,11 @@ $(document).ready(function(){
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    $( "#settings" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "#settings" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
     $( "footer" ).fadeIn('slow'); // Header
-    //$( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -663,6 +663,58 @@ switchSettingsLights = 'off';
   }
 });
 
+// Lock doors
+ $( ".lock > .front" ).on( "click", function() {
+  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("lock");
+		$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$( ".lock > .front > .title > h2").html( "Unlocked" );
+	}
+  else{
+	  	$( this ).addClass("lock");
+	  	$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .front > .title > h2" ).html( "Locked" );
+  }
+});
+
+$( ".lock > .right" ).on( "click", function() {
+  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("lock");
+		$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > .right > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( this ).addClass("lock");
+	  	$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .right > .title > h2" ).html( "Locked" );
+  }
+});
+
+$( ".lock > .charge" ).on( "click", function() {
+  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("lock");
+		$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > .charge > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( this ).addClass("lock");
+	  	$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .charge > .title > h2" ).html( "Locked" );
+  }
+});
+
+ $( ".lock > .left" ).on( "click", function() {
+  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("lock");
+		$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > .left > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( this ).addClass("lock");
+	  	$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .left > .title > h2" ).html( "Locked" );
+  }
+});
 
 
 // Menu
@@ -694,6 +746,7 @@ $( ".aside > ul > li" ).on( "click", function() {
 
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
+        $("#menunav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');

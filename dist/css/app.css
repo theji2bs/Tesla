@@ -1085,6 +1085,22 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   position: absolute;
   margin-left: 90px;
   top: 0; }
+  #tirix h1 {
+    margin-left: -50px;
+    margin-top: 5px;
+    color: #00D8EF;
+    font-size: 24pt;
+    letter-spacing: 2pt; }
+  #tirix h2 {
+    position: absolute;
+    margin-top: -45px;
+    color: #1F2847;
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: 2pt;
+    left: 50%;
+    margin-left: -70px;
+    transform: translate(-50%); }
   #tirix .containerlogo {
     width: 1100px;
     height: 500px;
@@ -1208,10 +1224,15 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     -webkit-transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(-360deg); } }
+  #tirix .contenu .user {
+    color: #424D6D; }
   #tirix .contenu .instruction {
     display: none;
     margin: 10px;
-    height: 100px;
+    height: auto;
+    margin-left: -50px;
+    font-size: 15pt;
+    line-height: 23pt;
     padding-left: 110px; }
     #tirix .contenu .instruction .triximg1 {
       width: 70px;
@@ -1222,15 +1243,22 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-left: 16%;
       margin-top: -5%; }
   #tirix .contenu .steak {
+    position: absolute;
     width: 90px;
     height: 90px;
-    border: solid 3px red;
+    border: solid 3px #F1304E;
     border-radius: 50%;
-    margin-left: 512px;
-    margin-top: 20px; }
+    background: #1E2749;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -80px;
+    transform: translate(-50%); }
   #tirix .contenu .texttrex1 {
-    margin-left: 490px;
-    margin-top: 350px; }
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    margin-left: -80px;
+    transform: translate(-50%); }
   #tirix .contenu .triximg2 {
     width: 70px;
     height: 70px;
@@ -1377,8 +1405,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         margin-right: 10px; }
       #settings .lights_control .header h2 {
         display: inline-block;
-        margin-top: 3px;
-        color: #465070; }
+        color: #465070;
+        margin-top: 3px; }
     #settings .lights_control .state {
       width: 100%;
       height: 75px;

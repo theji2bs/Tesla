@@ -2,6 +2,7 @@
 
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
+        $("#menunav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
