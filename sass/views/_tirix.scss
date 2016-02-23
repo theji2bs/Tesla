@@ -17,7 +17,7 @@
    			img{
 	   			width: 20%;
 			    position: absolute;
-			    margin-left: 496px;
+			    margin-left: 416px;
 			    margin-top: 41px
 	   		}
 
@@ -32,7 +32,7 @@
 				width:300px;
 				height:300px;
 			    margin-top: -5px;
-	    		margin-left: 457px;
+	    		margin-left: 377px;
 	    		transition: all 0.5s ease;
 			}
 
@@ -44,7 +44,7 @@
 				width:350px;
 				height:350px;
 			    margin-top: -324px;
-	    		margin-left: 431px;
+	    		margin-left: 351px;
 				top:-50px;
 				transition: all 0.5s ease;
 			}
@@ -60,7 +60,7 @@
 				width:250px;
 				height:250px;
 				margin-top: -251px;
-	    		margin-left: 481px;
+	    		margin-left: 401px;
 				position:relative;
 				top:-50px;
 				transition: all 0.5s ease;
@@ -71,7 +71,7 @@
    			img{
 	   			width: 20%;
 			    position: absolute;
-			    margin-left: 496px;
+			    margin-left: 416px;
 			    margin-top: 41px
 	   		}
 
@@ -86,7 +86,7 @@
 				width:300px;
 				height:300px;
 			    margin-top: -5px;
-	    		margin-left: 457px;
+	    		margin-left: 377px;
 				-moz-animation:spinoff 4s infinite linear;
 				-webkit-animation:spinoff 4s infinite linear;
 				transition: all 0.5s ease;
@@ -100,7 +100,7 @@
 				width:350px;
 				height:350px;
 			    margin-top: -324px;
-	    		margin-left: 431px;
+	    		margin-left: 351px;
 				top:-50px;
 				-moz-animation:spin 10s infinite linear;
 				-webkit-animation:spin 10s infinite linear;
@@ -118,7 +118,7 @@
 				width:250px;
 				height:250px;
 				margin-top: -251px;
-	    		margin-left: 481px;
+	    		margin-left: 401px;
 				position:relative;
 				top:-50px;
 				-moz-animation:spin 2s infinite linear;
@@ -149,9 +149,10 @@
 
 		
     	.instruction{
+    		display: none;
 		    margin: 10px;
 		    height: 100px;
-		    padding-left: 190px;
+		    padding-left: 110px;
 
     		.triximg1{
 			width: 70px;
@@ -168,30 +169,30 @@
     	}
 
 
+		.bottom{
+			//position: absolute;
+			//top: 1300px;
 
-    	.steak{
+	    	.steak{
+				width: 90px;
+				height: 90px;
+				border: solid 3px red;
+				border-radius: 50%;
+				margin-left: 512px;
+				margin-top: 20px;
+			}
 
-			width: 90px;
-			height: 90px;
-			border: solid 3px red;
-			border-radius: 50%;
-			margin-left: 512px;
-			margin-top: 20px;
-		}
+			.texttrex1{
+				margin-left: 490px;
+				margin-top: 350px;
+			}
 
-		.texttrex1{
-			margin-left: 490px;
-			margin-top: 350px;
-		}
-
-		.triximg2{
-			width: 70px;
-			height: 70px;
-			margin-left: 9px;
-    		margin-top: 10px;
+			.triximg2{
+				width: 70px;
+				height: 70px;
+				margin-left: 9px;
+	    		margin-top: 10px;
+			}
 		}
     }
 }
-
-
-

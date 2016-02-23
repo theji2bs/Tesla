@@ -1,6 +1,3 @@
-
-
-
 // On attend que le DOM soit prêt
 $(document).ready(function(){
 
@@ -36,11 +33,11 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
-    //$( "#settings" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
+    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#tirix" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
@@ -159,14 +156,6 @@ $( "nav > div > .nav-contacts" ).on( "click", function() {
 
 });
 
-    $(".gridster ul").gridster({
-        widget_margins: [10, 10],
-        widget_selector: "div",
-        min_cols: 2,
-        max_cols: 2,
-        max_size_x: 2,
-        widget_base_dimensions: [140, 140]
-    });
 
         Highcharts.setOptions({
             global: {
@@ -645,6 +634,39 @@ function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
 }
 
+function useTirix() {
+	$( ".containerlogo" ).fadeOut( 300, function() { 
+	  if( $( ".containerlogo > div" ).hasClass('active') ){ // si l'élément possède la classe .vert
+				    $( ".containerlogo > div" ).removeClass("active");
+					$( ".containerlogo > div" ).addClass("inactive");
+					$('.ball, .ball1').removeClass('stop');	    
+					$('.trigger').click(function() {
+							$('.ball, .ball1').toggleClass('stop');
+					});
+		}
+	  else{
+	  			
+				    $( ".containerlogo > div" ).removeClass("inactive");
+				    $( ".containerlogo > div" ).addClass("active");
+				
+				  
+	  }
+  });
+  $( ".containerlogo" ).fadeIn( 100 );
+}
+
+function showInteraction(i) {
+
+
+	$( ".contenu > #" + i ).slideDown( 200, function() {
+
+		$( ".contenu > #" + i ).fadeIn( 200 );
+		console.log (i);
+      // Animation complete.
+  	});
+
+}
+
 $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 
@@ -667,13 +689,38 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 });
 
-		
-$(document).ready(function() {
-	$('.ball, .ball1').removeClass('stop');	    
-		$('.trigger').click(function() {
-				$('.ball, .ball1').toggleClass('stop');
-		});
+
+$( ".containerlogo" ).on( "click", function() {
+	useTirix()
 });
+
+var interactions = 0;
+
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+
+		// T
+		if ( e.keyCode == 84 ){
+			
+			useTirix()			
+		
+		}
+
+		if ( e.keyCode == 73 ){
+
+			interactions = interactions + 1;
+			showInteraction(interactions);
+
+		}
+
+
+});
+
+		
+
+	
+
 // Base router
 
 function showWarning() {

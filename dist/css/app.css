@@ -933,7 +933,7 @@ footer {
     #tirix .containerlogo .inactive img {
       width: 20%;
       position: absolute;
-      margin-left: 496px;
+      margin-left: 416px;
       margin-top: 41px; }
     #tirix .containerlogo .inactive .ball {
       background-color: transparent;
@@ -946,7 +946,7 @@ footer {
       width: 300px;
       height: 300px;
       margin-top: -5px;
-      margin-left: 457px;
+      margin-left: 377px;
       transition: all 0.5s ease; }
     #tirix .containerlogo .inactive .ball1 {
       background-color: transparent;
@@ -956,7 +956,7 @@ footer {
       width: 350px;
       height: 350px;
       margin-top: -324px;
-      margin-left: 431px;
+      margin-left: 351px;
       top: -50px;
       transition: all 0.5s ease; }
     #tirix .containerlogo .inactive .ball2 {
@@ -970,14 +970,14 @@ footer {
       width: 250px;
       height: 250px;
       margin-top: -251px;
-      margin-left: 481px;
+      margin-left: 401px;
       position: relative;
       top: -50px;
       transition: all 0.5s ease; }
     #tirix .containerlogo .active img {
       width: 20%;
       position: absolute;
-      margin-left: 496px;
+      margin-left: 416px;
       margin-top: 41px; }
     #tirix .containerlogo .active .ball {
       background-color: transparent;
@@ -990,7 +990,7 @@ footer {
       width: 300px;
       height: 300px;
       margin-top: -5px;
-      margin-left: 457px;
+      margin-left: 377px;
       -moz-animation: spinoff 4s infinite linear;
       -webkit-animation: spinoff 4s infinite linear;
       transition: all 0.5s ease; }
@@ -1002,7 +1002,7 @@ footer {
       width: 350px;
       height: 350px;
       margin-top: -324px;
-      margin-left: 431px;
+      margin-left: 351px;
       top: -50px;
       -moz-animation: spin 10s infinite linear;
       -webkit-animation: spin 10s infinite linear;
@@ -1018,7 +1018,7 @@ footer {
       width: 250px;
       height: 250px;
       margin-top: -251px;
-      margin-left: 481px;
+      margin-left: 401px;
       position: relative;
       top: -50px;
       -moz-animation: spin 2s infinite linear;
@@ -1049,9 +1049,10 @@ footer {
   100% {
     -webkit-transform: rotate(-360deg); } }
   #tirix .contenu .instruction {
+    display: none;
     margin: 10px;
     height: 100px;
-    padding-left: 190px; }
+    padding-left: 110px; }
     #tirix .contenu .instruction .triximg1 {
       width: 70px;
       height: 70px;
@@ -1060,17 +1061,17 @@ footer {
     #tirix .contenu .instruction .texttrex {
       margin-left: 16%;
       margin-top: -5%; }
-  #tirix .contenu .steak {
+  #tirix .contenu .bottom .steak {
     width: 90px;
     height: 90px;
     border: solid 3px red;
     border-radius: 50%;
     margin-left: 512px;
     margin-top: 20px; }
-  #tirix .contenu .texttrex1 {
+  #tirix .contenu .bottom .texttrex1 {
     margin-left: 490px;
     margin-top: 350px; }
-  #tirix .contenu .triximg2 {
+  #tirix .contenu .bottom .triximg2 {
     width: 70px;
     height: 70px;
     margin-left: 9px;
