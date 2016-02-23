@@ -18,12 +18,83 @@ function hideSettings() {
     	
 }
 
+function lockDoor(id){
+	if( ($( ".lock > ."+ id ).hasClass('lock'))){ // si l'élément possède la classe .vert
+		$( ".lock > ."+ id ).removeClass("lock");
+		$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > ."+ id +" > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( ".lock > ."+ id ).addClass("lock");
+	  	$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > ."+ id +" > .title > h2" ).html( "Locked" );
+  }
+}
+
+function forceLockDoor(id){
+
+	  	$( ".lock > ."+ id ).addClass("lock");
+	  	$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > ."+ id +" > .title > h2" ).html( "Locked" );
+
+}
+
+function forceUnlockDoor(id){
+
+		$( ".lock > ."+ id ).removeClass("lock");
+		$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > ."+ id +" > .title > h2" ).html( "Unlocked" );
+
+}
+
+function roofClose(){
+	$(".roof_open").fadeOut(500, function(){
+		$('.roof_close').fadeIn(500);
+	});
+}
+
+function roofOpen(){
+	$(".roof_close").fadeOut(500, function(){
+		$('.roof_open').fadeIn(500);
+	});
+}
+
+$( ".roof_open" ).on( "click", function() {
+	roofClose();
+});
+$( ".roof_close" ).on( "click", function() {
+	roofOpen();
+});
+
+
+
+function lockGeneral(){
+	  forceLockDoor("front");
+	  forceLockDoor("right");
+	  forceLockDoor("charge");
+	  forceLockDoor("left");
+	  forceLockDoor("back");
+	  roofClose()
+}
+
+function unlockGeneral(){
+	  forceUnlockDoor("front");
+	  forceUnlockDoor("right");
+	  forceUnlockDoor("charge");
+	  forceUnlockDoor("left");
+	  forceUnlockDoor("back");
+	  roofOpen()
+}
+
 $( ".iconeU_off" ).on( "click", function() {
 	
 		$(this).fadeOut(500);
 		$('.iconeU_on').fadeIn(500);
 		$('.urgencyetat').removeClass("off").addClass("on");
 		$('.urgencyetat').text( "ON" );
+
+		lockGeneral()
+
 });
 
 $( ".iconeU_on" ).on( "click", function() {
@@ -31,13 +102,42 @@ $( ".iconeU_on" ).on( "click", function() {
 		$('.iconeU_off').fadeIn(500);
 		$('.urgencyetat').removeClass("on").addClass("off");
 		$('.urgencyetat').text( "OFF" );
+
+		unlockGeneral()
 });
+
+// Lock doors
+
+
+ $( ".lock > .front" ).on( "click", function() {
+	lockDoor("front");
+});
+
+$( ".lock > .right" ).on( "click", function() {
+  lockDoor("right");
+});
+
+$( ".lock > .charge" ).on( "click", function() {
+  lockDoor("charge");
+});
+
+ $( ".lock > .left" ).on( "click", function() {
+  lockDoor("left");
+});
+
+ $( ".lock > .back" ).on( "click", function() {
+  lockDoor("back");
+});
+
+
+
 
 $( ".iconeB_off" ).on( "click", function() {
 	
 		$(this).fadeOut(500);
 		$('.iconeB_on').fadeIn(500);
 		$('.blindageetat').removeClass("off").addClass("on");
+		$( ".car > .car_skeleton > img" ).attr( "src", "assets/img/Car_red.svg" );
 		$('.blindageetat').text( "ON" );
 });
 
@@ -45,6 +145,7 @@ $( ".iconeB_on" ).on( "click", function() {
 		$(this).fadeOut(500);
 		$('.iconeB_off').fadeIn(500);
 		$('.blindageetat').removeClass("on").addClass("off");
+		$( ".car > .car_skeleton > img" ).attr( "src", "assets/img/Car.svg" );
 		$('.blindageetat').text( "OFF" );
 });
 
@@ -137,16 +238,7 @@ switchSettingsLights = 'off';
 		}
 });
 
-$( ".roof_open" ).on( "click", function() {
-	$(this).fadeOut(500, function(){
-		$('.roof_close').fadeIn(500);
-	});
-});
-$( ".roof_close" ).on( "click", function() {
-	$(this).fadeOut(500, function(){
-		$('.roof_open').fadeIn(500);
-	});
-});
+
 
 
 
@@ -241,19 +333,8 @@ $( ".lock > .charge" ).on( "click", function() {
   }
 });
 
- $( ".lock > .back" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .back > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .back > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .back > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .back > .title > h2" ).html( "Locked" );
-  }
-});
 
+// Menu
 $( ".aside > ul > li" ).on( "click", function() {
 
  	$('.aside > ul > .active').removeClass('active').addClass('noactive');
@@ -276,49 +357,4 @@ $( ".aside > ul > li" ).on( "click", function() {
 		$('.txt_charging').removeClass('noactive').addClass('active');
 	}
 });
-
-/*
- $( ".drl" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-
- $( ".dome" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-
-  $( ".ambient" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-*/
-
-
-// Menu
- /*$( ".on" ).on( "click", function() {
- 		if( $( '.lights_control > .state > ul > li[class!="on"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-			$( "." + switchSettingsLights ).removeClass("active");
-			$( this ).addClass("active");
-			$( ".light_preview" ).fadeOut( "fast", function() {
-			    $( ".light_preview" ).attr( "src", "assets/img/Light_On.svg" );
-			  });
-			$( ".light_preview" ).fadeIn('fast');
-		  	switchSettingsLights = 'on';
-		  	console.log(switchSettingsLights);
-		}
-});*/
 

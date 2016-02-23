@@ -107,7 +107,6 @@
             margin-left: 20px;
             margin-top: 10px;
             color: #00C5DD;
-            transition: all ease 0.5s;
         }
         .on{
             position:absolute;
@@ -117,7 +116,6 @@
             margin-left: 20px;
             margin-top: 10px;
             color: #F1304E;
-            transition: all ease 0.5s;
         }
     }
     .lights_control{
@@ -140,6 +138,7 @@
 				display: inline-block;
                 color: #465070;
                 margin-top: 3px;
+
 			}
     	}
     	.state{
@@ -240,9 +239,6 @@
     		display: flex;
     		justify-content: space-around;
 
-    		.skeleton{
-
-    		}
     	}
     }
 

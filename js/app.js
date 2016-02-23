@@ -1,6 +1,3 @@
-
-
-
 // On attend que le DOM soit prêt
 $(document).ready(function(){
 
@@ -37,11 +34,14 @@ $(document).ready(function(){
 
     // Show different elements of the page
     //$( "#auth" ).fadeIn('slow'); // Dashboard
-    $( "#settings" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
+    //$( "#tirix" ).fadeIn('slow'); // Dashboard
+    //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
+    //$( "#settings" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
     $( "footer" ).fadeIn('slow'); // Header
-    //$( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });

@@ -1,6 +1,5 @@
 <section id="dash">
 
-	
 	<div class="big-head">
  
 	</div>
@@ -256,6 +255,5 @@
 
 
 	</div>
-
 
 </section>
