@@ -439,7 +439,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   margin-left: 10%; }
 
 .barhr {
-  width: 85%; }
+  width: 85%;
+  border: solid 2px #2E3554; }
 
 .voiture1 {
   height: 4%;
@@ -870,7 +871,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     #dash .graph .mid-left {
       width: 620px;
       margin-bottom: 10px;
-      border: 2px solid; }
+      border: 2px solid #2E3554; }
       #dash .graph .mid-left .sidebar2 {
         width: 70px;
         height: 450px;
@@ -883,12 +884,16 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         margin-left: 20px;
         margin-top: 30px; }
       #dash .graph .mid-left .blue1 {
-        color: blue;
-        margin-left: 80px;
+        color: #00D8EF;
+        margin-left: 100px;
+        margin-top: -430px;
+        position: absolute; }
+      #dash .graph .mid-left .blue2 {
+        color: white;
+        margin-left: 170px;
         margin-top: -430px;
         position: absolute; }
     #dash .graph .blue {
-      color: blue;
       margin-left: 15px; }
     #dash .graph .mid-right {
       background-color: transparent;
@@ -897,7 +902,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-bottom: 10px;
       display: flex;
       height: auto;
-      border: 2px solid;
+      border: 2px solid #2E3554;
       margin-left: 10px; }
       #dash .graph .mid-right .sidebar2 {
         width: 70px;
@@ -913,11 +918,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #dash .graph .mid-right .bplayer {
         display: flex;
         background: url("../assets/img/pochette.jpg") no-repeat;
-        background-position: 50% 50%;
-        background-size: 80%;
+        background-position: 60% 50%;
+        background-size: 70%;
         align-items: center;
-        margin-left: -160px;
+        margin-left: -170px;
         margin-right: 30px; }
+      #dash .graph .mid-right .bluechelou {
+        color: #2E3554; }
       #dash .graph .mid-right .play {
         width: 100px;
         height: 100px;
@@ -945,7 +952,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         display: flex;
         margin-top: 20px; }
       #dash .graph .mid-right .blue {
-        color: blue; }
+        color: #00D8EF; }
       #dash .graph .mid-right .musiclec {
         margin-left: -250px;
         margin-top: 380px;
@@ -954,13 +961,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     background-color: transparent;
     width: 100%;
     height: 500px;
-    border: solid 2px; }
+    border: solid 2px #2E3554; }
     #dash .big-foot .sidebar {
       width: 6%;
       height: 450px;
       background-color: rgba(0, 0, 255, 0.05);
       background: rgba(0, 0, 255, 0.05);
-      margin-left: 15px; }
+      /* margin-left: 15px; */ }
     #dash .big-foot .imgsidebar {
       width: 30px;
       height: 30px;
@@ -968,6 +975,19 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: 30px; }
     #dash .big-foot .txtphone {
       color: white; }
+    #dash .big-foot .delete {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #FFB414;
+      border: solid 2px #FFB414;
+      position: absolute;
+      text-align: center;
+      padding-left: px;
+      padding-top: 5px;
+      background: #775C25;
+      margin-left: 105px;
+      margin-top: -30px; }
     #dash .big-foot .one {
       display: flex; }
     #dash .big-foot .two {
@@ -1012,9 +1032,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     #dash .big-foot .numpad {
       margin-left: 20px;
       display: flex;
-      margin-top: 40px;
+      margin-top: 10px;
       margin-bottom: 30px;
       font-size: 2em; }
+    #dash .big-foot .vertc {
+      color: #95C25D; }
+    #dash .big-foot .rougec {
+      color: #F1304F; }
     #dash .big-foot .historique {
       margin-left: 60px;
       margin-top: 90px; }
@@ -1029,7 +1053,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      border: solid 2px red;
+      border: solid 2px #2E3554;
       padding: 6px;
       margin-left: 25px;
       margin-top: 25px;
@@ -1038,13 +1062,14 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       height: 2px;
       width: 170px;
       margin-left: -40px;
-      margin-top: -30px; }
+      margin-top: -30px;
+      border: solid 1px #2E3554; }
     #dash .big-foot .callerphone {
-      margin-top: 100px;
+      margin-top: 40px;
       width: 100px;
       height: 100px;
       border-radius: 50px;
-      border: solid 2px red; }
+      border: solid 2px #2E3554; }
     #dash .big-foot .contact {
       display: flex; }
     #dash .big-foot .cont {
@@ -1055,16 +1080,15 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: 20px;
       background-color: rgba(0, 0, 255, 0.05);
       background: rgba(0, 0, 255, 0.05);
-      border-left: solid 3px;
-      border-right: solid 3px;
-      border-color: #4F5A7A;
+      border-left: solid 3px #2E3554;
+      border-right: solid 3px #2E3554;
       width: 48%;
       height: 450px;
       padding-top: -10px; }
     #dash .big-foot .bar {
       width: 3px;
       height: 40px;
-      background: red;
+      background: #2E3554;
       margin-left: 120px;
       margin-top: 20px; }
     #dash .big-foot .iconegauche {
