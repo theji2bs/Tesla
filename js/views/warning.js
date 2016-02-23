@@ -28,11 +28,11 @@ $( ".nav-warning"  ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideWarning()
 	}
   else{
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
 	  	
   }

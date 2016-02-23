@@ -7,7 +7,7 @@ function hideContacts() {
         $( "#contacts" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-contacts" ).on( "click", function() {
+$( "nav > .nav-contacts" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -15,12 +15,12 @@ $( "nav > div > .nav-contacts" ).on( "click", function() {
 	  	hideContacts()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("inactive").addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showContacts()
 	  	route = 'contacts';
   }

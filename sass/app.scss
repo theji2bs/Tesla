@@ -47,25 +47,24 @@ body{
         background: -moz-linear-gradient(#202946, #151D35, #020D2D); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#202946, #151D35, #020D2D); /* Standard syntax */
 		flex: 1;
-		.menu{
-			
-			.inactive{
-				opacity: 0.5;
-				transition: opacity 0.5s ease;
-			}
-
-			.active{
-				opacity: 1;
-				transition: opacity 0.5s ease;
-				
-			}
-			.imgtaille{
-				fill-color: red;
-				height: 30px;
-				width: 30px;
-				margin-left: 30%;
-			}
+	
+		.inactive{
+			opacity: 0.5;
+			transition: opacity 0.5s ease;
 		}
+
+		.active{
+			opacity: 1;
+			transition: opacity 0.5s ease;
+			
+		}
+		.imgtaille{
+			fill-color: red;
+			height: 30px;
+			width: 30px;
+			margin-left: 30%;
+		}
+
 		
 
 		.marge{

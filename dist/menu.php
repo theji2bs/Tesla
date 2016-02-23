@@ -1,6 +1,6 @@
 
 
-<div class="menu">
+
 	<div class="nav-tirix inactive">
 		<img src="assets/img/menu/Tirix.svg" class="imgtaille" >
 	</div>
@@ -23,4 +23,3 @@
 	<div class="nav-warning inactive">
 		<img src="assets/img/tool.svg" class="imgtaille marge">
 	</div>
-</div>

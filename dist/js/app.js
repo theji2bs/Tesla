@@ -33,14 +33,14 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    $( "#settings" ).fadeIn('slow'); // Dashboard
+    //$( "#settings" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
@@ -109,7 +109,7 @@ function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-cellphone" ).on( "click", function() {
+$( "nav > .nav-cellphone" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -118,7 +118,7 @@ $( "nav > div > .nav-cellphone" ).on( "click", function() {
 	  	hideCellphone()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");
@@ -140,7 +140,7 @@ function hideContacts() {
         $( "#contacts" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-contacts" ).on( "click", function() {
+$( "nav > .nav-contacts" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -148,12 +148,12 @@ $( "nav > div > .nav-contacts" ).on( "click", function() {
 	  	hideContacts()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("inactive").addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showContacts()
 	  	route = 'contacts';
   }
@@ -332,20 +332,20 @@ function hideGps() {
         $( "#gps" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-gps" ).on( "click", function() {
+$( "nav > .nav-gps" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideGps()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showGps()
 	  	route = 'gps';
   }
@@ -361,7 +361,7 @@ function hideMail() {
         $( "#mail" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-mail" ).on( "click", function() {
+$( "nav > .nav-mail" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ 
 		
@@ -370,7 +370,7 @@ $( "nav > div > .nav-mail" ).on( "click", function() {
 	}
 
   else{
-	  	if( $( 'nav > div > div[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active").addClass("inactive");
@@ -391,7 +391,7 @@ function hideMusic() {
         $( "#music" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-music" ).on( "click", function() {
+$( "nav  > .nav-music" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -399,7 +399,7 @@ $( "nav > div > .nav-music" ).on( "click", function() {
 	  	hideMusic()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-music"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-music"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");
@@ -763,7 +763,7 @@ function showInteraction(i) {
 
 }
 
-$( "nav > div > .nav-tirix" ).on( "click", function() {
+$( "nav > .nav-tirix" ).on( "click", function() {
 
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -773,7 +773,7 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 	}
   else{
-	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active").addClass("inactive");
@@ -847,11 +847,11 @@ $( ".nav-warning"  ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideWarning()
 	}
   else{
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
 	  	
   }

@@ -7,7 +7,7 @@ function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-cellphone" ).on( "click", function() {
+$( "nav > .nav-cellphone" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
@@ -16,7 +16,7 @@ $( "nav > div > .nav-cellphone" ).on( "click", function() {
 	  	hideCellphone()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");

@@ -7,20 +7,20 @@ function hideGps() {
         $( "#gps" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-gps" ).on( "click", function() {
+$( "nav > .nav-gps" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideGps()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showGps()
 	  	route = 'gps';
   }

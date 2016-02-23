@@ -40,7 +40,7 @@ function showInteraction(i) {
 
 }
 
-$( "nav > div > .nav-tirix" ).on( "click", function() {
+$( "nav > .nav-tirix" ).on( "click", function() {
 
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -50,7 +50,7 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
 	}
   else{
-	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
 				$( '.nav-' + route ).removeClass("active").addClass("inactive");

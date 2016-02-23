@@ -85,13 +85,13 @@ body {
     background: linear-gradient(#202946, #151D35, #020D2D);
     /* Standard syntax */
     flex: 1; }
-    .content nav .menu .inactive {
+    .content nav .inactive {
       opacity: 0.5;
       transition: opacity 0.5s ease; }
-    .content nav .menu .active {
+    .content nav .active {
       opacity: 1;
       transition: opacity 0.5s ease; }
-    .content nav .menu .imgtaille {
+    .content nav .imgtaille {
       fill-color: red;
       height: 30px;
       width: 30px;
