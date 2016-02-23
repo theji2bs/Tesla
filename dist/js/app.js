@@ -38,17 +38,10 @@ $(document).ready(function(){
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-<<<<<<< HEAD
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
     //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
-=======
-    $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
-    $( "#dash" ).fadeIn('slow'); // Dashboard
->>>>>>> 6d77c0122f0e04f211a11f88b5f63b0b3e324c1f
     
 
 });
