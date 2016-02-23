@@ -1,28 +1,29 @@
 // Base router
 
-function showGps() {
-        $( "#gps" ).fadeIn('slow');
+function showMusic() {
+        $( "#music" ).fadeIn('slow');
 }
-function hideGps() {
-        $( "#gps" ).fadeOut('slow');
+function hideMusic() {
+        $( "#music" ).fadeOut('slow');
 }
 
-$( "nav > .nav-gps" ).on( "click", function() {
+$( "nav  > .nav-music" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active").addClass("inactive");
-	  	hideGps()
+	  	hideMusic()
 	}
   else{
-  		if( $( 'nav > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-music"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
 			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
 	  	$( this ).removeClass("inactive").addClass("active");
-	  	showGps()
-	  	route = 'gps';
+	  	showMusic()
+	  	route = 'music';
+
   }
 
 });

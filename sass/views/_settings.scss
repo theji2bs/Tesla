@@ -14,6 +14,110 @@
     		height: 80px;
     	}
     }
+    .blindage{
+        position:absolute;
+        top:520px;
+        right:70px;
+        width:130px;
+        height:180px;
+        float:right;
+
+        .iconeB_on{
+            position:absolute;
+            width: 130px;
+            height:130px;
+            margin-left: 10px;
+            background: url(../assets/img/Blindage.svg);
+            background-size:100%;
+            display: none
+
+        }
+        .iconeB_off{
+            position:absolute;
+            width: 130px;
+            height:130px;
+            margin-left: 10px;
+            background: url(../assets/img/BlindageOff.svg);
+            background-size:100%;
+        }
+
+        .name{
+            position:absolute;
+            bottom:25px;
+            right:20px;
+            margin-top: 10px;
+        }
+        .off{
+            position:absolute;
+            bottom:0;
+            right:40px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: #00C5DD;
+            transition: all ease 0.5s;
+        }
+        .on{
+            position:absolute;
+            bottom:0;
+            right:45px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: #F1304E;
+            transition: all ease 0.5s;
+        }
+    }
+    .urgency{
+        position:absolute;
+        top:320px;
+        right:70px;
+        width:130px;
+        height:180px;
+        float:right;
+
+
+        .iconeU_on{
+            position:absolute;
+            width: 130px;
+            height:130px;
+            margin-left: 10px;
+            background: url(../assets/img/UrgencyOn.svg);
+            background-size:100%;
+            display: none;
+
+        }
+        .iconeU_off{
+            position:absolute;
+            width: 130px;
+            height:130px;
+            margin-left: 10px;
+            background: url(../assets/img/UrgencyOff.svg);
+            background-size:100%;
+        }
+
+        .name{
+            position:absolute;
+            bottom:25px;
+            right: 0;
+            margin-top: 10px;
+        }
+        .off{
+            position:absolute;
+            bottom:0;
+            right:40px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: #00C5DD;
+        }
+        .on{
+            position:absolute;
+            bottom:0;
+            right:45px;
+            text-align: center;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: #F1304E;
+        }
+    }
     .lights_control{
     	margin-top: 35px;
 		//background-color: #000000;
@@ -27,9 +131,14 @@
 
 			h1{
 				display: inline-block;
+                font-size: 16pt;
+                margin-right: 10px;
 			}
 			h2{
 				display: inline-block;
+                color: #465070;
+                margin-top: 3px;
+
 			}
     	}
     	.state{
@@ -41,7 +150,7 @@
 
     		ul{
     			width: 100%;
-    			font-size: 16pt;
+    			font-size: 13pt;
     			text-align: center;
     			line-height:70px;
                 transition: all 0.5s ease;
@@ -75,7 +184,7 @@
     		justify-content: space-between;
     		div{
     			width: 100%;
-    			font-size: 16pt;
+    			font-size: 13pt;
     			text-align: center;
     			line-height:74px;
     			border: 2px solid #4F5A7A;
@@ -130,9 +239,6 @@
     		display: flex;
     		justify-content: space-around;
 
-    		.skeleton{
-
-    		}
     	}
     }
 
@@ -280,6 +386,61 @@
                 transition: all .5s ease;
             }
     	}
+        .charge{
+            position: absolute;
+            top: 1280px;
+            left: 360px;
+            width: 225px;
+            height: 55px;
+            
+            .title{
+                display: block;
+                margin-top: 20px;
+                margin-left: -14px;
+                margin-bottom: 15px;
+                display: block;
+                line-height: 14px;
+
+                h1{
+                    margin-bottom: 10px;
+                }
+                h2{
+                    margin-left: 5px;
+                }
+            }
+            .icon{
+                margin-top: -48px;
+                float: left;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                //margin-right: 15px;
+                display: block;
+                background-color: rgba(0, 216, 239, 0.3);
+                border: 2px solid #00D8EF;
+                text-align: center;
+                line-height: 55px;
+                transition: all .5s ease;
+
+                img{
+                    width: 25px;
+                    height: auto;
+                    vertical-align: sub;
+                }
+            }
+            .bar{
+                position:absolute;
+                margin-top: -85px;
+                margin-left: 10px;
+                float: left;
+                display: inline-block;
+                width: 92px;
+                height: 2px;
+                background-color: #00D8EF;
+                transform: rotate(-60deg);
+                transition: all .5s ease;
+            }
+        }
     	.back{
     		position: absolute;
 			top: 1105px;
@@ -330,6 +491,39 @@
 
         }
 
+    }
+
+    .roof_open{
+        position:absolute;
+        width:202px;
+        height:168px;
+        background:url(../assets/img/Open.svg) no-repeat;
+        background-position:bottom;
+        background-size:100% 100%;
+        left:50%;
+        top:785px;
+        margin-left: -100px;
+        transition: all ease 0.5s;
+    }
+    .roof_close{
+        position:absolute;
+        width:202px;
+        height:168px;
+        background:url(../assets/img/Close.svg) no-repeat;
+        background-position:bottom;
+        background-size:100% 100%;
+        left:50%;
+        top:785px;
+        margin-left: -100px;
+        display: none;
+        transition: all ease 0.5s;
+    }
+
+    .driving img{
+        margin-top: 10px;
+    }
+    .charging img{
+        margin-top: 10px;
     }
 
     .menu{

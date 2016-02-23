@@ -1,26 +1,25 @@
 
 
-<div>
-	<div class="nav-tirix">
-		<img src="assets/img/tool.svg" class="imgmenu imgtaille" >
+
+	<div class="nav-tirix inactive">
+		<img src="assets/img/menu/Tirix.svg" class="imgtaille" >
 	</div>
-	<div class="nav-gps">
-		<img src="assets/img/front.svg" class="imgtaille marge">
+	<div class="nav-music inactive">
+		<img src="assets/img/menu/Music.svg" class="imgtaille marge">
 	</div>
-	<div class="nav-contacts">
-		<img src="assets/img/battery.svg" class="imgtaille marge">
+	<div class="nav-gps inactive">
+		<img src="assets/img/menu/Gps.svg" class="imgtaille marge">
 	</div>
-	<div class="nav-cellphone">
-		<img src="assets/img/music.svg" class="imgtaille marge">
+	<div class="nav-cellphone inactive">
+		<img src="assets/img/menu/Phone.svg" class="imgtaille marge">
 	</div>
-	<div class="nav-mail">
-		<img src="assets/img/social.svg" class="imgtaille marge nav-mail">
+	<div class="nav-contacts inactive">
+		<img src="assets/img/menu/Contact.svg" class="imgtaille marge">
+	</div>
+	<div class="nav-mail inactive">
+		<img src="assets/img/menu/Mails.svg" class="imgtaille marge">
 	</div>
 	<hr class="hrr">
-	<div>
+	<div class="nav-warning inactive">
 		<img src="assets/img/tool.svg" class="imgtaille marge">
 	</div>
-	<div class="nav-warning">
-		<img src="assets/img/parameter.svg" class="imgtaille marge nav-warning">
-	</div>
-</div>

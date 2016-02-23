@@ -1,6 +1,7 @@
 
 <section id="contacts">
 
+
 	<div class="body" alt="body">
 
 		<div class="pad" alt="pad">
@@ -280,8 +281,5 @@
 
 
 	</div>	
-	
-
-
 
 </section>

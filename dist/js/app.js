@@ -1,6 +1,3 @@
-
-
-
 // On attend que le DOM soit prêt
 $(document).ready(function(){
 
@@ -36,11 +33,12 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
+    //$( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
+    //$( "header" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
@@ -109,20 +107,21 @@ function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-cellphone" ).on( "click", function() {
+$( "nav > .nav-cellphone" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
+	
 	  	hideCellphone()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-cellphone"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showCellphone()
 	  	route = 'cellphone';
 
@@ -139,20 +138,20 @@ function hideContacts() {
         $( "#contacts" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-contacts" ).on( "click", function() {
+$( "nav > .nav-contacts" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideContacts()
 	}
   else{
-  		if( $( 'nav > div > img[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-contacts"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showContacts()
 	  	route = 'contacts';
   }
@@ -198,14 +197,6 @@ var currentNumb = [];
 
 
 
-    $(".gridster ul").gridster({
-        widget_margins: [10, 10],
-        widget_selector: "div",
-        min_cols: 2,
-        max_cols: 2,
-        max_size_x: 2,
-        widget_base_dimensions: [140, 140]
-    });
 
         Highcharts.setOptions({
             global: {
@@ -378,20 +369,20 @@ function hideGps() {
         $( "#gps" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-gps" ).on( "click", function() {
+$( "nav > .nav-gps" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideGps()
 	}
   else{
-  		if( $( 'nav > div > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+  		if( $( 'nav > div[class!="nav-gps"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 			$( '#' + route ).fadeOut('slow');
-			$( '.nav-' + route ).removeClass("active");
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showGps()
 	  	route = 'gps';
   }
@@ -407,23 +398,53 @@ function hideMail() {
         $( "#mail" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-mail" ).on( "click", function() {
+$( "nav > .nav-mail" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ 
 		
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideMail()
 	}
 
   else{
-	  	if( $( 'nav > div > div[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div[class!="nav-mail"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
-				$( '.nav-' + route ).removeClass("active");
+				$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showMail()
 	  	route = 'mail';
+  }
+
+});
+
+// Base router
+
+function showMusic() {
+        $( "#music" ).fadeIn('slow');
+}
+function hideMusic() {
+        $( "#music" ).fadeOut('slow');
+}
+
+$( "nav  > .nav-music" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active").addClass("inactive");
+	  	hideMusic()
+	}
+  else{
+  		if( $( 'nav > div[class!="nav-music"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+			$( '#' + route ).fadeOut('slow');
+			$( '.nav-' + route ).removeClass("active").addClass("inactive");
+		}
+	  	$( this ).removeClass("inactive").addClass("active");
+	  	showMusic()
+	  	route = 'music';
+
   }
 
 });
@@ -447,6 +468,138 @@ function hideSettings() {
         
     	
 }
+
+function lockDoor(id){
+	if( ($( ".lock > ."+ id ).hasClass('lock'))){ // si l'élément possède la classe .vert
+		$( ".lock > ."+ id ).removeClass("lock");
+		$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > ."+ id +" > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( ".lock > ."+ id ).addClass("lock");
+	  	$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > ."+ id +" > .title > h2" ).html( "Locked" );
+  }
+}
+
+function forceLockDoor(id){
+
+	  	$( ".lock > ."+ id ).addClass("lock");
+	  	$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > ."+ id +" > .title > h2" ).html( "Locked" );
+
+}
+
+function forceUnlockDoor(id){
+
+		$( ".lock > ."+ id ).removeClass("lock");
+		$( ".lock > ."+ id +" > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > ."+ id +" > .title > h2" ).html( "Unlocked" );
+
+}
+
+function roofClose(){
+	$(".roof_open").fadeOut(500, function(){
+		$('.roof_close').fadeIn(500);
+	});
+}
+
+function roofOpen(){
+	$(".roof_close").fadeOut(500, function(){
+		$('.roof_open').fadeIn(500);
+	});
+}
+
+$( ".roof_open" ).on( "click", function() {
+	roofClose();
+});
+$( ".roof_close" ).on( "click", function() {
+	roofOpen();
+});
+
+
+
+function lockGeneral(){
+	  forceLockDoor("front");
+	  forceLockDoor("right");
+	  forceLockDoor("charge");
+	  forceLockDoor("left");
+	  forceLockDoor("back");
+	  roofClose()
+}
+
+function unlockGeneral(){
+	  forceUnlockDoor("front");
+	  forceUnlockDoor("right");
+	  forceUnlockDoor("charge");
+	  forceUnlockDoor("left");
+	  forceUnlockDoor("back");
+	  roofOpen()
+}
+
+$( ".iconeU_off" ).on( "click", function() {
+	
+		$(this).fadeOut(500);
+		$('.iconeU_on').fadeIn(500);
+		$('.urgencyetat').removeClass("off").addClass("on");
+		$('.urgencyetat').text( "ON" );
+
+		lockGeneral()
+
+});
+
+$( ".iconeU_on" ).on( "click", function() {
+		$(this).fadeOut(500);
+		$('.iconeU_off').fadeIn(500);
+		$('.urgencyetat').removeClass("on").addClass("off");
+		$('.urgencyetat').text( "OFF" );
+
+		unlockGeneral()
+});
+
+// Lock doors
+
+
+ $( ".lock > .front" ).on( "click", function() {
+	lockDoor("front");
+});
+
+$( ".lock > .right" ).on( "click", function() {
+  lockDoor("right");
+});
+
+$( ".lock > .charge" ).on( "click", function() {
+  lockDoor("charge");
+});
+
+ $( ".lock > .left" ).on( "click", function() {
+  lockDoor("left");
+});
+
+ $( ".lock > .back" ).on( "click", function() {
+  lockDoor("back");
+});
+
+
+
+
+$( ".iconeB_off" ).on( "click", function() {
+	
+		$(this).fadeOut(500);
+		$('.iconeB_on').fadeIn(500);
+		$('.blindageetat').removeClass("off").addClass("on");
+		$( ".car > .car_skeleton > img" ).attr( "src", "assets/img/Car_red.svg" );
+		$('.blindageetat').text( "ON" );
+});
+
+$( ".iconeB_on" ).on( "click", function() {
+		$(this).fadeOut(500);
+		$('.iconeB_off').fadeIn(500);
+		$('.blindageetat').removeClass("on").addClass("off");
+		$( ".car > .car_skeleton > img" ).attr( "src", "assets/img/Car.svg" );
+		$('.blindageetat').text( "OFF" );
+});
+
 
 $( ".voiture" ).on( "click", function() {
 
@@ -539,6 +692,8 @@ switchSettingsLights = 'off';
 
 
 
+
+
 // Options
  $( ".fog" ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -603,6 +758,19 @@ $( ".lock > .right" ).on( "click", function() {
   }
 });
 
+$( ".lock > .charge" ).on( "click", function() {
+  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
+		$( this ).removeClass("lock");
+		$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > .charge > .title > h2" ).html( "Unlocked" );
+	}
+  else{
+	  	$( this ).addClass("lock");
+	  	$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .charge > .title > h2" ).html( "Locked" );
+  }
+});
+
  $( ".lock > .left" ).on( "click", function() {
   if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
 		$( this ).removeClass("lock");
@@ -616,103 +784,129 @@ $( ".lock > .right" ).on( "click", function() {
   }
 });
 
- $( ".lock > .back" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .back > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .back > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .back > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .back > .title > h2" ).html( "Locked" );
-  }
-});
-
-/*
- $( ".drl" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-
- $( ".dome" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-
-  $( ".ambient" ).on( "click", function() {
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("active");
-	}
-  else{
-	  	$( this ).addClass("active");
-  }
-});
-*/
-
 
 // Menu
- /*$( ".on" ).on( "click", function() {
- 		if( $( '.lights_control > .state > ul > li[class!="on"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+$( ".aside > ul > li" ).on( "click", function() {
 
-			$( "." + switchSettingsLights ).removeClass("active");
-			$( this ).addClass("active");
-			$( ".light_preview" ).fadeOut( "fast", function() {
-			    $( ".light_preview" ).attr( "src", "assets/img/Light_On.svg" );
-			  });
-			$( ".light_preview" ).fadeIn('fast');
-		  	switchSettingsLights = 'on';
-		  	console.log(switchSettingsLights);
-		}
-});*/
+ 	$('.aside > ul > .active').removeClass('active').addClass('noactive');
+ 	$(this).removeClass('noactive').addClass('active');
+
+ 	if($(this).hasClass('general')){
+		$('.content > ul > li').removeClass('active').addClass('noactive');
+		$('.txt_general').removeClass('noactive').addClass('active');
+	}
+	if($(this).hasClass('driving')){
+		$('.content > ul > li').removeClass('active').addClass('noactive');
+		$('.txt_driving').removeClass('noactive').addClass('active');
+	}
+	if($(this).hasClass('display')){
+		$('.content > ul > li').removeClass('active').addClass('noactive');
+		$('.txt_displays').removeClass('noactive').addClass('active');
+	}
+	if($(this).hasClass('charging')){
+		$('.content > ul > li').removeClass('active').addClass('noactive');
+		$('.txt_charging').removeClass('noactive').addClass('active');
+	}
+});
 
 
 // Base router
 
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
+        $("#menunav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
 }
 
-$( "nav > div > .nav-tirix" ).on( "click", function() {
+function useTirix() {
+	$( ".containerlogo" ).fadeOut( 300, function() { 
+	  if( $( ".containerlogo > div" ).hasClass('active') ){ // si l'élément possède la classe .vert
+				    $( ".containerlogo > div" ).removeClass("active");
+					$( ".containerlogo > div" ).addClass("inactive");
+					$('.ball, .ball1').removeClass('stop');	    
+					$('.trigger').click(function() {
+							$('.ball, .ball1').toggleClass('stop');
+					});
+		}
+	  else{
+	  			
+				    $( ".containerlogo > div" ).removeClass("inactive");
+				    $( ".containerlogo > div" ).addClass("active");
+				
+				  
+	  }
+  });
+  $( ".containerlogo" ).fadeIn( 100 );
+}
+
+function showInteraction(i) {
+
+
+	$( ".contenu > #" + i ).slideDown( 200, function() {
+
+		$( ".contenu > #" + i ).fadeIn( 200 );
+		console.log (i);
+      // Animation complete.
+  	});
+
+}
+
+$( "nav > .nav-tirix" ).on( "click", function() {
 
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideTirix()
 
 	}
   else{
-	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
-				$( '.nav-' + route ).removeClass("active");
+				$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showTirix()
 	  	route = 'tirix';
   }
 
 });
 
-		
-$(document).ready(function() {
-	$('.ball, .ball1').removeClass('stop');	    
-		$('.trigger').click(function() {
-				$('.ball, .ball1').toggleClass('stop');
-		});
+
+$( ".containerlogo" ).on( "click", function() {
+	useTirix()
 });
+
+var interactions = 0;
+
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+
+		// T
+		if ( e.keyCode == 84 ){
+			
+			useTirix()			
+		
+		}
+
+		if ( e.keyCode == 73 ){
+
+			interactions = interactions + 1;
+			showInteraction(interactions);
+
+		}
+
+
+});
+
+		
+
+	
+
 // Base router
 
 function showWarning() {
@@ -743,11 +937,11 @@ $( ".nav-warning"  ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideWarning()
 	}
   else{
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
 	  	
   }

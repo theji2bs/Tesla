@@ -47,12 +47,26 @@ body{
         background: -moz-linear-gradient(#202946, #151D35, #020D2D); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#202946, #151D35, #020D2D); /* Standard syntax */
 		flex: 1;
+	
+		.inactive{
+			opacity: 0.5;
+			transition: opacity 0.5s ease;
+		}
+
+		.active{
+			opacity: 1;
+			transition: opacity 0.5s ease;
+			
+		}
 		.imgtaille{
 			fill-color: red;
 			height: 30px;
 			width: 30px;
 			margin-left: 30%;
 		}
+
+		
+
 		.marge{
 			margin-top: 30px;
 		}
@@ -67,7 +81,6 @@ body{
 		padding: 10px;
 		display: none;
 		flex: 1;
-
 		float: right;
 		//display: inline-block;
 		height: 1500px;
@@ -175,11 +188,168 @@ footer{
 	background-color: rgba(2, 13, 45, 1);
     right: 40px;
     bottom: 0px;
+
+
+
+
+.iconefooter{
+	display: flex;
+   
+    margin-left: 350px;
+    margin-top: -40px;
+
+
+}
+.voiturefooter{
+	width: 60px;
+	height: 60px;
+	margin-right: 40px;
+}
+
+
+.cerclefooter{
+    margin-top: 10px;
+    margin-left: -60px;
+   
+	
+
+}
+
+.volvol{
+	margin-left: 200px;
+}
+
+.volvol1{
+	margin-left: 800px;
+}
+
+.barvol{
+	height: 2px;
+	width: 100px;
 }
 
 
 
 
+
+
+}
+
+
+
+
+
+
+
+input[type=range].monbouton {
+  -webkit-appearance: none;
+  width:200px;
+
+}
+input[type=range].monbouton:focus {
+  outline: none;
+}
+input[type=range].monbouton::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #ffffff;
+  border-radius: 25px;
+  border: 0.2px solid #FFF;
+}
+input[type=range].monbouton::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px #ff1a1a;
+  border: 0.5px solid #ff0000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -18.2px;
+}
+input[type=range].monbouton:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type=range].monbouton::-moz-range-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #ffffff;
+  border-radius: 25px;
+  border: 0.2px solid #000000;
+}
+input[type=range].monbouton::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px #ff1a1a;
+  border: 0.5px solid #ff0000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range].monbouton::-ms-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].monbouton::-ms-fill-lower {
+  background: #ffffff;
+  border: 0.2px solid #000000;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range].monbouton::-ms-fill-upper {
+  background: #ffffff;
+  border: 0.2px solid #000000;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range].monbouton::-ms-thumb {
+  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px #ff1a1a;
+  border: 0.5px solid #ff0000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 0px;
+}
+input[type=range].monbouton:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+input[type=range].monbouton:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+
+
+
+
+
+.syncro{
+	margin-top: 40px;
+	position: absolute;
+	margin-left: 80px;
+}
+
+
+
+.mapos{
+    margin-left: -740px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.mapos1{
+    margin-left: 1px;
+    margin-top: 40px;
+    position: absolute;
+}
 
 
 .footerbas{
@@ -191,23 +361,72 @@ footer{
 
 }
 
-.plus{
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	border:solid 2px white;
-	padding-top: 10px;
-}
 .moins{
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	border:solid 2px white;
-	padding-top: 10px;
-	margin-left: 300px;
+	    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: -82px;
 }
+.plus{
+      border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 156px;
+
+}
+
+
+
+
+
+
+
+.moins1{
+	    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 58px;
+}
+.plus1{
+   border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 296px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contour{
 	height:70px;
 	width: 70px;
@@ -396,12 +615,34 @@ background-color:#272F4E;
 
 .front{
 	
-	color: white;	
-	font-family: 'PT Sans', sans-serif;
-	margin-top: -12px; 
-	float: left;
-	padding-left: 45px;
+	color: white;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: -12px;
+    float: left;
+    padding-left: 60px;
 }
+
+
+.flow{
+	
+	color: white;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: -12px;
+    float: left;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.rear{
+	
+	color: white;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: -12px;
+    float: left;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
 
 #rear{
 	padding-left: 30px;
@@ -511,7 +752,7 @@ background-color:#272F4E;
   width:100px;
   height:50px;
   background-color: orange;
- margin-left: 3px;
+  margin-left: 3px;
   float: left;
   text-align: center;
   margin-top: -80px;
@@ -536,6 +777,7 @@ background-color:#272F4E;
 @import 'views/_gps.scss';
 @import 'views/_contacts.scss';
 @import 'views/_cellphone.scss';
+@import 'views/_music.scss';
 @import 'views/_mail.scss';
 @import 'views/_settings.scss';
 

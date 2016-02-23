@@ -1,5 +1,6 @@
 <section id="tirix">
 
+<h1>TI-RIX</h1>
 
 
 <div class="containerlogo">
@@ -10,26 +11,27 @@
 	    <div class="ball2"></div>
     </div>
 </div>
+<h2 class="touchandtalk">TOUCH TI-RIX AND TALK</h2>
 
 <div class="contenu">
 
-	<div class="instruction">
-	<img src="assets/img/logotrix.png" class="triximg1">
-	<p class="texttrex">Bonjour Mr Dupont, vous êtes très appaitissant aujourd'hui </p>
+	<div id="1" class="instruction">
+		<img src="assets/img/logotrix.png" class="triximg1">
+		<p class="texttrex">Bonjour Mr Dupont, vous êtes très appaitissant aujourd'hui </p>
 	</div>	
 
 
-	<div class="instruction">
-	<img src="assets/img/hexagone1.svg" class="triximg1">
-	<p class="texttrex">Bonjour Mr Dupont, vous êtes très appaitissant aujourd'hui </p>
+	<div id="2" class="instruction user">
+		<img src="assets/img/hexagone2.svg" class="triximg1">
+		<p class="texttrex">Quel est le programme de la matinée ?</p>
 	</div>	
 
-	<div class="instruction">
+	<div id="3" class="instruction">
 	<img src="assets/img/logotrix.png" class="triximg1">
 	<p class="texttrex">Alors vous avez une réunion avec Nathalie. Vous avez également un rendez-vous <br> avec Sophie à 11h45 devant la brasserie le Congrès. Et n'oubliez pas de me donner <br>un steak.</p>	
 	</div>
 
-	<div class="instruction">
+	<div id="4" class="instruction">
 		<img src="assets/img/logotrix.png" class="triximg1">
 		<p class="texttrex">Désolé, je n'ai pas compris ce que vous me demandez</p>
 	</div>
