@@ -536,7 +536,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
 
 .barhr {
   width: 85%;
-  border: solid 2px #2E3554; }
+  border: solid 2px #2E3554;
+  margin-top: 2px;
+  padding: -8px; }
 
 .voiture1 {
   height: 4%;
@@ -1094,7 +1096,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       display: flex; }
     #dash .big-foot .pad {
       margin-left: 2%;
-      margin-top: 1%; }
+      margin-top: -7px; }
     #dash .big-foot .number {
       margin: 10px;
       width: 60px;
@@ -1135,12 +1137,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       color: #F1304F; }
     #dash .big-foot .historique {
       margin-left: 60px;
-      margin-top: 90px; }
+      margin-top: 50px; }
     #dash .big-foot .petit {
-      font-size: 0,2em; }
+      font-size: 0.8em;
+      line-height: 27px; }
     #dash .big-foot .losange {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       margin-top: 0px;
       margin-left: 30px; }
     #dash .big-foot .phonebutton {
@@ -1149,8 +1152,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       border-radius: 50%;
       border: solid 2px #2E3554;
       padding: 6px;
-      margin-left: 25px;
-      margin-top: 25px;
+      margin-left: 19px;
+      margin-top: 20px;
       background-color: #202946; }
     #dash .big-foot .hrphone {
       height: 2px;
@@ -1159,26 +1162,27 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: -30px;
       border: solid 1px #2E3554; }
     #dash .big-foot .callerphone {
-      margin-top: 40px;
-      width: 100px;
-      height: 100px;
+      margin-top: 10px;
+      width: 90px;
+      height: 90px;
       border-radius: 50px;
       border: solid 2px #2E3554; }
     #dash .big-foot .contact {
-      display: flex; }
+      display: flex;
+      height: 50px; }
     #dash .big-foot .cont {
       margin-top: 20px;
       margin-left: 20px; }
     #dash .big-foot .contactcontenu {
       margin-left: 50px;
-      margin-top: 20px;
+      margin-top: 10px;
       background-color: rgba(0, 0, 255, 0.05);
       background: rgba(0, 0, 255, 0.05);
       border-left: solid 3px #2E3554;
       border-right: solid 3px #2E3554;
       width: 48%;
-      height: 450px;
-      padding-top: -10px; }
+      height: 420px;
+      padding-top: -30px; }
     #dash .big-foot .bar {
       width: 3px;
       height: 40px;

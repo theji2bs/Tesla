@@ -272,7 +272,7 @@ color:white;
 }
 .pad{
 	margin-left: 2%;
-	margin-top: 1%;
+    margin-top: -7px;
 }
 .number{
 	margin:10px;
@@ -331,7 +331,7 @@ margin-top: 20px;
 
 .historique{
 	margin-left: 60px;
-	margin-top: 90px;
+    margin-top: 50px;
 }
 .strong{
 	
@@ -343,26 +343,27 @@ margin-top: 20px;
 }
 
 .petit{
-	font-size: 0,2em;
+  font-size: 0.8em;
+    line-height: 27px
 }
 
 
 .losange{
-	width: 70px;
-	height:70px;
-	margin-top: 0px;
-	margin-left: 30px;
+	    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: 30px;
 
 }
 
 .phonebutton{
-	width: 50px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     border: solid 2px #2E3554;
     padding: 6px;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: 19px;
+    margin-top: 20px;
     background-color: #202946;
 
 	
@@ -376,15 +377,16 @@ margin-top: 20px;
 }
 
 .callerphone{
-	margin-top: 40px;
-    width: 100px;
-    height: 100px;
+	    margin-top: 10px;
+    width: 90px;
+    height: 90px;
     border-radius: 50px;
     border: solid 2px #2E3554;
 }
 
 .contact{
-	display: flex;
+	      display: flex;
+    height: 50px;
 	
 
 }
@@ -393,16 +395,15 @@ margin-top: 20px;
 	margin-left: 20px;
 }
 .contactcontenu{
-
-       margin-left: 50px;
-    margin-top: 20px;
+margin-left: 50px;
+    margin-top: 10px;
     background-color: rgba(0, 0, 255, 0.05);
     background: rgba(0, 0, 255, 0.05);
     border-left: solid 3px #2E3554;
     border-right: solid 3px #2E3554;
     width: 48%;
-    height: 450px;
-    padding-top: -10px;
+    height: 420px;
+    padding-top: -30px;
 
 }
 
