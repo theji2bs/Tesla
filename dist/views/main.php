@@ -15,7 +15,7 @@
 		<img src="assets/img/number.svg" class="imgsidebar2">
 
 </div>
-<p class="blue1">ENERGY requirement</p>
+<p class="blue1">ENERGY <p class="blue2">Last 30 miles</p></p>
 
 <div id="container" style="width:440px; height:350px; margin-left:100px;">
 
@@ -65,7 +65,7 @@
 <div class="musiclec">
 	
 	<p>Jurassic Wordl</p>
-	<p> Jurassic</p> 
+	<p class="bluechelou"> Jurassic</p> 
 	<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
 </div>
 	</div>
@@ -84,9 +84,9 @@
 <div class="ok">	
 <div class="sidebar">
 
-	<img src="assets/img/favoris.svg" class="imgsidebar">
-		<img src="assets/img/move.svg" class="imgsidebar">
-		<img src="assets/img/number.svg" class="imgsidebar">
+	<img src="assets/img/favoris1.svg" class="imgsidebar">
+		<img src="assets/img/move1.svg" class="imgsidebar">
+		<img src="assets/img/number1.svg" class="imgsidebar">
 
 </div>
 
@@ -104,7 +104,7 @@
 <div class="numpad">
 	<p>... ... ... ... ...</p> 
 </div>
-<span class="del-phone-number">DELETE</span>
+<span class="del-phone-number delete">	&#xD7;</span>
 
 	<div class="one">
 	<div class="number">1</div>
@@ -135,15 +135,20 @@
 
 
 <div class="historique">
-	<p class="strong">Martin Maillot</p>
-	<p class="petit">+0633445566</p>
+	<p class="strong vertc">Bryce Dallas Ho</p>
+	<p class="petit vertc">+0633445566</p>
 		<br><br>
-	<p class="strong">Martin Maillot</p>
-	<p class="petit">+0633445566</p>
+	<p class="strong vertc">Omar Sy</p>
+	<p class="petit vertc">+0633445566</p>
 		<br><br>
-	<p class="strong">Martin Maillot</p>
-	<p class="petit">+0633445566<</p>
+	<p class="strong vertc">DeltaVelociraptor</p>
+	<p class="petit vertc">+0633445566</p>
 		
+	<br><br>
+	<p class="strong rougec">DeltaVelociraptor</p>
+	<p class="petit rougec">+0633445566</p>
+
+
 	<div class="callerphone">
 			<img src="assets/img/phone.svg" class="phonebutton">
 <hr class="hrphone">
