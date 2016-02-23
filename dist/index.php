@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<title>Tesla</title>
 	<link rel="stylesheet" href="css/app.css">
- <script src="js/vendors.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+
+	<script src="js/vendors.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
 
 
 
@@ -39,6 +40,8 @@
 		<?php include 'views/contacts.php'; ?>
 
 		<?php include 'views/cellphone.php'; ?>
+
+		<?php include 'views/music.php'; ?>
 
 		<?php include 'views/mail.php'; ?>
 

@@ -45,7 +45,7 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
-		$( this ).removeClass("active");
+		$( this ).removeClass("active").addClass("inactive");
 	  	hideTirix()
 
 	}
@@ -53,9 +53,9 @@ $( "nav > div > .nav-tirix" ).on( "click", function() {
 	  	if( $( 'nav > div > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 				$( '#' + route ).fadeOut('slow');
-				$( '.nav-' + route ).removeClass("active");
+				$( '.nav-' + route ).removeClass("active").addClass("inactive");
 		}
-	  	$( this ).addClass("active");
+	  	$( this ).removeClass("inactive").addClass("active");
 	  	showTirix()
 	  	route = 'tirix';
   }

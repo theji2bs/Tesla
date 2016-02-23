@@ -85,7 +85,13 @@ body {
     background: linear-gradient(#202946, #151D35, #020D2D);
     /* Standard syntax */
     flex: 1; }
-    .content nav .imgtaille {
+    .content nav .menu .inactive {
+      opacity: 0.5;
+      transition: opacity 0.5s ease; }
+    .content nav .menu .active {
+      opacity: 1;
+      transition: opacity 0.5s ease; }
+    .content nav .menu .imgtaille {
       fill-color: red;
       height: 30px;
       width: 30px;
@@ -1252,6 +1258,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   top: 0; }
 
 #cellphone {
+  background-color: rgba(32, 41, 70, 0.7);
+  z-index: 10;
+  position: absolute;
+  margin-left: 90px;
+  top: 0; }
+
+#music {
   background-color: rgba(32, 41, 70, 0.7);
   z-index: 10;
   position: absolute;
