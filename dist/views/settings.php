@@ -2,7 +2,7 @@
 	<div class="close">
 		<img src="assets/img/Fermer.svg" alt="close" class="close_button" />
 	</div>
-	
+
 	<div class="lights_control">
 		<div class="header">
 			<h1>Lights</h1> <h2>Headlights</h2>

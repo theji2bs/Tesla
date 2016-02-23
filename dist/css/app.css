@@ -1115,9 +1115,15 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   position: absolute;
   margin-left: 90px;
   top: 0; }
+  #tirix .close {
+    position: absolute;
+    margin-left: -55px; }
+    #tirix .close .close_button {
+      width: 80px;
+      height: 80px; }
   #tirix h1 {
-    margin-left: -50px;
-    margin-top: 5px;
+    margin-left: 100px;
+    margin-top: 25px;
     color: #00D8EF;
     font-size: 24pt;
     letter-spacing: 2pt; }
@@ -1135,7 +1141,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     width: 1100px;
     height: 500px;
     margin-left: -50px;
-    padding-top: 100px; }
+    margin-top: 70px; }
     #tirix .containerlogo .inactive img {
       width: 20%;
       position: absolute;
@@ -1276,13 +1282,17 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     position: absolute;
     width: 90px;
     height: 90px;
-    border: solid 3px #F1304E;
     border-radius: 50%;
-    background: #1E2749;
     bottom: 50px;
     left: 50%;
     margin-left: -80px;
     transform: translate(-50%); }
+  #tirix .contenu .active {
+    border: solid 3px #F1304E;
+    background: #1E2749; }
+  #tirix .contenu .desactive {
+    border: solid 3px #00D8EF;
+    background: #1E2749; }
   #tirix .contenu .texttrex1 {
     position: absolute;
     bottom: 160px;
