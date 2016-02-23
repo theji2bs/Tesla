@@ -2,11 +2,18 @@
 
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
-        $("#menunav").fadeOut();
+        $("nav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
+        $("nav").fadeIn();
 }
+
+$( "#tirix > .close" ).on( "click", function() {
+
+  hideTirix()
+
+});
 
 function useTirix() {
 	$( ".containerlogo" ).fadeOut( 300, function() { 
