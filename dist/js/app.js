@@ -35,8 +35,6 @@ $(document).ready(function(){
     // Show different elements of the page
     $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
     //$( "#settings" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
@@ -159,6 +157,45 @@ $( "nav > .nav-contacts" ).on( "click", function() {
   }
 
 });
+
+
+
+
+// Phone widget
+//hiddenBox.show()
+var currentNumb = [];
+
+    function numberWithSpace(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    
+    $( ".number" ).on( "click", function( event ) {
+            if(currentNumb.length < 10){
+              var getNumb = $(this).text();
+              //console.log(getNumb);
+              currentNumb.push(getNumb);
+
+             
+              //var length = $(".numpad > p").val().length;
+              //console.log(length);
+
+              var goodNumbers = numberWithSpace(currentNumb.join(''));
+
+
+
+              $(".numpad > p").text(goodNumbers);
+            }
+         $( ".del-phone-number" ).on( "click", function( event ) {
+            if(currentNumb != []){
+                console.log(currentNumb);
+            currentNumb = [];
+            
+            $(".numpad > p").text("... ... ... ... ...");
+            }
+        });
+    });
+
+
 
 
         Highcharts.setOptions({

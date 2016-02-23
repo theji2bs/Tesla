@@ -35,8 +35,6 @@ $(document).ready(function(){
     // Show different elements of the page
     $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
     //$( "#settings" ).fadeIn('slow'); // Dashboard
     //$( "header" ).fadeIn('slow'); // Header
     //$( "nav" ).fadeIn('slow'); // Header
