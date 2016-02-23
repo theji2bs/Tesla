@@ -174,7 +174,7 @@
 		</div>
 
 	</div>
-
+<br>
 <hr class="barhr">
 	<div class="contact">
 		<div class="los">
@@ -191,6 +191,7 @@
 		</div>
 
 	</div>
+	<br>
 <hr class="barhr">
 
 	<div class="contact">
@@ -208,6 +209,7 @@
 		</div>
 
 	</div>
+	<br>
 	<hr class="barhr">
 
 	<div class="contact">
@@ -225,6 +227,7 @@
 		</div>
 
 	</div>
+	<br>
 	<hr class="barhr">
 
 	<div class="contact">
