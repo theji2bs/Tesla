@@ -1059,7 +1059,7 @@ footer {
       right: 40px;
       margin-left: 20px;
       margin-top: 10px;
-      color: #F1304E;
+      color: #00C5DD;
       transition: all ease 0.5s; }
     #settings .blindage .on {
       position: absolute;
@@ -1067,7 +1067,7 @@ footer {
       right: 45px;
       margin-left: 20px;
       margin-top: 10px;
-      color: #00C5DD;
+      color: #F1304E;
       transition: all ease 0.5s; }
   #settings .urgency {
     position: absolute;
@@ -1102,7 +1102,7 @@ footer {
       right: 40px;
       margin-left: 20px;
       margin-top: 10px;
-      color: #F1304E;
+      color: #00C5DD;
       transition: all ease 0.5s; }
     #settings .urgency .on {
       position: absolute;
@@ -1111,7 +1111,7 @@ footer {
       text-align: center;
       margin-left: 20px;
       margin-top: 10px;
-      color: #00C5DD;
+      color: #F1304E;
       transition: all ease 0.5s; }
   #settings .lights_control {
     margin-top: 35px;
@@ -1123,9 +1123,13 @@ footer {
       width: 100%;
       margin-bottom: 30px; }
       #settings .lights_control .header h1 {
-        display: inline-block; }
+        display: inline-block;
+        font-size: 16pt;
+        margin-right: 10px; }
       #settings .lights_control .header h2 {
-        display: inline-block; }
+        display: inline-block;
+        color: #465070;
+        margin-top: 3px; }
     #settings .lights_control .state {
       width: 100%;
       height: 75px;
@@ -1134,7 +1138,7 @@ footer {
       margin-bottom: 30px; }
       #settings .lights_control .state ul {
         width: 100%;
-        font-size: 16pt;
+        font-size: 13pt;
         text-align: center;
         line-height: 70px;
         transition: all 0.5s ease;
@@ -1158,7 +1162,7 @@ footer {
       justify-content: space-between; }
       #settings .lights_control .options div {
         width: 100%;
-        font-size: 16pt;
+        font-size: 13pt;
         text-align: center;
         line-height: 74px;
         border: 2px solid #4F5A7A;

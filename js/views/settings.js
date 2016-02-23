@@ -218,13 +218,13 @@ $( ".lock > .right" ).on( "click", function() {
 $( ".lock > .charge" ).on( "click", function() {
   if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
 		$( this ).removeClass("lock");
-		$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .right > .title > h2" ).html( "Unlocked" );
+		$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
+		$(".lock > .charge > .title > h2" ).html( "Unlocked" );
 	}
   else{
 	  	$( this ).addClass("lock");
-	  	$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .right > .title > h2" ).html( "Locked" );
+	  	$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
+	  	$(".lock > .charge > .title > h2" ).html( "Locked" );
   }
 });
 
