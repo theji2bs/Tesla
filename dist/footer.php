@@ -6,7 +6,6 @@
 
 
 
-
 <img src="assets/img/siege.svg" class="voiture1">
 <img src="assets/img/front.svg" class="voiture2">
 <img src="assets/img/aeration.svg" class="voiture3">
@@ -102,110 +101,76 @@
 
 
 <div class="footer">
-
 	<div class="voiturecontrol">
-
 		<img src="assets/img/control.svg" class="voiture">
-		<p class="control">Control</p>
-
-
-
+		<p class="control">Controls</p>
 	</div>
 	
-	
+	<div id="iconefoot">
+		<div class="listeicone">
+			<img src="assets/img/siege.svg" class="siege1">
+			<img src="assets/img/front.svg" class="front">
+			<img src="assets/img/aeration.svg"class="aeration">
+			<img src="assets/img/ventilation.svg"class="ventilation">
+			<img src="assets/img/arriere.svg"class="arriere">
+			<img src="assets/img/siege.svg"class="siege2">
+		</div>
 
-
-	<div class="iconefooter">
-
-<div><img src="assets/img/siege.svg" class="voiturefooter"> </div>
-<div><img src="assets/img/front.svg" class="voiturefooter"></div>
-<div><img src="assets/img/aeration.svg"class="voiturefooter"></div>
-<div><img src="assets/img/ventilation.svg"class="voiturefooter"></div>
-<div><img src="assets/img/arriere.svg"class="voiturefooter"></div>
-<div><img src="assets/img/siege.svg"class="voiturefooter"></div>
-
-	</div>
-
-				
-
-
-				<div class="cerclefooter">
-
-					
-
-
-			
-					<div>
-					<div class="moncercle1 cercle cplein"></div>
-					<div class="moncercle2 cercle cplein" ></div>
-					<div class="moncercle2 cercle"></div> 
-					</div>
-
-					<div class="marg">
-					<div><p class="front">Front</p></div>
-					
-
-					<div>
-					<div><p class="flow">Airflow</p></div>
-					</div>
-
-					<div class="marg">
-			        <div class="moncercle3 cercle"></div>
-					<div class="moncercle4 cercle"></div>
-					<div class="moncercle4 cercle"></div>
-					<div class="moncercle4 cercle"></div>
-					<div class="moncercle4 cercle"></div>
-				    </div>
-
-
-				    <div>
-					<p class="rear"id="rear">Rear</p>
-				    </div>
-
-
-					<div>
-					<div class="moncercle5 cercle"></div>
-					<div class="moncercle6 cercle"></div>
-					<div class="moncercle6 cercle"></div>
-				    </div>
-
-			   </div>
-
-
+		<div class="listename">
+			<div class="namebloc">
+				<div class="cerclebox1">
+					<span class="active"></span>
+					<span class="active"></span>
+					<span class="noactive"></span>
 				</div>
-				
-
+			</div>
+			<div class="namebloc">
+			<p class="p_front">Front</p>
+			</div>
+			<div class="namebloc">
+			<p class="p_airflow">Airflow</p>
+			</div>
+			<div class="namebloc">
+				<div class="cerclebox2">
+					<span class="active"></span>
+					<span class="active"></span>
+					<span class="noactive"></span>
+					<span class="noactive"></span>
+					<span class="noactive"></span>
+				</div>
+			</div>
+			<div class="namebloc">
+			<p class="p_rear">Rear</p>
+			</div>
+			<div class="namebloc">
+				<div class="cerclebox1">
+					<span class="active"></span>
+					<span class="active"></span>
+					<span class="noactive"></span>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <div class="volvol">
-
-
-<div class="moins">-</div><input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos"><div class="plus">+</div>
+<div class="moins1">-</div>
+	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+<div class="plus1">+</div>
 </div>
 
-
-
-<div class="syncro">
-
-<img src="assets/img/Synchronisation.svg" class="power1">
-<img src="assets/img/power.svg" class="power2">
-
-
-	<p class="powe">POWER</p>
-
-
-	<p class="sync">SYNC</p>
-
-
+<div id="syncpower">
+<img src="assets/img/Synchronisation.svg"class="sync_icon">
+<img src="assets/img/Power.svg"class="power_icon">
+<p class="p_sync">SYNC</p>
+<p class="p_power">POWER</p>
 </div>
-
-
 
 <div class="volvol1">
-
-
-<div class="moins1">-</div><input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1"><div class="plus1">+</div>
+<div class="moins1">-</div>
+	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+<div class="plus1">+</div>
 </div>
 
-	</div>
+</div>
 
 

@@ -172,21 +172,114 @@ footer {
   background-color: #020d2d;
   right: 40px;
   bottom: 0px; }
-  footer .iconefooter {
-    display: flex;
-    margin-left: 350px;
-    margin-top: -40px; }
-  footer .voiturefooter {
-    width: 60px;
-    height: 60px;
-    margin-right: 40px; }
-  footer .cerclefooter {
-    margin-top: 10px;
-    margin-left: -60px; }
+  footer #iconefoot {
+    position: absolute;
+    width: 610px;
+    height: 140px;
+    bottom: 95px;
+    left: 50%;
+    margin-left: 45px;
+    transform: translate(-50%); }
+    footer #iconefoot .listeicone {
+      width: 100%;
+      height: 70px; }
+      footer #iconefoot .listeicone img {
+        display: inline-block;
+        float: left;
+        height: 50px;
+        margin-right: 45px; }
+      footer #iconefoot .listeicone img:last-child {
+        margin-right: 0px; }
+      footer #iconefoot .listeicone .front {
+        height: 50px;
+        transform: scale(0.95); }
+      footer #iconefoot .listeicone .aeration {
+        transform: scale(0.9); }
+      footer #iconefoot .listeicone .ventilation {
+        height: 50px;
+        transform: scale(1.2); }
+      footer #iconefoot .listeicone .arriere {
+        transform: scale(0.9); }
+    footer #iconefoot .listename {
+      width: 110%;
+      margin-left: -5%;
+      height: 60px; }
+      footer #iconefoot .listename .namebloc {
+        width: 16.6%;
+        height: 100%;
+        display: inline-block;
+        float: left; }
+        footer #iconefoot .listename .namebloc p {
+          margin-top: -3px; }
+        footer #iconefoot .listename .namebloc .p_front {
+          margin-left: 33px; }
+        footer #iconefoot .listename .namebloc .p_airflow {
+          margin-left: 29px; }
+        footer #iconefoot .listename .namebloc .p_rear {
+          margin-left: 40px; }
+        footer #iconefoot .listename .namebloc .cerclebox1 {
+          width: 100%;
+          height: 100%;
+          margin-left: 33px; }
+          footer #iconefoot .listename .namebloc .cerclebox1 span {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+            display: inline-block;
+            float: left; }
+          footer #iconefoot .listename .namebloc .cerclebox1 .active {
+            background: #26B0D3;
+            border: 1px solid #26B0D3; }
+          footer #iconefoot .listename .namebloc .cerclebox1 .noactive {
+            background: transparent;
+            border: 1px solid #26B0D3; }
+        footer #iconefoot .listename .namebloc .cerclebox2 {
+          width: 100%;
+          height: 100%;
+          margin-left: 17px; }
+          footer #iconefoot .listename .namebloc .cerclebox2 span {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+            display: inline-block;
+            float: left; }
+          footer #iconefoot .listename .namebloc .cerclebox2 .active {
+            background: #26B0D3;
+            border: 1px solid #26B0D3; }
+          footer #iconefoot .listename .namebloc .cerclebox2 .noactive {
+            background: transparent;
+            border: 1px solid #26B0D3; }
   footer .volvol {
-    margin-left: 200px; }
+    position: absolute;
+    bottom: 85px;
+    left: 20px; }
+  footer #syncpower {
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    height: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 40px; }
+    footer #syncpower .sync_icon {
+      height: 45px; }
+    footer #syncpower .power_icon {
+      height: 32px;
+      margin-bottom: 6px;
+      margin-left: 30px; }
+    footer #syncpower .p_sync {
+      margin-left: 12px;
+      font-size: 14px; }
+    footer #syncpower .p_power {
+      margin-left: 88px;
+      margin-top: -14px;
+      font-size: 14px; }
   footer .volvol1 {
-    margin-left: 800px; }
+    position: absolute;
+    bottom: 85px;
+    right: 330px; }
   footer .barvol {
     height: 2px;
     width: 100px; }
@@ -203,17 +296,17 @@ input[type=range].monbouton::-webkit-slider-runnable-track {
   height: 0px;
   cursor: pointer;
   box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
-  background: #ffffff;
+  background: blue;
   border-radius: 25px;
   border: 0.2px solid #FFF; }
 
 input[type=range].monbouton::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px #ff1a1a;
-  border: 0.5px solid #ff0000;
+  border: 2px solid #FFF;
+  box-shadow: 0 0 3pt 2pt red;
   height: 36px;
   width: 36px;
   border-radius: 50px;
-  background: #ffffff;
+  background: #020D2D;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -18.2px; }
@@ -225,7 +318,6 @@ input[type=range].monbouton::-moz-range-track {
   width: 100%;
   height: 0px;
   cursor: pointer;
-  box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
   background: #ffffff;
   border-radius: 25px;
   border: 0.2px solid #000000; }
@@ -250,17 +342,15 @@ input[type=range].monbouton::-ms-track {
 input[type=range].monbouton::-ms-fill-lower {
   background: #ffffff;
   border: 0.2px solid #000000;
-  border-radius: 50px;
-  box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0); }
+  border-radius: 50px; }
 
 input[type=range].monbouton::-ms-fill-upper {
   background: #ffffff;
   border: 0.2px solid #000000;
-  border-radius: 50px;
-  box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0); }
+  border-radius: 50px; }
 
 input[type=range].monbouton::-ms-thumb {
-  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px #ff1a1a;
+  box-shadow: 0px 0px 0px #ff0000, 0px 0px 0px green;
   border: 0.5px solid #ff0000;
   height: 36px;
   width: 36px;
@@ -286,7 +376,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   position: absolute; }
 
 .mapos1 {
-  margin-left: 1px;
+  margin-left: 98px;
   margin-top: 40px;
   position: absolute; }
 
@@ -343,7 +433,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
 .contour {
   height: 70px;
   width: 70px;
-  border: solid 2px red;
+  border: solid 2px green;
   border-radius: 50%;
   position: absolute;
   margin-left: 55px;
@@ -439,8 +529,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   color: white; }
 
 .voiture {
-  height: 8%;
-  width: 8%;
+  height: 6.5%;
+  width: 6.5%;
   padding-top: 70px;
   margin-left: 10%; }
 
@@ -467,8 +557,10 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   margin-left: 28px; }
 
 .control {
-  margin-left: 140px;
+  margin-left: 120px;
+  margin-top: 10px;
   color: white;
+  font-size: 16pt;
   font-family: 'PT Sans', sans-serif; }
 
 .moncercle1 {
@@ -492,13 +584,6 @@ input[type=range].monbouton:focus::-ms-fill-upper {
 
 .cplein {
   background: #00D8EF; }
-
-.front {
-  color: white;
-  font-family: 'PT Sans', sans-serif;
-  margin-top: -12px;
-  float: left;
-  padding-left: 60px; }
 
 .flow {
   color: white;
