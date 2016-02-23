@@ -5,11 +5,11 @@
     top: 0;
 
 	.big-head{
-		background:url("../assets/img/map.png") no-repeat;
+		background:url("../assets/img/screens/widget-map.png") no-repeat;
 		width: 100%;
 		margin-bottom: 10px;
-		height: 500px;
-		
+		height: 618px;
+		border-bottom: 1px solid #2E3658;
 	    background-size:100%;
 	}
 	.graph {
@@ -20,11 +20,14 @@
 #container{
 	margin-top: -400px;
 }
+	
 
 	.mid-left{
 		    width: 620px;
+		    height: 396px;
     		margin-bottom: 10px;
     		border: 2px solid #2E3554;
+    		padding-bottom: 20px;
 
 
 
@@ -87,9 +90,8 @@
 	background-color: transparent;
     width: 593px;
     margin-bottom: 10px;
-    margin-bottom: 10px;
     display: flex;
-    height: auto;
+    height: 396px;
     border: 2px solid #2E3554;
     margin-left: 10px;
 
@@ -127,6 +129,7 @@
 		    background-size: 70%;
 		    align-items: center;
 		    margin-left: -170px;
+		    height: 375px;
 		    margin-right: 30px;
 
 		}
@@ -190,7 +193,7 @@ margin-top: 20px;
 
 .musiclec{
 	margin-left: -250px;
-	margin-top: 380px;
+	margin-top: 330px;
 	text-align: center;
 }
 
@@ -204,7 +207,7 @@ margin-top: 20px;
 	.big-foot{
 		background-color: transparent;
 	    width: 100%;
-	    height: 500px;
+	    height: 442px;
 	    border: solid 2px #2E3554;
 
 	

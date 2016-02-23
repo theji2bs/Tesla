@@ -26,6 +26,10 @@ $(document).ready(function(){
        
     })
 
+
+
+
+
     // Initialisation of router
     var route = '';
 
@@ -462,10 +466,13 @@ function showSettings() {
         
 }
 function hideSettings() {
-		$( "#settings" ).fadeOut('fast');
-		$( "nav" ).fadeIn('fast'); // Header
-		$( "#dash" ).fadeIn('fast'); // Header
-        
+		
+        //console.log(route);
+        $( "#settings" ).fadeOut('fast');
+        if(route != "tirix"){
+			$( "nav" ).fadeIn('fast'); // Header
+        }
+        $( "#dash" ).fadeIn('fast'); // Header
     	
 }
 
@@ -611,7 +618,6 @@ $( ".voiture" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showSettings()
-	  	route = '#settings';
   }
 
 });

@@ -949,10 +949,11 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   margin-left: 90px;
   top: 0; }
   #dash .big-head {
-    background: url("../assets/img/map.png") no-repeat;
+    background: url("../assets/img/screens/widget-map.png") no-repeat;
     width: 100%;
     margin-bottom: 10px;
-    height: 500px;
+    height: 618px;
+    border-bottom: 1px solid #2E3658;
     background-size: 100%; }
   #dash .graph {
     display: flex;
@@ -961,8 +962,10 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: -400px; }
     #dash .graph .mid-left {
       width: 620px;
+      height: 396px;
       margin-bottom: 10px;
-      border: 2px solid #2E3554; }
+      border: 2px solid #2E3554;
+      padding-bottom: 20px; }
       #dash .graph .mid-left .sidebar2 {
         width: 70px;
         height: 450px;
@@ -990,9 +993,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       background-color: transparent;
       width: 593px;
       margin-bottom: 10px;
-      margin-bottom: 10px;
       display: flex;
-      height: auto;
+      height: 396px;
       border: 2px solid #2E3554;
       margin-left: 10px; }
       #dash .graph .mid-right .sidebar2 {
@@ -1013,6 +1015,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         background-size: 70%;
         align-items: center;
         margin-left: -170px;
+        height: 375px;
         margin-right: 30px; }
       #dash .graph .mid-right .bluechelou {
         color: #2E3554; }
@@ -1046,12 +1049,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         color: #00D8EF; }
       #dash .graph .mid-right .musiclec {
         margin-left: -250px;
-        margin-top: 380px;
+        margin-top: 330px;
         text-align: center; }
   #dash .big-foot {
     background-color: transparent;
     width: 100%;
-    height: 500px;
+    height: 442px;
     border: solid 2px #2E3554; }
     #dash .big-foot .sidebar {
       width: 6%;
@@ -1207,8 +1210,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       width: 80px;
       height: 80px; }
   #tirix h1 {
-    margin-left: 100px;
-    margin-top: 25px;
+    position: absolute;
+    left: 435px;
+    top: 453px;
     color: #00D8EF;
     font-size: 24pt;
     letter-spacing: 2pt; }
@@ -1394,7 +1398,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   background-color: #202946;
   z-index: 10;
   position: absolute;
-  margin-left: 10px;
+  margin-top: 100px;
+  margin-left: 90px;
   top: 0; }
 
 ::-webkit-scrollbar {
@@ -1611,9 +1616,10 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   top: 0; }
 
 #music {
-  background-color: rgba(32, 41, 70, 0.7);
+  background-color: #202946;
   z-index: 10;
   position: absolute;
+  margin-top: 100px;
   margin-left: 90px;
   top: 0; }
 
@@ -1621,6 +1627,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   background-color: rgba(32, 41, 70, 0.7);
   z-index: 10;
   position: absolute;
+  margin-top: 100px;
   margin-left: 90px;
   top: 0; }
 
@@ -1808,7 +1815,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     #settings .lock .front {
       position: absolute;
       top: 470px;
-      left: 455px;
+      left: 485px;
       width: 240px;
       height: 120px; }
       #settings .lock .front .title {

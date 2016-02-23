@@ -26,6 +26,10 @@ $(document).ready(function(){
        
     })
 
+
+
+
+
     // Initialisation of router
     var route = '';
 

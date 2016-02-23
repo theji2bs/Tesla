@@ -1,3 +1,5 @@
 <section id="music">
-	<h1>Music</h1>
+
+	<img src="assets/img/screens/music.png" class="Gps" alt="Music">
+
 </section>
