@@ -84,9 +84,9 @@
 <div class="ok">	
 <div class="sidebar">
 
-	<img src="assets/img/favoris1.svg" class="imgsidebar">
-		<img src="assets/img/move1.svg" class="imgsidebar">
-		<img src="assets/img/number1.svg" class="imgsidebar">
+	<img src="assets/img/favoris.svg" class="imgsidebar">
+		<img src="assets/img/move.svg" class="imgsidebar">
+		<img src="assets/img/number.svg" class="imgsidebar">
 
 </div>
 
