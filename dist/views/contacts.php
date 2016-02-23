@@ -1,3 +1,3 @@
 <section id="contacts">
-	<h1>Contacts</h1>
+	<img src="assets/img/contact.png" class="Contact" alt="Main">
 </section>

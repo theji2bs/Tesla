@@ -1,3 +1,5 @@
 <section id="gps">
-	<h1>GPS</h1>
+
+		<img src="assets/img/GPS.png" class="Gps" alt="Main">
+
 </section>
