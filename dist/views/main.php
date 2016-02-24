@@ -164,7 +164,7 @@
 	<img src="assets/img/hexagone.svg" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Bryce Dallas Ho</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
@@ -181,7 +181,7 @@
 	<img src="assets/img/hexagone.svg" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Chris Pratt &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
@@ -199,7 +199,7 @@
 	<img src="assets/img/hexagone.svg" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Delta Veloc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
@@ -217,7 +217,7 @@
 	<img src="assets/img/hexagone.svg" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Omar Sy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
@@ -235,7 +235,7 @@
 	<img src="assets/img/hexagone.svg" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Vincent D'Ono &nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>

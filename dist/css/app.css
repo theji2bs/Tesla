@@ -972,14 +972,14 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         width: 66px;
         height: 374px;
         background-color: rgba(0, 0, 255, 0.05);
-        background: rgba(0, 0, 255, 0.05);
+        background: #111B3B;
         margin-right: 80px;
         margin-left: 9px;
         margin-top: 10px; }
       #dash .graph .mid-left .imgsidebar2 {
         width: 30px;
         height: 30px;
-        margin-left: 20px;
+        margin-left: 19px;
         margin-top: 30px; }
       #dash .graph .mid-left .blue1 {
         color: #00D8EF;
@@ -1007,7 +1007,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         width: 70px;
         height: 375px;
         background-color: rgba(0, 0, 255, 0.05);
-        background: rgba(0, 0, 255, 0.05);
+        background: #111B3B;
         margin-right: 80px; }
       #dash .graph .mid-right .imgsidebar2 {
         width: 30px;
@@ -1067,12 +1067,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-left: 10px;
       height: 420px;
       background-color: rgba(0, 0, 255, 0.05);
-      background: rgba(0, 0, 255, 0.05);
+      background: #111B3B;
       margin-top: 10px; }
     #dash .big-foot .imgsidebar {
       width: 30px;
       height: 30px;
-      margin-left: 20px;
+      margin-left: 18px;
       margin-top: 30px; }
     #dash .big-foot .txtphone {
       color: white; }
@@ -1175,19 +1175,19 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       border: solid 2px #2E3554; }
     #dash .big-foot .contact {
       display: flex;
-      height: 50px; }
+      height: 53px; }
     #dash .big-foot .cont {
       margin-top: 20px;
       margin-left: 20px; }
     #dash .big-foot .contactcontenu {
       margin-left: 43px;
-      margin-top: 10px;
+      margin-top: 16px;
       background-color: rgba(0, 0, 255, 0.05);
       background: rgba(0, 0, 255, 0.05);
       border-left: solid 3px #2E3554;
       border-right: solid 3px #2E3554;
       width: 48%;
-      height: 420px;
+      height: 411px;
       padding-top: -30px; }
     #dash .big-foot .bar {
       width: 3px;
