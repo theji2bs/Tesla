@@ -53,6 +53,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   color: white;
   font-family: 'PT Sans', sans-serif; }
@@ -719,12 +722,13 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     width: 1180px;
     height: 300px; }
     #auth .header img {
-      width: 35%;
-      padding-left: 250px;
-      margin-left: 240px; }
+      width: auto;
+      padding-left: 120px;
+      margin-left: 328px;
+      height: 250px; }
     #auth .header p {
       margin-left: 503px;
-      padding-top: 0px;
+      margin-top: -30px;
       font-size: 130%;
       letter-spacing: 2px;
       font-weight: bold; }
@@ -747,7 +751,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   #auth .footer {
     width: 1180px;
     height: 280px;
-    margin-top: 170px;
+    margin-top: 120px;
     /* Victoria Buttons */ }
     #auth .footer .instru {
       margin-left: 299px;
@@ -979,7 +983,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     display: flex;
     justify-content: center; }
     #dash .graph #container {
-      margin-top: -400px; }
+      margin-top: -340px; }
     #dash .graph .mid-left {
       width: 620px;
       height: 396px;
@@ -1038,7 +1042,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         background-position: 60% 50%;
         background-size: 70%;
         align-items: center;
-        margin-left: -170px;
+        margin-left: -195px;
         height: 375px;
         margin-right: 30px; }
       #dash .graph .mid-right .bluechelou {
@@ -1145,7 +1149,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     #dash .big-foot .txtpad {
       margin-left: 20px;
       display: flex;
-      margin-top: 20px; }
+      margin-top: 35px; }
     #dash .big-foot .orange {
       color: #FFB414; }
     #dash .big-foot .numpad {
@@ -1740,7 +1744,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
           margin-right: 20px;
           margin-top: -41px; }
     #cellphone .recent .appel1 {
-      border: 1px solid #4b5274;
+      border-top: 1px solid #4b5274;
       height: 96px;
       width: 100%;
       box-shadow: 0 0 2px #2187e7;
@@ -1793,7 +1797,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
           margin-right: 20px;
           margin-top: -41px; }
     #cellphone .recent .appel2 {
-      border: 1px solid #4b5274;
+      border-top: 1px solid #4b5274;
       height: 96px;
       width: 100%;
       box-shadow: 0 0 2px #2187e7;
@@ -1897,7 +1901,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
           margin-right: 20px;
           margin-top: -41px; }
     #cellphone .recent .appel4 {
-      border: 1px solid #4b5274;
+      border-top: 1px solid #4b5274;
       height: 96px;
       width: 100%;
       box-shadow: 0 0 2px #2187e7;
@@ -1979,6 +1983,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   z-index: 70;
   position: absolute;
   width: 100%;
+  height: 1489px;
   top: -10px; }
   #settings .close {
     position: absolute;
