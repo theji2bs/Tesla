@@ -2,7 +2,6 @@
 @import '_reset.scss';
 
 
-
 // Variables import
 @import '_variables.scss';
 
@@ -195,7 +194,7 @@ footer{
 #iconefoot
 {
 	position:absolute;
-	width:610px;
+	width:590px;
 	height:140px;
 	bottom:95px;
 	left:50%;
@@ -215,7 +214,7 @@ footer{
 		img:last-child{
 			margin-right:0px;
 		}
-		.front{height:50px;transform:scale(0.95);}
+		.front{height:50px;transform:scale(1.55);margin-left:10px;}
 		.aeration{transform:scale(0.9);}
 		.ventilation{height:50px;transform:scale(1.2);}
 		.arriere{transform:scale(0.9);}
@@ -235,9 +234,9 @@ footer{
 			p{
 				margin-top: -3px;
 			}
-			.p_front{margin-left:33px;}
-			.p_airflow{margin-left:29px;}
-			.p_rear{margin-left:40px;}
+			.p_front{margin-left:35px;}
+			.p_airflow{margin-left:22px;}
+			.p_rear{margin-left:38px;}
 
 			.cerclebox1{
 				width: 100%;
@@ -265,7 +264,30 @@ footer{
 			.cerclebox2{
 				width: 100%;
 				height:100%;
-				margin-left: 17px;
+				margin-left: 15px;
+
+				span{
+					width: 10px;
+					height:10px;
+					margin-right: 5px;
+					border-radius:50%;
+					display: inline-block;
+					float: left;
+				}
+
+				.active{
+					background:#26B0D3;
+					border:1px solid #26B0D3;
+				}
+				.noactive{
+					background:transparent;
+					border:1px solid #26B0D3;
+				}
+			}
+			.cerclebox3{
+				width: 100%;
+				height:100%;
+				margin-left: 32px;
 
 				span{
 					width: 10px;

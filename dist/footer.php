@@ -143,7 +143,7 @@
 			<p class="p_rear">Rear</p>
 			</div>
 			<div class="namebloc">
-				<div class="cerclebox1">
+				<div class="cerclebox3">
 					<span class="active"></span>
 					<span class="active"></span>
 					<span class="noactive"></span>
