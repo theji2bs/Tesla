@@ -44,8 +44,7 @@
 <div class="txtpad2">
 	
 	<p class="blue">MUSIC</p> &nbsp; &nbsp;  &nbsp;  &nbsp;
-	<p>Jurassic</p> &nbsp;
-	<p> World</p>
+	<p>Jurassic World</p>
 
 </div>
 
