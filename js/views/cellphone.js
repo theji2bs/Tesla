@@ -1,10 +1,13 @@
 // Base router
 
 function showCellphone() {
+        $( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#cellphone" ).fadeIn('slow');
+        
 }
 function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
 }
 
 

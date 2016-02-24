@@ -1,9 +1,11 @@
 // Base router
 
 function showMail() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#mail" ).fadeIn('slow');
 }
 function hideMail() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#mail" ).fadeOut('slow');
 }
 
