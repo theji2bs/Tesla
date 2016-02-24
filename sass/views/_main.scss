@@ -324,14 +324,24 @@ margin-top: 35px;
 
 .orange{
 	color:#FFB414;
+	margin-left:-13px;
 }
 
 .numpad{
     margin-left: 20px;
     display: flex;
     margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 2em;
+    margin-bottom: 25px;
+    font-size: 18pt;
+}
+
+#barprogress{
+	position:absolute;
+	margin-top:35px;
+	margin-left:-120px;
+	width:200px;
+	height:5px;
+	background:#FFF;
 }
 .vertc{
 	color:#95C25D;
@@ -343,7 +353,7 @@ margin-top: 35px;
 
 .historique{
 	margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 .strong{
 	
@@ -356,7 +366,9 @@ margin-top: 35px;
 
 .petit{
     font-size: 0.8em;
-    line-height: 27px
+    line-height: 27px;
+    color:#242F51;
+    font-weight: bold;
 }
 
 
@@ -374,7 +386,7 @@ margin-top: 35px;
     border-radius: 50%;
     border: solid 2px #2E3554;
     padding: 6px;
-    margin-left: 14px;
+    margin-left: 13.2px;
     margin-top: 14px;
     background-color: #202946;
 }
@@ -382,7 +394,7 @@ margin-top: 35px;
 	
 
 .hrphone{
-      height: 2px;
+    height: 2px;
     width: 121px;
     margin-left: -29px;
     margin-top: -23px;
@@ -391,8 +403,8 @@ margin-top: 35px;
 
 .callerphone{
 	
-	margin-top: 10px;
-    margin-left: 27px;
+	margin-top:60px;
+    margin-left: 25px;
     width: 70px;
     padding-left: -4px;
     height: 70px;

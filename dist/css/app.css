@@ -75,16 +75,16 @@ body {
   .content nav {
     display: none;
     width: 80px;
-    height: 1820px;
+    height: 1490px;
     padding-top: 30px;
     margin-top: 100px;
-    background: -webkit-linear-gradient(#202946, #151D35, #020D2D);
+    background: -webkit-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#202946, #151D35, #020D2D);
+    background: -o-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#202946, #151D35, #020D2D);
+    background: -moz-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#202946, #151D35, #020D2D);
+    background: linear-gradient(#020C2F, #151C35, #020C2F);
     /* Standard syntax */
     flex: 1; }
     .content nav .inactive {
@@ -1175,23 +1175,33 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       display: flex;
       margin-top: 35px; }
     #dash .big-foot .orange {
-      color: #FFB414; }
+      color: #FFB414;
+      margin-left: -13px; }
     #dash .big-foot .numpad {
       margin-left: 20px;
       display: flex;
       margin-top: 10px;
-      margin-bottom: 30px;
-      font-size: 2em; }
+      margin-bottom: 25px;
+      font-size: 18pt; }
+    #dash .big-foot #barprogress {
+      position: absolute;
+      margin-top: 35px;
+      margin-left: -120px;
+      width: 200px;
+      height: 5px;
+      background: #FFF; }
     #dash .big-foot .vertc {
       color: #95C25D; }
     #dash .big-foot .rougec {
       color: #F1304F; }
     #dash .big-foot .historique {
       margin-left: 60px;
-      margin-top: 40px; }
+      margin-top: 55px; }
     #dash .big-foot .petit {
       font-size: 0.8em;
-      line-height: 27px; }
+      line-height: 27px;
+      color: #242F51;
+      font-weight: bold; }
     #dash .big-foot .losange {
       idth: 60px;
       height: 60px;
@@ -1203,7 +1213,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       border-radius: 50%;
       border: solid 2px #2E3554;
       padding: 6px;
-      margin-left: 14px;
+      margin-left: 13.2px;
       margin-top: 14px;
       background-color: #202946; }
     #dash .big-foot .hrphone {
@@ -1213,8 +1223,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: -23px;
       border: solid 1px #2E3554; }
     #dash .big-foot .callerphone {
-      margin-top: 10px;
-      margin-left: 27px;
+      margin-top: 60px;
+      margin-left: 25px;
       width: 70px;
       padding-left: -4px;
       height: 70px;
