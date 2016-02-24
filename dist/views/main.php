@@ -50,13 +50,16 @@
 </div>
 
 	<div class="bplayer playeur">
-
-		<img src="assets/img/previous-button.svg" class="prev">
+		<div class="previous_action">
+			<img src="assets/img/previous-button.svg" class="prev">
+		</div>
 		<div class="player_action">
 			<img src="assets/img/play-circle.svg" class="play">
 			<img src="assets/img/pause-circle.svg" class="pause">
 		</div>
-		<img src="assets/img/next-button.svg" class="next">
+		<div class="next_action">
+			<img src="assets/img/next-button.svg" class="next">
+		</div>
 
 
 
@@ -245,13 +248,6 @@
 		</div>
 
 	</div>
-
-
-
-
-	
-
-
 
 
 

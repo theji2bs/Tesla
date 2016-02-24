@@ -266,6 +266,9 @@ $( "nav > .nav-contacts" ).on( "click", function() {
 
 
 
+//callerphone
+
+
         Highcharts.setOptions({
             global: {
                 useUTC: false
@@ -959,9 +962,10 @@ function showWarning() {
 }
 function hideWarning() {
         $( "#warning" ).fadeOut('slow');
+        $( "nav > .nav-warning" ).removeClass("active").addClass("inactive");
 }
 
-$( ".nav-warning"  ).on( "click", function() {
+$( ".nav-warning" ).on( "click", function() {
 
 
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
