@@ -1,7 +1,7 @@
 <section id="cellphone">
 	<div class="body" alt="body">
 
-		<div class="pad " alt="pad">
+		<div class="pad active" alt="pad">
 
 			<div class="numpad">
 				<p>... ... ... ... ...</p> 
@@ -45,7 +45,7 @@
 		</div>
 
 
-		<div class="appel active" alt="pad">
+		<div class="appel inactive" alt="pad">
 
 			<div class="identiter">
 				<p class="nom">Martin Maillot</p> 
@@ -79,7 +79,7 @@
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
+					<p class="nom">Stépanie 1 Demonalu</p>
 					<p class="numero">+0636463478</p>
 				</div>
 			</div>	
@@ -87,7 +87,7 @@
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
+					<p class="nom">Stépanie 2 Demonalu</p>
 					<p class="numero">+0636463478</p>
 				</div>
 			</div>	
@@ -95,7 +95,7 @@
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
+					<p class="nom">Stépanie 3 Demonalu</p>
 					<p class="numero">+0636463478</p>
 				</div>
 			</div>	

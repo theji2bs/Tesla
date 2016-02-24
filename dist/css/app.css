@@ -955,7 +955,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     width: 100%;
     margin-bottom: 10px;
     height: 618px;
-    border-bottom: 1px solid #2E3658;
+    border-bottom: 2px solid #2E3658;
     background-size: 100%; }
   #dash .graph {
     display: flex;
@@ -1440,8 +1440,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       width: 900px;
       height: 960px;
       margin-right: 10px;
-      padding-left: 115px;
-      display: none; }
+      padding-left: 115px; }
       #cellphone .body .pad img {
         width: 6%;
         margin-left: 395px;
@@ -1527,8 +1526,6 @@ input[type=range].monbouton:focus::-ms-fill-upper {
             background: #4b5274;
             margin-left: -84px;
             margin-top: 67px; }
-    #cellphone .body .active {
-      display: block; }
     #cellphone .body .appel {
       position: absolute;
       float: left;
@@ -1605,6 +1602,10 @@ input[type=range].monbouton:focus::-ms-fill-upper {
             background: #4b5274;
             margin-left: -84px;
             margin-top: 67px; }
+    #cellphone .body .active {
+      display: block; }
+    #cellphone .body .inactive {
+      display: none; }
     #cellphone .body .liste {
       width: 400px;
       float: right;
