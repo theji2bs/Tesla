@@ -1,7 +1,7 @@
 <section id="tirix">
-
-<h1>TI-RIX</h1>
-
+	<div class="close">
+		<img src="assets/img/Fermer.svg" alt="close" class="close_button" />
+	</div>
 
 <div class="containerlogo">
 	<div class="inactive">
@@ -11,6 +11,7 @@
 	    <div class="ball2"></div>
     </div>
 </div>
+<h1>TI-RIX</h1>
 <h2 class="touchandtalk">TOUCH TI-RIX AND TALK</h2>
 
 <div class="contenu">
@@ -42,7 +43,7 @@
 
 		<p class="texttrex1">DONNER UN STEAK</p>	
 		
-		<div class="steak">
+		<div class="steak active">
 			<img src="assets/img/steak.svg" class="triximg2">
 		</div>
 	</div>

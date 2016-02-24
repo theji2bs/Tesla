@@ -4,10 +4,21 @@
     position: absolute; 
     margin-left: 90px;
     top: 0;
+	
+	.close{
+    	position: absolute;
+		margin-left: -55px;
 
+    	.close_button{
+    		width: 80px;
+    		height: 80px;
+    	}
+    }
+	
     h1{
-    	margin-left: -50px;
-    	margin-top: 5px;
+    	position: absolute;
+	    left: 435px;
+	    top: 453px;
     	color:#00D8EF;
     	font-size: 24pt;
     	letter-spacing: 2pt;
@@ -27,7 +38,7 @@
     	    width: 1100px;
 		    height: 500px;
 		    margin-left: -50px;
-   			padding-top: 100px;
+   			margin-top: 70px;
 
    		.inactive{
 
@@ -194,13 +205,19 @@
     		position:absolute;
 			width: 90px;
 			height: 90px;
-			border: solid 3px #F1304E;
 			border-radius: 50%;
-			background:#1E2749;
 			bottom:50px;
 			left:50%;
 			margin-left: -80px;
 			transform: translate(-50%);
+		}
+		.active{
+			border: solid 3px #F1304E;
+			background:#1E2749;
+		}
+		.desactive{
+			border: solid 3px #00D8EF;
+			background:#1E2749;
 		}
 		.texttrex1{
 			position:absolute;

@@ -11,10 +11,13 @@ function showSettings() {
         
 }
 function hideSettings() {
-		$( "#settings" ).fadeOut('fast');
-		$( "nav" ).fadeIn('fast'); // Header
-		$( "#dash" ).fadeIn('fast'); // Header
-        
+		
+        //console.log(route);
+        $( "#settings" ).fadeOut('fast');
+        if(route != "tirix"){
+			$( "nav" ).fadeIn('fast'); // Header
+        }
+        $( "#dash" ).fadeIn('fast'); // Header
     	
 }
 
@@ -160,7 +163,6 @@ $( ".voiture" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showSettings()
-	  	route = '#settings';
   }
 
 });
@@ -277,59 +279,6 @@ switchSettingsLights = 'off';
 	}
   else{
 	  	$( this ).addClass("active");
-  }
-});
-
-// Lock doors
- $( ".lock > .front" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$( ".lock > .front > .title > h2").html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .front > .title > h2" ).html( "Locked" );
-  }
-});
-
-$( ".lock > .right" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .right > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .right > .title > h2" ).html( "Locked" );
-  }
-});
-
-$( ".lock > .charge" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .charge > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .charge > .title > h2" ).html( "Locked" );
-  }
-});
-
- $( ".lock > .left" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .left > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .left > .title > h2" ).html( "Locked" );
   }
 });
 

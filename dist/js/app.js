@@ -26,6 +26,10 @@ $(document).ready(function(){
        
     })
 
+
+
+
+
     // Initialisation of router
     var route = '';
 
@@ -33,15 +37,13 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    $( "#auth" ).fadeIn('slow'); // Dashboard
+    //$( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-    //$( "header" ).fadeIn('slow'); // Header
-    //$( "nav" ).fadeIn('slow'); // Header
-    //$( "footer" ).fadeIn('slow'); // Header
-    //$( "#dash" ).fadeIn('slow'); // Dashboard
+    $( "header" ).fadeIn('slow'); // Header
+    $( "nav" ).fadeIn('slow'); // Header
+    $( "footer" ).fadeIn('slow'); // Header
+    $( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -131,6 +133,42 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 
 });
 
+
+
+// Phone widget
+//hiddenBox.show()
+var currentNumb = [];
+
+    function numberWithSpace(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    
+    $( ".number" ).on( "click", function( event ) {
+            if(currentNumb.length < 10){
+              var getNumb = $(this).text();
+              //console.log(getNumb);
+              currentNumb.push(getNumb);
+
+             
+              //var length = $(".numpad > p").val().length;
+              //console.log(length);
+
+              var goodNumbers = numberWithSpace(currentNumb.join(''));
+
+
+
+              $(".numpad > p").text(goodNumbers);
+            }
+         $( ".del-phone-number" ).on( "click", function( event ) {
+            if(currentNumb != []){
+                console.log(currentNumb);
+            currentNumb = [];
+            
+            $(".numpad > p").text("... ... ... ... ...");
+            }
+        });
+    });
+
 // Base router
 
 function showContacts() {
@@ -159,6 +197,11 @@ $( "nav > .nav-contacts" ).on( "click", function() {
   }
 
 });
+
+
+
+
+
 
 
         Highcharts.setOptions({
@@ -425,10 +468,13 @@ function showSettings() {
         
 }
 function hideSettings() {
-		$( "#settings" ).fadeOut('fast');
-		$( "nav" ).fadeIn('fast'); // Header
-		$( "#dash" ).fadeIn('fast'); // Header
-        
+		
+        //console.log(route);
+        $( "#settings" ).fadeOut('fast');
+        if(route != "tirix"){
+			$( "nav" ).fadeIn('fast'); // Header
+        }
+        $( "#dash" ).fadeIn('fast'); // Header
     	
 }
 
@@ -574,7 +620,6 @@ $( ".voiture" ).on( "click", function() {
   else{
 	  	$( this ).addClass("active");
 	  	showSettings()
-	  	route = '#settings';
   }
 
 });
@@ -694,59 +739,6 @@ switchSettingsLights = 'off';
   }
 });
 
-// Lock doors
- $( ".lock > .front" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$( ".lock > .front > .title > h2").html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .front > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .front > .title > h2" ).html( "Locked" );
-  }
-});
-
-$( ".lock > .right" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .right > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .right > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .right > .title > h2" ).html( "Locked" );
-  }
-});
-
-$( ".lock > .charge" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .charge > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .charge > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .charge > .title > h2" ).html( "Locked" );
-  }
-});
-
- $( ".lock > .left" ).on( "click", function() {
-  if( $( this ).hasClass('lock') ){ // si l'élément possède la classe .vert
-		$( this ).removeClass("lock");
-		$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Deverrouillage.svg" );
-		$(".lock > .left > .title > h2" ).html( "Unlocked" );
-	}
-  else{
-	  	$( this ).addClass("lock");
-	  	$( ".lock > .left > .icon > img" ).attr( "src", "assets/img/Verrouillage.svg" );
-	  	$(".lock > .left > .title > h2" ).html( "Locked" );
-  }
-});
-
 
 // Menu
 $( ".aside > ul > li" ).on( "click", function() {
@@ -777,11 +769,18 @@ $( ".aside > ul > li" ).on( "click", function() {
 
 function showTirix() {
         $( "#tirix" ).fadeIn('slow');
-        $("#menunav").fadeOut();
+        $("nav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
+        $("nav").fadeIn();
 }
+
+$( "#tirix > .close" ).on( "click", function() {
+
+  hideTirix()
+
+});
 
 function useTirix() {
 	$( ".containerlogo" ).fadeOut( 300, function() { 
