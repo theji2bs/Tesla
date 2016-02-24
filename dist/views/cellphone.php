@@ -57,7 +57,7 @@
 			</div>
 
 			<div class="temps">
-				<p>00:02:36</p>
+				<p id="chronotime">00:00:00:00</p>
 			</div>
 
 			<div class="raccrocher" alt="">
