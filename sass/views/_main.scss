@@ -5,12 +5,12 @@
     top: 0;
 
 	.big-head{
-		background:url("../assets/img/screens/widget-map.png") no-repeat;
-		width: 100%;
-		margin-bottom: 10px;
-		height: 618px;
-		border-bottom: 1px solid #2E3658;
-	    background-size:100%;
+		background: url("../assets/img/screens/widget-map.png") no-repeat;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 618px;
+    border-bottom: 2px solid #2E3658;
+    background-size: 100%;
 	}
 	.graph {
 		display: flex;
@@ -33,11 +33,15 @@
 
 
 	.sidebar2{
-			width: 70px;
-			height: 450px;
-			background-color: rgba(0, 0, 255, 0.05);
-			background: rgba(0, 0, 255, 0.05);
-			margin-right:80px;
+			
+
+        width: 66px;
+    height: 374px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    margin-right: 80px;
+    margin-left: 9px;
+    margin-top: 10px;
 
 
 
@@ -53,18 +57,18 @@
 
 
 .blue1{
-	color: #00D8EF;
-	margin-left:100px;
-	margin-top: -430px;
-	position: absolute;
+	    color: #00D8EF;
+    margin-left: 100px;
+    margin-top: -360px;
+    position: absolute;
 
 }
 .blue2{
-	color: white;
-	margin-left:170px;
-	margin-top: -430px;
-	position: absolute;
-
+	
+	    color: white;
+    margin-left: 170px;
+    margin-top: -360px;
+    position: absolute;
 }
 
 
@@ -99,11 +103,13 @@
 
 
 .sidebar2{
-		width: 70px;
-		height: 450px;
-		background-color: rgba(0, 0, 255, 0.05);
-		background: rgba(0, 0, 255, 0.05);
-		margin-right:80px;
+		       margin-left: 10px;
+    margin-top: 10px;
+    width: 70px;
+    height: 375px;
+    background-color: rgba(0, 0, 255, 0.05);
+    background: rgba(0, 0, 255, 0.05);
+    margin-right: 80px;
 
 
 	}
@@ -212,11 +218,12 @@ margin-top: 20px;
 
 	
 	.sidebar{
-		    width: 6%;
-    height: 450px;
+	     width: 66px;
+    margin-left: 10px;
+    height: 420px;
     background-color: rgba(0, 0, 255, 0.05);
     background: rgba(0, 0, 255, 0.05);
-    /* margin-left: 15px; */
+    margin-top: 10px;
 
 
 	}
@@ -246,8 +253,8 @@ color:white;
     padding-left: px;
     padding-top: 5px;
     background: #775C25;
-    margin-left: 105px;
-    margin-top: -30px;
+    margin-left: 245px;
+    margin-top: -60px;
 }
 
 .one{
@@ -330,8 +337,9 @@ margin-top: 20px;
 
 
 .historique{
-	margin-left: 60px;
-    margin-top: 50px;
+
+margin-left: 60px;
+    margin-top: 110px;
 }
 .strong{
 	
@@ -357,29 +365,32 @@ margin-top: 20px;
 }
 
 .phonebutton{
-    width: 50px;
-    height: 50px;
+       width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: solid 2px #2E3554;
     padding: 6px;
     margin-left: 19px;
     margin-top: 20px;
     background-color: #202946;
+}
 
 	
-}
+
 .hrphone{
-	height: 2px;
-    width: 170px;
-    margin-left: -40px;
-    margin-top: -30px;
+    height: 2px;
+    width: 121px;
+    margin-left: -24px;
+    margin-top: -23px;
     border: solid 1px #2E3554;
 }
 
 .callerphone{
+	
 	    margin-top: 10px;
-    width: 90px;
-    height: 90px;
+    margin-left: 24px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     border: solid 2px #2E3554;
 }
@@ -395,7 +406,8 @@ margin-top: 20px;
 	margin-left: 20px;
 }
 .contactcontenu{
-margin-left: 50px;
+
+    margin-left: 43px;
     margin-top: 10px;
     background-color: rgba(0, 0, 255, 0.05);
     background: rgba(0, 0, 255, 0.05);
@@ -404,6 +416,8 @@ margin-left: 50px;
     width: 48%;
     height: 420px;
     padding-top: -30px;
+
+
 
 }
 

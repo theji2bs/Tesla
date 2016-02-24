@@ -137,20 +137,20 @@
 <div class="historique">
 	<p class="strong vertc">Bryce Dallas Ho</p>
 	<p class="petit vertc">+0633445566</p>
-		<br><br>
+		<br>
 	<p class="strong vertc">Omar Sy</p>
 	<p class="petit vertc">+0633445566</p>
-		<br><br>
+		<br>
 	<p class="strong vertc">DeltaVelociraptor</p>
 	<p class="petit vertc">+0633445566</p>
 		
-	<br><br>
+	<br>
 	<p class="strong rougec">DeltaVelociraptor</p>
 	<p class="petit rougec">+0633445566</p>
 
 
 	<div class="callerphone">
-			<img src="assets/img/phone.svg" class="phonebutton">
+			<img src="assets/img/menu/Phoneo.svg" class="phonebutton">
 <hr class="hrphone">
 
 		</div>	
@@ -169,7 +169,7 @@
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -186,7 +186,7 @@
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -204,7 +204,7 @@
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -222,7 +222,7 @@
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -240,7 +240,7 @@
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
