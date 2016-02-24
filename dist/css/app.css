@@ -282,13 +282,20 @@ footer {
     transform: translate(-50%);
     margin-left: 40px; }
     footer #syncpower .sync_icon {
-      height: 45px; }
+      height: 55px;
+      position: absolute;
+      margin-left: -10px;
+      margin-top: -20px; }
+    footer #syncpower .syncblue {
+      display: none; }
     footer #syncpower .power_icon {
-      height: 32px;
-      margin-bottom: 6px;
-      margin-left: 30px; }
+      height: 42px;
+      margin-top: -13px;
+      margin-left: 88px;
+      margin-bottom: 7px; }
     footer #syncpower .p_sync {
       margin-left: 12px;
+      margin-top: 5px;
       font-size: 14px; }
     footer #syncpower .p_power {
       margin-left: 88px;
@@ -1439,9 +1446,6 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   padding: 0;
   background-size: 100% 100%;
   background-position: top; }
-  #contacts img {
-    width: 1042px;
-    height: 1479px; }
 
 ::-webkit-scrollbar {
   width: 1px; }

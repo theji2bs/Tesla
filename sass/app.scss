@@ -331,16 +331,24 @@ footer{
 	margin-left:40px;
 
 	.sync_icon{
-		height:45px;
+		height:55px;
+		position:absolute;
+		margin-left: -10px;
+		margin-top: -20px;
+	}
+	.syncblue{
+		display: none;
 	}
 	.power_icon{
-		height:32px; 
-		margin-bottom:6px;
-		margin-left:30px; 
+		height:42px; 
+		margin-top: -13px;
+		margin-left:88px; 
+		margin-bottom: 7px;
 	}
 
 	.p_sync{
 		margin-left: 12px;
+		margin-top: 5px;
 		font-size: 14px;
 	}
 	.p_power{
