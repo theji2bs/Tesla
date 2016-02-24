@@ -161,7 +161,7 @@
 	
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Bryce.png" class="losange">
 		</div>
 	<div class="cont">
 	<p class="strong">Bryce Dallas Ho</p>
@@ -178,7 +178,7 @@
 <hr class="barhr">
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Prat.png" class="losange">
 		</div>
 	<div class="cont">
 	<p class="strong">Chris Pratt &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -196,7 +196,7 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Delta.png" class="losange">
 		</div>
 	<div class="cont">
 	<p class="strong">Delta Veloc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -214,7 +214,7 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Sy.png" class="losange">
 		</div>
 	<div class="cont">
 	<p class="strong">Omar Sy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -232,7 +232,7 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Donofrio.png" class="losange">
 		</div>
 	<div class="cont">
 	<p class="strong">Vincent D'Ono &nbsp;&nbsp;</p>
