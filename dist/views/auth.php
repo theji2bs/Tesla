@@ -1,5 +1,4 @@
 <section id="auth">
-
 <div class="header">
 	<img src="assets/img/logot.svg" alt="LogoTesla">
 	<p>Welcome Sir,</p>
