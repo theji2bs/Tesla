@@ -1,9 +1,11 @@
 // Base router
 
 function showGps() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#gps" ).fadeIn('slow');
 }
 function hideGps() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#gps" ).fadeOut('slow');
 }
 

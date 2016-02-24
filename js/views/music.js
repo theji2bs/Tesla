@@ -1,9 +1,11 @@
 // Base router
 
 function showMusic() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#music" ).fadeIn('slow');
 }
 function hideMusic() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#music" ).fadeOut('slow');
 }
 

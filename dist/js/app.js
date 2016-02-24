@@ -91,10 +91,13 @@ $( ".power2" ).on( "click", function() {
 // Base router
 
 function showCellphone() {
+        $( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#cellphone" ).fadeIn('slow');
+        
 }
 function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
 }
 
 
@@ -229,9 +232,11 @@ var currentNumb = [];
 // Base router
 
 function showContacts() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#contacts" ).fadeIn('slow');
 }
 function hideContacts() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#contacts" ).fadeOut('slow');
 }
 
@@ -426,9 +431,11 @@ $( "nav > .nav-contacts" ).on( "click", function() {
 // Base router
 
 function showGps() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#gps" ).fadeIn('slow');
 }
 function hideGps() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#gps" ).fadeOut('slow');
 }
 
@@ -455,9 +462,11 @@ $( "nav > .nav-gps" ).on( "click", function() {
 // Base router
 
 function showMail() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#mail" ).fadeIn('slow');
 }
 function hideMail() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#mail" ).fadeOut('slow');
 }
 
@@ -485,9 +494,11 @@ $( "nav > .nav-mail" ).on( "click", function() {
 // Base router
 
 function showMusic() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#music" ).fadeIn('slow');
 }
 function hideMusic() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#music" ).fadeOut('slow');
 }
 
@@ -516,7 +527,7 @@ $( "nav  > .nav-music" ).on( "click", function() {
 
 function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
+		//$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
    
 }
@@ -526,8 +537,8 @@ function hideSettings() {
         $( "#settings" ).fadeOut('fast');
         
 			$( "nav" ).fadeIn('fast'); // Header
-        //}
-        $( "#dash" ).fadeIn('fast'); // Header
+        
+        //$( "#dash" ).fadeIn('fast'); // Header
     	
 }
 

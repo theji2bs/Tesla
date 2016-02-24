@@ -2,7 +2,7 @@
 
 function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
+		//$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
    
 }
@@ -12,8 +12,8 @@ function hideSettings() {
         $( "#settings" ).fadeOut('fast');
         
 			$( "nav" ).fadeIn('fast'); // Header
-        //}
-        $( "#dash" ).fadeIn('fast'); // Header
+        
+        //$( "#dash" ).fadeIn('fast'); // Header
     	
 }
 
