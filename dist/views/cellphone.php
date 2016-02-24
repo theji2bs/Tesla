@@ -53,7 +53,7 @@
 			</div>
 
 			<div class="photo">
-				<img src="../assets/img/hexagone.svg" alt="fermer">
+				<img src="../assets/img/profil/PrattContact.png" alt="profil_user">
 			</div>
 
 			<div class="temps">
