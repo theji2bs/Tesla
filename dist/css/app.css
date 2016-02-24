@@ -987,25 +987,27 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       border: 2px solid #2E3554;
       padding-bottom: 20px; }
       #dash .graph .mid-left .sidebar2 {
-        width: 70px;
-        height: 450px;
+        width: 66px;
+        height: 374px;
         background-color: rgba(0, 0, 255, 0.05);
-        background: rgba(0, 0, 255, 0.05);
-        margin-right: 80px; }
+        background: #111B3B;
+        margin-right: 80px;
+        margin-left: 9px;
+        margin-top: 10px; }
       #dash .graph .mid-left .imgsidebar2 {
         width: 30px;
         height: 30px;
-        margin-left: 20px;
+        margin-left: 19px;
         margin-top: 30px; }
       #dash .graph .mid-left .blue1 {
         color: #00D8EF;
         margin-left: 100px;
-        margin-top: -430px;
+        margin-top: -360px;
         position: absolute; }
       #dash .graph .mid-left .blue2 {
         color: white;
         margin-left: 170px;
-        margin-top: -430px;
+        margin-top: -360px;
         position: absolute; }
     #dash .graph .blue {
       margin-left: 15px; }
@@ -1018,10 +1020,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       border: 2px solid #2E3554;
       margin-left: 10px; }
       #dash .graph .mid-right .sidebar2 {
+        margin-left: 10px;
+        margin-top: 10px;
         width: 70px;
-        height: 450px;
+        height: 375px;
         background-color: rgba(0, 0, 255, 0.05);
-        background: rgba(0, 0, 255, 0.05);
+        background: #111B3B;
         margin-right: 80px; }
       #dash .graph .mid-right .imgsidebar2 {
         width: 30px;
@@ -1077,15 +1081,16 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     height: 442px;
     border: solid 2px #2E3554; }
     #dash .big-foot .sidebar {
-      width: 6%;
-      height: 450px;
+      width: 66px;
+      margin-left: 10px;
+      height: 420px;
       background-color: rgba(0, 0, 255, 0.05);
-      background: rgba(0, 0, 255, 0.05);
-      /* margin-left: 15px; */ }
+      background: #111B3B;
+      margin-top: 10px; }
     #dash .big-foot .imgsidebar {
       width: 30px;
       height: 30px;
-      margin-left: 20px;
+      margin-left: 18px;
       margin-top: 30px; }
     #dash .big-foot .txtphone {
       color: white; }
@@ -1100,8 +1105,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       padding-left: px;
       padding-top: 5px;
       background: #775C25;
-      margin-left: 105px;
-      margin-top: -30px; }
+      margin-left: 245px;
+      margin-top: -60px; }
     #dash .big-foot .one {
       display: flex; }
     #dash .big-foot .two {
@@ -1155,51 +1160,54 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       color: #F1304F; }
     #dash .big-foot .historique {
       margin-left: 60px;
-      margin-top: 50px; }
+      margin-top: 110px; }
     #dash .big-foot .petit {
       font-size: 0.8em;
       line-height: 27px; }
     #dash .big-foot .losange {
-      width: 60px;
+      idth: 60px;
       height: 60px;
       margin-top: 0px;
       margin-left: 30px; }
     #dash .big-foot .phonebutton {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       border: solid 2px #2E3554;
       padding: 6px;
-      margin-left: 19px;
-      margin-top: 20px;
+      margin-left: 14px;
+      margin-top: 14px;
       background-color: #202946; }
     #dash .big-foot .hrphone {
       height: 2px;
-      width: 170px;
-      margin-left: -40px;
-      margin-top: -30px;
+      width: 121px;
+      margin-left: -29px;
+      margin-top: -23px;
       border: solid 1px #2E3554; }
     #dash .big-foot .callerphone {
       margin-top: 10px;
-      width: 90px;
-      height: 90px;
+      margin-left: 27px;
+      width: 70px;
+      padding-left: -4px;
+      height: 70px;
       border-radius: 50px;
       border: solid 2px #2E3554; }
     #dash .big-foot .contact {
       display: flex;
-      height: 50px; }
+      height: 55px;
+      margin-top: 5px; }
     #dash .big-foot .cont {
       margin-top: 20px;
       margin-left: 20px; }
     #dash .big-foot .contactcontenu {
-      margin-left: 50px;
-      margin-top: 10px;
-      background-color: rgba(0, 0, 255, 0.05);
-      background: rgba(0, 0, 255, 0.05);
+      margin-left: 43px;
+      margin-top: 16px;
+      /* background-color: rgba(0, 0, 255, 0.05); */
+      background: #051032;
       border-left: solid 3px #2E3554;
       border-right: solid 3px #2E3554;
       width: 48%;
-      height: 420px;
+      height: 411px;
       padding-top: -30px; }
     #dash .big-foot .bar {
       width: 3px;
