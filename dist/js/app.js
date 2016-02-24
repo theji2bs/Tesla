@@ -14,20 +14,6 @@ $(document).ready(function(){
 	    }, 100);
 	    
 
-	var socket = io.connect('http://localhost:8080');
-    socket.on('data', function(content) {
-        //console.log(content.number);
-        //data.datasets[0].data.push(content.number);
-        //delete data.datasets[0].data[0];
-        //var shift = data.datasets[0].data.shift();
-        //console.log(data.datasets.data);
-        //console.log(data.datasets[0].data);
-        
-       
-    })
-
-
-
 
 
     // Initialisation of router
@@ -37,13 +23,13 @@ $(document).ready(function(){
     var switchSettingsLights = '';
 
     // Show different elements of the page
-    //$( "#auth" ).fadeIn('slow'); // Dashboard
+    $( "#auth" ).fadeIn('slow'); // Dashboard
     //$( "#tirix" ).fadeIn('slow'); // Dashboard
     //$( "#settings" ).fadeIn('slow'); // Dashboard
-    $( "header" ).fadeIn('slow'); // Header
-    $( "nav" ).fadeIn('slow'); // Header
-    $( "footer" ).fadeIn('slow'); // Header
-    $( "#dash" ).fadeIn('slow'); // Dashboard
+    //$( "header" ).fadeIn('slow'); // Header
+    //$( "nav" ).fadeIn('slow'); // Header
+    //$( "footer" ).fadeIn('slow'); // Header
+    //$( "#dash" ).fadeIn('slow'); // Dashboard
     
 
 });
@@ -105,11 +91,56 @@ $( ".power2" ).on( "click", function() {
 // Base router
 
 function showCellphone() {
+        $( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#cellphone" ).fadeIn('slow');
+        
 }
 function hideCellphone() {
         $( "#cellphone" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
 }
+
+
+var startTime = 0
+var start = 0
+var end = 0
+var diff = 0
+var timerID = 0
+function chrono(){
+  end = new Date()
+  diff = end - start
+  diff = new Date(diff)
+  var msec = diff.getMilliseconds()
+  var sec = diff.getSeconds()
+  var min = diff.getMinutes()
+  var hr = diff.getHours()-1
+  if (min < 10){
+    min = "0" + min
+  }
+  if (sec < 10){
+    sec = "0" + sec
+  }
+  if(msec < 10){
+    msec = "00" +msec
+  }
+  else if(msec < 100){
+    msec = "0" +msec
+  }
+  document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec + ":" + msec
+  timerID = setTimeout("chrono()", 10)
+}
+function chronoStart(){
+  start = new Date()
+  chrono()
+}
+function chronoReset(){
+  document.getElementById("chronotime").innerHTML = "0:00:00:000"
+  start = new Date()
+}
+function chronoStop(){
+  clearTimeout(timerID)
+}
+
 
 $( "nav > .nav-cellphone" ).on( "click", function() {
 
@@ -129,10 +160,39 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 	  	showCellphone()
 	  	route = 'cellphone';
 
+      $( ".appeler > .cercle" ).on( "click", function() {
+                $( ".body > .pad" ).fadeOut( "fast" , function(){
+                    $( ".body > .appel" ).fadeIn( "slow" );
+                });
+                chronoStart()
+               
+      });
+
+
+      $( ".raccrocher > .cercle" ).on( "click", function() {
+                chronoStop()
+                $( ".body > .appel" ).fadeOut( "fast" , function(){
+                    $( ".body > .pad" ).fadeIn( "slow" );
+                });
+                chronoReset()
+      });
+
   }
 
 });
 
+
+
+$( "#content-1 > .contact" ).on( "click", function() {
+
+    //$( this ).removeClass("active").addClass("inactive");
+
+                $( ".body > .pad" ).fadeOut( "fast" , function(){
+                    $( ".body > .appel" ).fadeIn( "slow" );
+                });
+                chronoStart()
+
+});
 
 
 // Phone widget
@@ -143,7 +203,7 @@ var currentNumb = [];
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
     
-    $( ".number" ).on( "click", function( event ) {
+    $( "#cellphone > .number" ).on( "click", function( event ) {
             if(currentNumb.length < 10){
               var getNumb = $(this).text();
               //console.log(getNumb);
@@ -157,14 +217,14 @@ var currentNumb = [];
 
 
 
-              $(".numpad > p").text(goodNumbers);
+              $("#cellphone > .numpad > p").text(goodNumbers);
             }
-         $( ".del-phone-number" ).on( "click", function( event ) {
+         $( "#cellphone > .del-phone-number" ).on( "click", function( event ) {
             if(currentNumb != []){
                 console.log(currentNumb);
             currentNumb = [];
             
-            $(".numpad > p").text("... ... ... ... ...");
+            $("#cellphone > .numpad > p").text("... ... ... ... ...");
             }
         });
     });
@@ -172,9 +232,11 @@ var currentNumb = [];
 // Base router
 
 function showContacts() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#contacts" ).fadeIn('slow');
 }
 function hideContacts() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#contacts" ).fadeOut('slow');
 }
 
@@ -469,9 +531,11 @@ $( ".syncblue" ).on( "click", function() {
 // Base router
 
 function showGps() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#gps" ).fadeIn('slow');
 }
 function hideGps() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#gps" ).fadeOut('slow');
 }
 
@@ -498,9 +562,11 @@ $( "nav > .nav-gps" ).on( "click", function() {
 // Base router
 
 function showMail() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#mail" ).fadeIn('slow');
 }
 function hideMail() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#mail" ).fadeOut('slow');
 }
 
@@ -528,9 +594,11 @@ $( "nav > .nav-mail" ).on( "click", function() {
 // Base router
 
 function showMusic() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#music" ).fadeIn('slow');
 }
 function hideMusic() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#music" ).fadeOut('slow');
 }
 
@@ -559,22 +627,18 @@ $( "nav  > .nav-music" ).on( "click", function() {
 
 function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
+		//$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
-
-
-
-
-        
+   
 }
 function hideSettings() {
 		
         //console.log(route);
         $( "#settings" ).fadeOut('fast');
-        if(route != "tirix"){
+        
 			$( "nav" ).fadeIn('fast'); // Header
-        }
-        $( "#dash" ).fadeIn('fast'); // Header
+        
+        //$( "#dash" ).fadeIn('fast'); // Header
     	
 }
 
@@ -868,16 +932,18 @@ $( ".aside > ul > li" ).on( "click", function() {
 // Base router
 
 function showTirix() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#tirix" ).fadeIn('slow');
         $("nav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
         $("nav").fadeIn();
 }
 
 $( "#tirix > .close" ).on( "click", function() {
-
+	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
   hideTirix()
 
 });
@@ -955,6 +1021,7 @@ $(window).on('keydown', function(e){
 		
 		}
 
+		// I
 		if ( e.keyCode == 73 ){
 
 			interactions = interactions + 1;
@@ -1000,11 +1067,24 @@ $( ".nav-warning"  ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active").addClass("inactive");
-	  	hideWarning()
+	  	
 	}
   else{
 	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
+	  	$(window).on('keydown', function(e){
+			
+			//console.log(e.keyCode);
+
+				// Echap
+				if ( e.keyCode == 27 ){
+						
+					hideWarning()		
+				
+				}
+
+
+		});
 	  	
   }
 

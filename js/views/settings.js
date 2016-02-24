@@ -2,22 +2,18 @@
 
 function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
-		$( "#dash" ).fadeOut('fast'); // Header
+		//$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
-
-
-
-
-        
+   
 }
 function hideSettings() {
 		
         //console.log(route);
         $( "#settings" ).fadeOut('fast');
-        if(route != "tirix"){
+        
 			$( "nav" ).fadeIn('fast'); // Header
-        }
-        $( "#dash" ).fadeIn('fast'); // Header
+        
+        //$( "#dash" ).fadeIn('fast'); // Header
     	
 }
 

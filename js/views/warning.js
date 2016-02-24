@@ -29,11 +29,24 @@ $( ".nav-warning"  ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active").addClass("inactive");
-	  	hideWarning()
+	  	
 	}
   else{
 	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
+	  	$(window).on('keydown', function(e){
+			
+			//console.log(e.keyCode);
+
+				// Echap
+				if ( e.keyCode == 27 ){
+						
+					hideWarning()		
+				
+				}
+
+
+		});
 	  	
   }
 

@@ -1,16 +1,18 @@
 // Base router
 
 function showTirix() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#tirix" ).fadeIn('slow');
         $("nav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
         $("nav").fadeIn();
 }
 
 $( "#tirix > .close" ).on( "click", function() {
-
+	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
   hideTirix()
 
 });
@@ -88,6 +90,7 @@ $(window).on('keydown', function(e){
 		
 		}
 
+		// I
 		if ( e.keyCode == 73 ){
 
 			interactions = interactions + 1;

@@ -1,9 +1,11 @@
 // Base router
 
 function showContacts() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#contacts" ).fadeIn('slow');
 }
 function hideContacts() {
+		$( "#dash" ).fadeIn('slow'); // Dashboard
         $( "#contacts" ).fadeOut('slow');
 }
 

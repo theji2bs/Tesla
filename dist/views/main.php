@@ -137,20 +137,20 @@
 <div class="historique">
 	<p class="strong vertc">Bryce Dallas Ho</p>
 	<p class="petit vertc">+0633445566</p>
-		<br><br>
+		<br>
 	<p class="strong vertc">Omar Sy</p>
 	<p class="petit vertc">+0633445566</p>
-		<br><br>
+		<br>
 	<p class="strong vertc">DeltaVelociraptor</p>
 	<p class="petit vertc">+0633445566</p>
 		
-	<br><br>
+	<br>
 	<p class="strong rougec">DeltaVelociraptor</p>
 	<p class="petit rougec">+0633445566</p>
 
 
 	<div class="callerphone">
-			<img src="assets/img/phone.svg" class="phonebutton">
+			<img src="assets/img/menu/Phoneo.svg" class="phonebutton">
 <hr class="hrphone">
 
 		</div>	
@@ -161,15 +161,15 @@
 	
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Bryce.png" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Bryce Dallas Ho</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -178,15 +178,15 @@
 <hr class="barhr">
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Prat.png" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Chris Pratt &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -196,15 +196,15 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Delta.png" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Delta Veloc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -214,15 +214,15 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Sy.png" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Omar Sy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
@@ -232,15 +232,15 @@
 
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/hexagone.svg" class="losange">
+	<img src="assets/img/menu/Donofrio.png" class="losange">
 		</div>
 	<div class="cont">
-	<p class="strong">Martin Maillot</p>
+	<p class="strong">Vincent D'Ono &nbsp;&nbsp;</p>
 	<p class="petit">+0633445566</p>
     </div>
     <div class="bar"></div>
 		<div class="icons">
-		<img src="assets/img/phone.svg" class="iconegauche">
+		<img src="assets/img/menu/Phoneo.svg" class="iconegauche">
 		<img src="assets/img/message.svg" class="iconedroite">
 		</div>
 
