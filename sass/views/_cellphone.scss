@@ -305,15 +305,17 @@
 
     				.nom{
     					float: right;
-					    margin-right: 110px;
-					    margin-top: 21px;
+                        margin-left: 123px;
+                        margin-top: -66px;
+                        position: absolute;
     				}
 
     				.numero{
-    					float: right;
-					    margin-right: 170px;
-					    margin-top: -34px;
-					    font-size: 98%;
+    					    float: right;
+                            margin-right: 170px;
+                            margin-top: -34px;
+                            font-size: 98%;
+                            color: #242F51;
     				}
 
     			}

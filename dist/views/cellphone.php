@@ -78,49 +78,41 @@
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie 1 Demonalu</p>
+					<img src="assets/img/profil/PrattContact.png" alt="image">
+					<p class="nom">Chris Pratt</p>
 					<p class="numero">+0636463478</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie 2 Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<img src="assets/img/profil/BryceContact.png" alt="image">
+					<p class="nom">Bryce Dallas Howard</p>
+					<p class="numero">+0699786543</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie 3 Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<img src="assets/img/profil/DeltaContact.png" alt="image">
+					<p class="nom">Delta Verociraotor</p>
+					<p class="numero">+0655123453</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<img src="assets/img/profil/Sy.png" alt="image">
+					<p class="nom">Omar Sy</p>
+					<p class="numero">+0636469987</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
-				</div>
-			</div>	
-
-			<div class="contact" alt="contact">
-				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<img src="assets/img/profil/DonofrioContact.png" alt="image">
+					<p class="nom">Vincent D'Onofrio</p>
+					<p class="numero">+0687567655</p>
 				</div>
 			</div>	
 
@@ -135,8 +127,24 @@
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<p class="nom">Lucie Galtern</p>
+					<p class="numero">++0626453643</p>
+				</div>
+			</div>	
+
+			<div class="contact" alt="contact">
+				<div class="bebe">
+					<img src="assets/img/hexagone.svg" alt="image">
+					<p class="nom">Lionel Rachou</p>
+					<p class="numero">+0688123466</p>
+				</div>
+			</div>	
+
+			<div class="contact" alt="contact">
+				<div class="bebe">
+					<img src="assets/img/hexagone.svg" alt="image">
+					<p class="nom">Lauren Lapkus</p>
+					<p class="numero">+0636814587</p>
 				</div>
 			</div>	
 
@@ -151,40 +159,32 @@
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<p class="nom">Colin Trevorrow</p>
+					<p class="numero">+0122556490</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<p class="nom">Nick Robinson</p>
+					<p class="numero">+0233887654</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<p class="nom">Judy Greer</p>
+					<p class="numero">+0766982374</p>
 				</div>
 			</div>	
 
 			<div class="contact" alt="contact">
 				<div class="bebe">
 					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
-				</div>
-			</div>	
-
-			<div class="contact" alt="contact">
-				<div class="bebe">
-					<img src="assets/img/hexagone.svg" alt="image">
-					<p class="nom">Stépanie Demonalu</p>
-					<p class="numero">+0636463478</p>
+					<p class="nom">Brian Tee</p>
+					<p class="numero">+0122387464</p>
 				</div>
 			</div>	
 
@@ -221,7 +221,7 @@
 
 					<img src="assets/img/hexagone-phone-red.svg" alt="">
 					<p class="name">Stéphanie Demanalue</p>
-					<p class="number">+0645876443</p>
+					<p class="number">+0636463478</p>
 				
 				</div>	
 
@@ -263,7 +263,7 @@
 
 					<img src="assets/img/hexagone-phone-green.svg" alt="">
 					<p class="name">Lionel Rachou</p>
-					<p class="number">+0626453643</p>
+					<p class="number">+0688123466</p>
 				
 				</div>	
 

@@ -1708,13 +1708,15 @@ input[type=range].monbouton:focus::-ms-fill-upper {
             margin-left: 2px; }
           #cellphone .body .liste .contact .bebe .nom {
             float: right;
-            margin-right: 110px;
-            margin-top: 21px; }
+            margin-left: 123px;
+            margin-top: -66px;
+            position: absolute; }
           #cellphone .body .liste .contact .bebe .numero {
             float: right;
             margin-right: 170px;
             margin-top: -34px;
-            font-size: 98%; }
+            font-size: 98%;
+            color: #242F51; }
   #cellphone .recent {
     border: 1px solid #4b5274;
     width: 1019px;
