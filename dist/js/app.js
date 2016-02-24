@@ -14,20 +14,6 @@ $(document).ready(function(){
 	    }, 100);
 	    
 
-	var socket = io.connect('http://localhost:8080');
-    socket.on('data', function(content) {
-        //console.log(content.number);
-        //data.datasets[0].data.push(content.number);
-        //delete data.datasets[0].data[0];
-        //var shift = data.datasets[0].data.shift();
-        //console.log(data.datasets.data);
-        //console.log(data.datasets[0].data);
-        
-       
-    })
-
-
-
 
 
     // Initialisation of router
@@ -129,6 +115,18 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 	  	showCellphone()
 	  	route = 'cellphone';
 
+      $( ".appeler" ).on( "click", function() {
+        console.log("click to phone");
+          $('#cellphone > .pad').removeClass('active').addClass('inactive');
+          $('#cellphone > .appel').removeClass('inactive').addClass('active');
+      });
+
+      $( ".raccrocher" ).on( "click", function() {
+        console.log("click to phone");
+          $('#cellphone > .pad').removeClass('active').addClass('inactive');
+          $('#cellphone > .appel').removeClass('inactive').addClass('active');
+      });
+
   }
 
 });
@@ -143,7 +141,7 @@ var currentNumb = [];
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
     
-    $( ".number" ).on( "click", function( event ) {
+    $( "#cellphone > .number" ).on( "click", function( event ) {
             if(currentNumb.length < 10){
               var getNumb = $(this).text();
               //console.log(getNumb);
@@ -157,14 +155,14 @@ var currentNumb = [];
 
 
 
-              $(".numpad > p").text(goodNumbers);
+              $("#cellphone > .numpad > p").text(goodNumbers);
             }
-         $( ".del-phone-number" ).on( "click", function( event ) {
+         $( "#cellphone > .del-phone-number" ).on( "click", function( event ) {
             if(currentNumb != []){
                 console.log(currentNumb);
             currentNumb = [];
             
-            $(".numpad > p").text("... ... ... ... ...");
+            $("#cellphone > .numpad > p").text("... ... ... ... ...");
             }
         });
     });
@@ -461,19 +459,15 @@ function showSettings() {
 		$( "nav" ).fadeOut('fast'); // Header
 		$( "#dash" ).fadeOut('fast'); // Header
         $( "#settings" ).fadeIn('slow');
-
-
-
-
-        
+   
 }
 function hideSettings() {
 		
         //console.log(route);
         $( "#settings" ).fadeOut('fast');
-        if(route != "tirix"){
+        
 			$( "nav" ).fadeIn('fast'); // Header
-        }
+        //}
         $( "#dash" ).fadeIn('fast'); // Header
     	
 }
@@ -777,7 +771,7 @@ function hideTirix() {
 }
 
 $( "#tirix > .close" ).on( "click", function() {
-
+	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
   hideTirix()
 
 });
@@ -855,6 +849,7 @@ $(window).on('keydown', function(e){
 		
 		}
 
+		// I
 		if ( e.keyCode == 73 ){
 
 			interactions = interactions + 1;
@@ -900,11 +895,24 @@ $( ".nav-warning"  ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active").addClass("inactive");
-	  	hideWarning()
+	  	
 	}
   else{
 	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
+	  	$(window).on('keydown', function(e){
+			
+			//console.log(e.keyCode);
+
+				// Echap
+				if ( e.keyCode == 27 ){
+						
+					hideWarning()		
+				
+				}
+
+
+		});
 	  	
   }
 

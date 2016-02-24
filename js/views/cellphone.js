@@ -25,6 +25,18 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 	  	showCellphone()
 	  	route = 'cellphone';
 
+      $( ".appeler" ).on( "click", function() {
+        console.log("click to phone");
+          $('#cellphone > .pad').removeClass('active').addClass('inactive');
+          $('#cellphone > .appel').removeClass('inactive').addClass('active');
+      });
+
+      $( ".raccrocher" ).on( "click", function() {
+        console.log("click to phone");
+          $('#cellphone > .pad').removeClass('active').addClass('inactive');
+          $('#cellphone > .appel').removeClass('inactive').addClass('active');
+      });
+
   }
 
 });
@@ -39,7 +51,7 @@ var currentNumb = [];
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
     
-    $( ".number" ).on( "click", function( event ) {
+    $( "#cellphone > .number" ).on( "click", function( event ) {
             if(currentNumb.length < 10){
               var getNumb = $(this).text();
               //console.log(getNumb);
@@ -53,14 +65,14 @@ var currentNumb = [];
 
 
 
-              $(".numpad > p").text(goodNumbers);
+              $("#cellphone > .numpad > p").text(goodNumbers);
             }
-         $( ".del-phone-number" ).on( "click", function( event ) {
+         $( "#cellphone > .del-phone-number" ).on( "click", function( event ) {
             if(currentNumb != []){
                 console.log(currentNumb);
             currentNumb = [];
             
-            $(".numpad > p").text("... ... ... ... ...");
+            $("#cellphone > .numpad > p").text("... ... ... ... ...");
             }
         });
     });
