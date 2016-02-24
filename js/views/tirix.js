@@ -1,11 +1,13 @@
 // Base router
 
 function showTirix() {
+		$( "#dash" ).fadeOut('slow'); // Dashboard
         $( "#tirix" ).fadeIn('slow');
         $("nav").fadeOut();
 }
 function hideTirix() {
         $( "#tirix" ).fadeOut('slow');
+        $( "#dash" ).fadeIn('slow'); // Dashboard
         $("nav").fadeIn();
 }
 

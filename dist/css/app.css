@@ -102,13 +102,13 @@ body {
       background-color: red;
       margin-top: 30px; }
   .content section {
-    width: 1110px;
-    margin-top: 90px;
+    width: 1042px;
+    margin-top: 100px;
     padding: 0px;
     display: none;
     flex: 1;
     float: right;
-    height: 1500px; }
+    height: 1479px; }
 
 header {
   z-index: 10;
@@ -966,7 +966,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
 #dash {
   z-index: 1;
   position: absolute;
-  margin-left: 90px;
+  margin-left: 115px;
   top: 0; }
   #dash .big-head {
     background: url("../assets/img/screens/widget-map.png") no-repeat;
@@ -1160,7 +1160,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       color: #F1304F; }
     #dash .big-foot .historique {
       margin-left: 60px;
-      margin-top: 110px; }
+      margin-top: 40px; }
     #dash .big-foot .petit {
       font-size: 0.8em;
       line-height: 27px; }
@@ -1197,8 +1197,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       height: 55px;
       margin-top: 5px; }
     #dash .big-foot .cont {
-      margin-top: 20px;
-      margin-left: 20px; }
+      margin-top: 12px;
+      margin-left: 20px;
+      width: 200px; }
     #dash .big-foot .contactcontenu {
       margin-left: 43px;
       margin-top: 16px;
@@ -1213,15 +1214,16 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       width: 3px;
       height: 40px;
       background: #2E3554;
-      margin-left: 120px;
-      margin-top: 20px; }
+      margin-left: 40px;
+      margin-top: 12px; }
     #dash .big-foot .iconegauche {
       width: 40px;
       height: 40px;
       margin-left: 20px; }
     #dash .big-foot .icons {
-      margin-top: 20px;
-      margin-right: 10px; }
+      margin-top: 12px;
+      margin-right: 10px;
+      width: 50%; }
     #dash .big-foot .iconedroite {
       width: 40px;
       height: 40px;
@@ -1431,7 +1433,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   z-index: 10;
   position: absolute;
   margin-left: 115px;
-  top: 5px;
+  top: 0px;
   padding: 0;
   background-size: 100% 100%;
   background-position: top; }
@@ -1443,7 +1445,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   z-index: 10;
   position: absolute;
   margin-left: 115px;
-  top: 5px;
+  top: 0px;
   padding: 0;
   background-size: 100% 100%;
   background-position: top; }
@@ -1466,12 +1468,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   background-color: #020d2d;
   z-index: 10;
   position: absolute;
-  margin-left: 90px;
+  margin-left: 115px;
   top: 0; }
   #cellphone .body {
     width: 100%;
     height: 1473px;
-    border: 2px solid #4b5274;
+    border: 2px solid #2E3658;
     padding: 10px; }
     #cellphone .body .pad {
       float: left;
@@ -1652,12 +1654,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-top: -960px;
       position: absolute;
       top: 983px;
-      left: 689px; }
+      left: 630px; }
       #cellphone .body .liste p {
         margin: 10px;
         font-size: 115%; }
       #cellphone .body .liste .contact {
-        border: 1px solid #4b5274;
+        border-top: 1px solid #4b5274;
         height: 100px;
         width: 100%;
         box-shadow: 0 0 2px #2187e7;
@@ -1680,7 +1682,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
             font-size: 98%; }
   #cellphone .recent {
     border: 1px solid #4b5274;
-    width: 1067px;
+    width: 1019px;
     height: 386px;
     margin-top: 805px;
     position: absolute;
@@ -1713,7 +1715,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel .info {
         float: left;
         height: 100%;
-        width: 552px;
+        width: 517px;
         padding: 5px; }
         #cellphone .recent .appel .info .duree {
           width: 200px;
@@ -1766,7 +1768,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel1 .info {
         float: left;
         height: 100%;
-        width: 552px;
+        width: 517px;
         padding: 5px; }
         #cellphone .recent .appel1 .info .duree {
           width: 200px;
@@ -1818,7 +1820,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel2 .info {
         float: left;
         height: 100%;
-        width: 552px;
+        width: 517px;
         padding: 5px; }
         #cellphone .recent .appel2 .info .duree {
           width: 200px;
@@ -1843,7 +1845,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
           margin-right: 20px;
           margin-top: -41px; }
     #cellphone .recent .appel3 {
-      border: 1px solid #4b5274;
+      border-top: 1px solid #4b5274;
       height: 96px;
       width: 100%;
       box-shadow: 0 0 2px #2187e7;
@@ -1870,7 +1872,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel3 .info {
         float: left;
         height: 100%;
-        width: 552px;
+        width: 517px;
         padding: 5px; }
         #cellphone .recent .appel3 .info .duree {
           width: 200px;
@@ -1923,7 +1925,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel4 .info {
         float: left;
         height: 100%;
-        width: 552px;
+        width: 517px;
         padding: 5px; }
         #cellphone .recent .appel4 .info .duree {
           width: 200px;
@@ -1955,7 +1957,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   z-index: 10;
   position: absolute;
   margin-left: 115px;
-  top: 5px;
+  top: 0px;
   padding: 0;
   background-size: 100% 100%;
   background-position: top; }
@@ -1967,7 +1969,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   z-index: 10;
   position: absolute;
   margin-left: 115px;
-  top: 5px;
+  top: 0px;
   padding: 0;
   background-size: 100% 100%;
   background-position: top; }
