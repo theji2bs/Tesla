@@ -14,9 +14,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
+
 html{
 	overflow-x: hidden;
 }
+
 
 body{
 	color: white;
@@ -36,9 +38,7 @@ body{
 
 .content{
 	width: 1200px;
-	z-index: 1;
-
-
+	
 	nav{
 		display: none;
 		width: 80px;
@@ -190,7 +190,7 @@ footer{
 	position: absolute;
 	background-color: rgba(2, 13, 45, 1);
     right: 40px;
-    bottom: 0px;
+    bottom:0px;
 
 
 
@@ -335,17 +335,26 @@ footer{
 	margin-left:40px;
 
 	.sync_icon{
-		height:45px;
+		height:55px;
+		position:absolute;
+		margin-left: -10px;
+		margin-top: -20px;
+	}
+	.syncblue{
+		display: none;
 	}
 	.power_icon{
-		height:32px; 
-		margin-bottom:6px;
-		margin-left:30px; 
+		height:42px; 
+		margin-top: -13px;
+		margin-left:88px; 
+		margin-bottom: 7px;
 	}
 
 	.p_sync{
-		margin-left: 12px;
+		margin-left:10px;
+		margin-top: 5px;
 		font-size: 14px;
+		transition:color 0.5s ease;
 	}
 	.p_power{
 		margin-left: 88px;
@@ -674,13 +683,32 @@ background-color:#272F4E;
 
 
 
-.voiture{
-	height: 6.5%;
-	width: 6.5%;
-	padding-top: 70px;
-	margin-left: 10%;
+.carbox{
+	position:relative;
+	width:100px;
+	height:95px;
+	margin-top:60px;
+	margin-left:90px;
 
+	.voiture{
+		position:absolute;
+		height:70px;
+		left:50%;
+		margin-left: 2px;
+		transform: translate(-50%);
+	}
 
+	.voitureblue{
+		display: none;
+	}
+
+	p{
+		position:absolute;
+		bottom:0;
+		left:50%;
+		font-size: 17pt;
+		transform: translate(-50%);
+	}
 }
 
 .barhr{
