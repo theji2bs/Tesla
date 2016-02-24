@@ -75,16 +75,16 @@ body {
   .content nav {
     display: none;
     width: 80px;
-    height: 1820px;
+    height: 1490px;
     padding-top: 30px;
     margin-top: 100px;
-    background: -webkit-linear-gradient(#202946, #151D35, #020D2D);
+    background: -webkit-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#202946, #151D35, #020D2D);
+    background: -o-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#202946, #151D35, #020D2D);
+    background: -moz-linear-gradient(#020C2F, #151C35, #020C2F);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#202946, #151D35, #020D2D);
+    background: linear-gradient(#020C2F, #151C35, #020C2F);
     /* Standard syntax */
     flex: 1; }
     .content nav .inactive {
