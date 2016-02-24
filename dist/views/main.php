@@ -105,6 +105,7 @@
 
 <div class="numpad">
 	<p>... ... ... ... ...</p> 
+	<div id="barprogress"></div>
 </div>
 <span class="del-phone-number delete">	&#xD7;</span>
 
@@ -112,7 +113,6 @@
 	<div class="number">1</div>
 	<div class="number">2</div>
 	<div class="number">3</div>
-	
 	</div>
 	<div class="two">
 	<div class="number haut">4</div>
@@ -137,26 +137,24 @@
 
 
 <div class="historique">
-	<p class="strong vertc">Bryce Dallas Ho</p>
-	<p class="petit vertc">+0633445566</p>
+	<p class="strong ">Bryce Dallas Ho</p>
+	<p class="petit ">+0633445566</p>
 		<br>
-	<p class="strong vertc">Omar Sy</p>
-	<p class="petit vertc">+0633445566</p>
+	<p class="strong ">Omar Sy</p>
+	<p class="petit ">+0633445566</p>
 		<br>
-	<p class="strong vertc">DeltaVelociraptor</p>
-	<p class="petit vertc">+0633445566</p>
+	<p class="strong ">DeltaVelociraptor</p>
+	<p class="petit ">+0633445566</p>
 		
 	<br>
-	<p class="strong rougec">DeltaVelociraptor</p>
-	<p class="petit rougec">+0633445566</p>
 
 
 	<div class="callerphone">
-			<img src="assets/img/menu/Phoneo.svg" class="phonebutton">
-<hr class="hrphone">
+		<img src="assets/img/menu/Phoneo.svg" class="phonebutton">
+		<hr class="hrphone">
 
 		</div>	
-</div>
+	</div>
 
 
 <div class="contactcontenu">
