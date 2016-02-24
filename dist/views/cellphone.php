@@ -236,7 +236,7 @@
 				</div>	
 			</div>
 
-			<div class="appel2" alt="...">
+			<div class="appel2">
 
 				<div class="description" alt="desc">
 
