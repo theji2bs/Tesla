@@ -1,8 +1,11 @@
 <div class="footer">
-	<div class="voiturecontrol">
-		<img src="assets/img/control.svg" class="voiture">
-		<p class="control">Controls</p>
-	</div>
+
+    <div class="carbox">
+    <img src="assets/img/Voiture.svg" class="voiture voitureblanc">
+    <img src="assets/img/VoitureBlue.svg" class="voiture voitureblue">
+    <p class="p_car">Controls</p>
+    </div>
+
 	
 	<div id="iconefoot">
 		<div class="listeicone">
@@ -59,7 +62,7 @@
 <div id="syncpower">
 <img src="assets/img/Synchronisation.svg"class="sync_icon syncblanc">
 <img src="assets/img/SynchronisationBlue.svg"class="sync_icon syncblue">
-<img src="assets/img/Power.svg"class="power_icon">
+<img src="assets/img/Power.svg"class="power_icon btnpower">
 <p class="p_sync">SYNC</p>
 <p class="p_power">POWER</p>
 </div>

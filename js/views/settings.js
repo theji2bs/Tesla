@@ -154,10 +154,14 @@ $( ".voiture" ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
+		$(this).attr('src', 'assets/img/Voiture.svg');
+		$(".p_car").css("color", "white");
 	  	hideSettings()
 	}
   else{
 	  	$( this ).addClass("active");
+	  	$(this).attr('src', 'assets/img/VoitureBlue.svg');
+	  	$(".p_car").css("color", "#00D8EF");
 	  	showSettings()
   }
 

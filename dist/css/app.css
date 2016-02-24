@@ -68,8 +68,7 @@ body {
   flex-wrap: wrap; }
 
 .content {
-  width: 1200px;
-  z-index: 1; }
+  width: 1200px; }
   .content nav {
     display: none;
     width: 80px;
@@ -294,9 +293,10 @@ footer {
       margin-left: 88px;
       margin-bottom: 7px; }
     footer #syncpower .p_sync {
-      margin-left: 12px;
+      margin-left: 10px;
       margin-top: 5px;
-      font-size: 14px; }
+      font-size: 14px;
+      transition: color 0.5s ease; }
     footer #syncpower .p_power {
       margin-left: 88px;
       margin-top: -14px;
@@ -553,11 +553,26 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   margin-top: -52px;
   color: white; }
 
-.voiture {
-  height: 6.5%;
-  width: 6.5%;
-  padding-top: 70px;
-  margin-left: 10%; }
+.carbox {
+  position: relative;
+  width: 100px;
+  height: 95px;
+  margin-top: 60px;
+  margin-left: 90px; }
+  .carbox .voiture {
+    position: absolute;
+    height: 70px;
+    left: 50%;
+    margin-left: 2px;
+    transform: translate(-50%); }
+  .carbox .voitureblue {
+    display: none; }
+  .carbox p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 17pt;
+    transform: translate(-50%); }
 
 .barhr {
   width: 85%;
@@ -833,12 +848,12 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       opacity: 1; }
 
 #warning {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(1, 11, 44, 0.8);
   z-index: 80;
   position: absolute;
-  top: 10px;
+  top: -100px;
   width: 100%;
-  height: 1500px; }
+  height: 100%; }
   #warning .box {
     background-color: rgba(208, 46, 67, 0.3);
     margin-top: 530px;

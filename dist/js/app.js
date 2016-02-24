@@ -74,6 +74,21 @@ $( ".tesla" ).on( "click", function() {
 
 });
 
+$( ".btnpower" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideAuth()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showAuth()
+	  	route = '#auth';
+  }
+
+});
+
 $( ".unlock" ).on( "click", function() {
 
 	  	hideAuth()
@@ -520,12 +535,16 @@ $( ".ventilation" ).on( "click", function() {
 $( ".syncblanc" ).on( "click", function() {
 	$(this).fadeOut(500);
 	$(".syncblue").fadeIn(500);
+	$(".p_sync").css("color", "#00D8EF");
 });
 
 $( ".syncblue" ).on( "click", function() {
 	$(this).fadeOut(500);
 	$(".syncblanc").fadeIn(500);
+	$(".p_sync").css("color", "white");
 });
+
+
 
 
 // Base router
@@ -779,10 +798,14 @@ $( ".voiture" ).on( "click", function() {
   if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
 
 		$( this ).removeClass("active");
+		$(this).attr('src', 'assets/img/Voiture.svg');
+		$(".p_car").css("color", "white");
 	  	hideSettings()
 	}
   else{
 	  	$( this ).addClass("active");
+	  	$(this).attr('src', 'assets/img/VoitureBlue.svg');
+	  	$(".p_car").css("color", "#00D8EF");
 	  	showSettings()
   }
 

@@ -39,6 +39,21 @@ $( ".tesla" ).on( "click", function() {
 
 });
 
+$( ".btnpower" ).on( "click", function() {
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active");
+	  	hideAuth()
+	}
+  else{
+	  	$( this ).addClass("active");
+	  	showAuth()
+	  	route = '#auth';
+  }
+
+});
+
 $( ".unlock" ).on( "click", function() {
 
 	  	hideAuth()
