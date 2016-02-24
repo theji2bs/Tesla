@@ -1,3 +1,3 @@
-<section id="mail">
-	<img src="assets/img/Email.png" class="Email" alt="Main">
+<section id="mail" style="background:url(assets/img/Email.png);">
+
 </section>

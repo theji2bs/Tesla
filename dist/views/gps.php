@@ -1,5 +1,4 @@
-<section id="gps">
+<section id="gps" style="background:url(assets/img/screens/gps.png);">
 
-		<img src="assets/img/screens/gps.png" class="Gps" alt="Main">
 
 </section>
