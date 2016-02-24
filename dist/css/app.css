@@ -104,7 +104,7 @@ body {
   .content section {
     width: 1110px;
     margin-top: 90px;
-    padding: 10px;
+    padding: 0px;
     display: none;
     flex: 1;
     float: right;
@@ -1417,19 +1417,31 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     margin-top: 10px; }
 
 #gps {
-  background-color: #202946;
+  background-color: #010B2C;
+  width: 1042px;
+  height: 1479px;
   z-index: 10;
   position: absolute;
-  margin-top: 100px;
-  margin-left: 90px;
-  top: 0; }
+  margin-left: 115px;
+  top: 5px;
+  padding: 0;
+  background-size: 100% 100%;
+  background-position: top; }
 
 #contacts {
-  background-color: #202946;
+  background-color: #010B2C;
+  width: 1042px;
+  height: 1479px;
   z-index: 10;
   position: absolute;
-  margin-left: 90px;
-  top: 0; }
+  margin-left: 115px;
+  top: 5px;
+  padding: 0;
+  background-size: 100% 100%;
+  background-position: top; }
+  #contacts img {
+    width: 1042px;
+    height: 1479px; }
 
 ::-webkit-scrollbar {
   width: 1px; }
@@ -1929,20 +1941,28 @@ input[type=range].monbouton:focus::-ms-fill-upper {
           margin-top: -41px; }
 
 #music {
-  background-color: #202946;
+  background-color: #010B2C;
+  width: 1042px;
+  height: 1479px;
   z-index: 10;
   position: absolute;
-  margin-top: 100px;
-  margin-left: 90px;
-  top: 0; }
+  margin-left: 115px;
+  top: 5px;
+  padding: 0;
+  background-size: 100% 100%;
+  background-position: top; }
 
 #mail {
-  background-color: rgba(32, 41, 70, 0.7);
+  background-color: #010B2C;
+  width: 1042px;
+  height: 1479px;
   z-index: 10;
   position: absolute;
-  margin-top: 100px;
-  margin-left: 90px;
-  top: 0; }
+  margin-left: 115px;
+  top: 5px;
+  padding: 0;
+  background-size: 100% 100%;
+  background-position: top; }
 
 #settings {
   background-color: #020d2d;

@@ -1,7 +1,5 @@
 
-<section id="contacts">
-
-<h1>Contacts</h1>
+<section id="contacts" style="background:url(assets/img/view_contact.png);">
 
 
 </section>
