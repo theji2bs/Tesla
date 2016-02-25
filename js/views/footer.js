@@ -99,8 +99,62 @@ $( ".syncblue" ).on( "click", function() {
 	$(".p_sync").css("color", "white");
 });
 
+var count_temp_seat_1 = 50;
 $( ".volvol > .moins1" ).on( "click", function() {
-	$(".volvol >  input[type=range]").val(6); // set value to 6
+	//console.log("test");
+
+	if(count_temp_seat_1 >= 0){
+		console.log(count_temp_seat_1);
+		count_temp_seat_1 = count_temp_seat_1 - 10;
+		$('input[type="range"][name="temp_seat_1"]').val(count_temp_seat_1); // set value to 6
+		
+		console.log(count_temp_seat_1);
+	}
+});
+
+$( ".volvol > .plus1" ).on( "click", function() {
+	//console.log("test");
+	if(count_temp_seat_1 <= 100){
+		//console.log(count_temp_seat_1);
+		count_temp_seat_1 = count_temp_seat_1 + 10;
+		$('input[type="range"][name="temp_seat_1"]').val(count_temp_seat_1); 
+
+	}
+
+
+});
+
+var count_temp_seat_2 = 50;
+$( ".volvol1 > .moins1" ).on( "click", function() {
+	//console.log("test");
+
+	if(count_temp_seat_2 >= 0){
+		//console.log(count_temp_seat_2);
+		count_temp_seat_2 = count_temp_seat_2 - 10;
+		$('input[type="range"][name="temp_seat_2"]').val(count_temp_seat_2); // set value to 6
+		
+	}
+});
+
+$( ".volvol1 > .plus1" ).on( "click", function() {
+	//console.log("test");
+	if(count_temp_seat_2 <= 100){
+		count_temp_seat_2 = count_temp_seat_2 + 10;
+		$('input[type="range"][name="temp_seat_2"]').val(count_temp_seat_2); 
+	}
+
+
+});
+
+
+$( "#put_off" ).on( "click", function() {
+	$('.roundmove').animate({left: '47px'}, "fast");
+	$('.content').fadeOut(500);
+});
+
+$( "#put_on" ).on( "click", function() {
+	$('.roundmove').animate({left: '0px'}, "fast");
+	$('.content').fadeIn(500);
 });
 
 

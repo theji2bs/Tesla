@@ -96,6 +96,7 @@
     }
     
     $( ".number" ).on( "click", function( event ) {
+            $('.delete').fadeIn(500);
             if(currentNumb.length < 10){
               var getNumb = $(this).text();
               //console.log(getNumb);
@@ -118,6 +119,7 @@
             
             $(".numpad > p").text("... ... ... ... ...");
             }
+            $(this).fadeOut(500);
         });
     });
 

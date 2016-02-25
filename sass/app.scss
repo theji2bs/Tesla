@@ -1,7 +1,6 @@
 // Reset import 
 @import '_reset.scss';
 
-
 // Variables import
 @import '_variables.scss';
 
@@ -73,8 +72,10 @@ body{
 		.marge{
 			margin-top: 30px;
 		}
-		.hrr{
-			background-color: red;
+		.hrr_blue{
+			width: 79px;
+			height:2px;
+			background-color: #475272;
 			margin-top: 30px;
 		}
 	}
@@ -191,8 +192,6 @@ footer{
 	background-color: rgba(2, 13, 45, 1);
     right: 40px;
     bottom:0px;
-
-
 
 
 #iconefoot
@@ -681,7 +680,40 @@ background-color:#272F4E;
 
 }
 
+.onofff{
+	position:relative;
+	left:1090px;
+	margin-top:-85px;
+	width:100px;
+	height:50px;
+	border-radius:50px;
+	background:#182346;
 
+	.roundmove{
+		position:absolute;
+		width: 58px;
+		height:58px;
+		left:0px;
+		top:-4px;
+		background:rgba(241,48,78,0.3);
+		border:3px solid #F1304E;
+		border-radius:100%;
+	}
+
+	p{
+		position:absolute;
+		color: #FFF;
+		height:50px;
+		width:50px;
+		line-height: 50px;
+	}
+	#put_on{
+		left:20px;
+	}
+	#put_off{
+		right:-15px;
+	}
+}
 
 .carbox{
 	position:relative;

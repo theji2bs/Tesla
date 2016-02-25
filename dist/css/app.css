@@ -100,8 +100,10 @@ body {
       margin-left: 30%; }
     .content nav .marge {
       margin-top: 30px; }
-    .content nav .hrr {
-      background-color: red;
+    .content nav .hrr_blue {
+      width: 79px;
+      height: 2px;
+      background-color: #475272;
       margin-top: 30px; }
   .content section {
     width: 1042px;
@@ -555,6 +557,34 @@ input[type=range].monbouton:focus::-ms-fill-upper {
   margin-left: 950px;
   margin-top: -52px;
   color: white; }
+
+.onofff {
+  position: relative;
+  left: 1090px;
+  margin-top: -85px;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background: #182346; }
+  .onofff .roundmove {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 0px;
+    top: -4px;
+    background: rgba(241, 48, 78, 0.3);
+    border: 3px solid #F1304E;
+    border-radius: 100%; }
+  .onofff p {
+    position: absolute;
+    color: #FFF;
+    height: 50px;
+    width: 50px;
+    line-height: 50px; }
+  .onofff #put_on {
+    left: 20px; }
+  .onofff #put_off {
+    right: -15px; }
 
 .carbox {
   position: relative;
@@ -1020,9 +1050,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         margin-left: 9px;
         margin-top: 10px; }
       #dash .graph .mid-left .imgsidebar2 {
-        width: 30px;
-        height: 30px;
-        margin-left: 19px;
+        width: 35px;
+        height: 35px;
+        margin-left: 17.5px;
         margin-top: 30px; }
       #dash .graph .mid-left .blue1 {
         color: #00D8EF;
@@ -1055,9 +1085,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
         background: #111B3B;
         margin-right: 80px; }
       #dash .graph .mid-right .imgsidebar2 {
-        width: 30px;
-        height: 30px;
-        margin-left: 20px;
+        width: 35px;
+        height: 35px;
+        margin-left: 17.5px;
         margin-top: 30px; }
       #dash .graph .mid-right .bplayer {
         display: flex;
@@ -1115,9 +1145,9 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       background: #111B3B;
       margin-top: 10px; }
     #dash .big-foot .imgsidebar {
-      width: 30px;
-      height: 30px;
-      margin-left: 18px;
+      width: 35px;
+      height: 35px;
+      margin-left: 17.5px;
       margin-top: 30px; }
     #dash .big-foot .txtphone {
       color: white; }
@@ -1133,7 +1163,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       padding-top: 5px;
       background: #775C25;
       margin-left: 245px;
-      margin-top: -43px; }
+      margin-top: -43px;
+      display: none; }
     #dash .big-foot .one {
       display: flex; }
     #dash .big-foot .two {
