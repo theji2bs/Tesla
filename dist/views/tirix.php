@@ -23,7 +23,7 @@
 
 	<div id="2" class="instruction user">
 		<img src="assets/img/hexagone2.svg" class="triximg1">
-		<p class="texttrex">À quelle est ma prochaine réunion ?</p>
+		<p class="texttrex">À quelle heure est ma prochaine réunion ?</p>
 	</div>	
 
 	<div id="3" class="instruction">

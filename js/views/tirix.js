@@ -11,12 +11,6 @@ function hideTirix() {
         $("nav").fadeIn();
 }
 
-$( "#tirix > .close" ).on( "click", function() {
-	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
-  hideTirix()
-
-});
-
 function useTirix() {
 	$( ".containerlogo" ).fadeOut( 300, function() { 
 	  if( $( ".containerlogo > div" ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -50,33 +44,6 @@ function showInteraction(i) {
 
 }
 
-$( "nav > .nav-tirix" ).on( "click", function() {
-
-
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-		$( this ).removeClass("active").addClass("inactive");
-	  	hideTirix()
-
-	}
-  else{
-	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-				$( '#' + route ).fadeOut('slow');
-				$( '.nav-' + route ).removeClass("active").addClass("inactive");
-		}
-	  	$( this ).removeClass("inactive").addClass("active");
-	  	showTirix()
-	  	route = 'tirix';
-  }
-
-});
-
-
-$( ".containerlogo" ).on( "click", function() {
-	useTirix()
-});
-
 var interactions = 0;
 
 $(window).on('keydown', function(e){
@@ -99,7 +66,42 @@ $(window).on('keydown', function(e){
 		}
 
 
+
 });
+
+
+$( "nav > .nav-tirix" ).on( "click", function() {
+
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active").addClass("inactive");
+	  	hideTirix()
+
+	}
+  else{
+	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active").addClass("inactive");
+		}
+	  	$( this ).removeClass("inactive").addClass("active");
+	  	showTirix()
+	  	route = 'tirix';
+  }
+
+});
+
+$( "#tirix > .close" ).on( "click", function() {
+	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
+  hideTirix()
+
+});
+
+$( ".containerlogo" ).on( "click", function() {
+	useTirix()
+});
+
 
 		
 

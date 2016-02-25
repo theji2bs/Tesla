@@ -30,6 +30,34 @@ $(document).ready(function(){
     //$( "nav" ).fadeIn('slow'); // Header
     //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
+
+$(window).on('keydown', function(e){
+    
+    //console.log(e.keyCode);
+        
+        // H
+        if ( e.keyCode == 72 ){
+            
+            if (route === 'help'){
+                $( "#help" ).fadeOut('fast'); // Help 
+                route = '';
+                  console.log('off');
+            }else{
+                $( "#help" ).fadeIn('fast'); // Help 
+                route = 'help'; 
+                console.log('on');  
+            }
+                 
+        
+        }
+
+
+
+
+});
+
+    $( "#help" ).fadeIn('fast'); // Help
+    $( "#help" ).fadeOut('fast'); // Help
     
 
 });
@@ -804,6 +832,25 @@ function unlockGeneral(){
 	  roofOpen()
 }
 
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+		
+		// W
+		if ( e.keyCode == 87 ){
+			
+			lockGeneral();	
+			$('.iconeU_off').fadeOut(500);
+			$('.iconeU_on').fadeIn(500);
+			$('.urgencyetat').removeClass("off").addClass("on");
+			$('.urgencyetat').text( "ON" );	
+		
+		}
+		
+
+
+});
+
 $( ".iconeU_off" ).on( "click", function() {
 	
 		$(this).fadeOut(500);
@@ -1040,12 +1087,6 @@ function hideTirix() {
         $("nav").fadeIn();
 }
 
-$( "#tirix > .close" ).on( "click", function() {
-	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
-  hideTirix()
-
-});
-
 function useTirix() {
 	$( ".containerlogo" ).fadeOut( 300, function() { 
 	  if( $( ".containerlogo > div" ).hasClass('active') ){ // si l'élément possède la classe .vert
@@ -1079,33 +1120,6 @@ function showInteraction(i) {
 
 }
 
-$( "nav > .nav-tirix" ).on( "click", function() {
-
-
-  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-		$( this ).removeClass("active").addClass("inactive");
-	  	hideTirix()
-
-	}
-  else{
-	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
-
-				$( '#' + route ).fadeOut('slow');
-				$( '.nav-' + route ).removeClass("active").addClass("inactive");
-		}
-	  	$( this ).removeClass("inactive").addClass("active");
-	  	showTirix()
-	  	route = 'tirix';
-  }
-
-});
-
-
-$( ".containerlogo" ).on( "click", function() {
-	useTirix()
-});
-
 var interactions = 0;
 
 $(window).on('keydown', function(e){
@@ -1128,7 +1142,42 @@ $(window).on('keydown', function(e){
 		}
 
 
+
 });
+
+
+$( "nav > .nav-tirix" ).on( "click", function() {
+
+
+  if( $( this ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+		$( this ).removeClass("active").addClass("inactive");
+	  	hideTirix()
+
+	}
+  else{
+	  	if( $( 'nav > div[class!="nav-tirix"]' ).hasClass('active') ){ // si l'élément possède la classe .vert
+
+				$( '#' + route ).fadeOut('slow');
+				$( '.nav-' + route ).removeClass("active").addClass("inactive");
+		}
+	  	$( this ).removeClass("inactive").addClass("active");
+	  	showTirix()
+	  	route = 'tirix';
+  }
+
+});
+
+$( "#tirix > .close" ).on( "click", function() {
+	$( "nav > .nav-tirix" ).removeClass("active").addClass("inactive");
+  hideTirix()
+
+});
+
+$( ".containerlogo" ).on( "click", function() {
+	useTirix()
+});
+
 
 		
 
@@ -1160,6 +1209,26 @@ function hideWarning() {
         $( "nav > .nav-warning" ).removeClass("active").addClass("inactive");
 }
 
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+		
+		// W
+		if ( e.keyCode == 87 ){
+			
+			showWarning();			
+		
+		}
+
+		if ( e.keyCode == 27 ){
+				
+			hideWarning()		
+		
+		}
+
+
+});
+
 $( ".nav-warning" ).on( "click", function() {
 
 
@@ -1171,19 +1240,6 @@ $( ".nav-warning" ).on( "click", function() {
   else{
 	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
-	  	$(window).on('keydown', function(e){
-			
-			//console.log(e.keyCode);
-
-				// Echap
-				if ( e.keyCode == 27 ){
-						
-					hideWarning()		
-				
-				}
-
-
-		});
 	  	
   }
 

@@ -85,6 +85,25 @@ function unlockGeneral(){
 	  roofOpen()
 }
 
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+		
+		// W
+		if ( e.keyCode == 87 ){
+			
+			lockGeneral();	
+			$('.iconeU_off').fadeOut(500);
+			$('.iconeU_on').fadeIn(500);
+			$('.urgencyetat').removeClass("off").addClass("on");
+			$('.urgencyetat').text( "ON" );	
+		
+		}
+		
+
+
+});
+
 $( ".iconeU_off" ).on( "click", function() {
 	
 		$(this).fadeOut(500);
