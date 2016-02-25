@@ -259,7 +259,7 @@ color:white;
     padding-top: 5px;
     background: #775C25;
     margin-left: 245px;
-    margin-top: -60px;
+    margin-top: -43px;
 }
 
 .one{
@@ -328,19 +328,20 @@ margin-top: 35px;
 }
 
 .numpad{
-    margin-left: 20px;
+    margin-left: 50px;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 18pt;
 }
 
 #barprogress{
 	position:absolute;
 	margin-top:35px;
-	margin-left:-120px;
+	margin-left:-105px;
 	width:200px;
-	height:5px;
+	height:4px;
+	border-radius:5px;
 	background:#FFF;
 }
 .vertc{
@@ -353,7 +354,7 @@ margin-top: 35px;
 
 .historique{
 	margin-left: 60px;
-    margin-top: 55px;
+    margin-top: 43px;
 }
 .strong{
 	
@@ -371,14 +372,19 @@ margin-top: 35px;
     font-weight: bold;
 }
 
-
-.losange{
-	idth: 60px;
+.losange1{
+	width: 60px;
     height: 60px;
-    margin-top: 0px;
+    margin-top:-1px;
     margin-left: 30px;
-
 }
+.losange{
+	width: 60px;
+    height: 60px;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
 
 .phonebutton{
     width: 40px;
@@ -403,22 +409,25 @@ margin-top: 35px;
 
 .callerphone{
 	
-	margin-top:60px;
+	margin-top:57px;
     margin-left: 25px;
     width: 70px;
     padding-left: -4px;
     height: 70px;
     border-radius: 50px;
     border: solid 2px #2E3554;
+    transform: scale(1.2);
 }
 
 .contact{
-	
 	display: flex;
-    height: 55px;
-    margin-top: 5px;
-	
+    height: 69px;
+    border-bottom:2px solid #2E3554;
 
+
+}
+.contact:last-child{
+	border:0;
 }
 .cont{
     margin-top: 12px;
@@ -427,15 +436,13 @@ margin-top: 35px;
 }
 .contactcontenu{
 
-    margin-left: 43px;
-    margin-top: 16px;
-    /* background-color: rgba(0, 0, 255, 0.05); */
+    margin-left:45px;
+    margin-top: 10px;
     background: #051032;
-    border-left: solid 3px #2E3554;
-    border-right: solid 3px #2E3554;
-    width: 48%;
-    height: 411px;
-    padding-top: -30px;
+    border: solid 2px #2E3554;
+    width: 45%;
+    height: 418px;
+    padding-top: 10px;
 
 
 
@@ -450,9 +457,9 @@ margin-top: 35px;
 }
 
 .iconegauche{
-	width: 40px;
-	height: 40px;
-	margin-left: 20px;
+	width: 30px;
+	height: 30px;
+	margin-left: 35px;
 }
 
 .icons{
@@ -462,8 +469,8 @@ margin-top: 35px;
 }
 
 .iconedroite{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-left:30px;
 }
 }

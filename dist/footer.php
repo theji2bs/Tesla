@@ -55,7 +55,7 @@
 
 <div class="volvol">
 <div class="moins1">-</div>
-	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+	<input type="range" value="80" max="100" min="0" step="10" class="monbouton mapos1">
 <div class="plus1">+</div>
 </div>
 
@@ -69,7 +69,7 @@
 
 <div class="volvol1">
 <div class="moins1">-</div>
-	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+	<input type="range" value="12" max="100" min="0" step="10" class="monbouton mapos1">
 <div class="plus1">+</div>
 </div>
 

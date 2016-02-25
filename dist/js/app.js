@@ -547,6 +547,9 @@ $( ".syncblue" ).on( "click", function() {
 	$(".p_sync").css("color", "white");
 });
 
+$( ".volvol > .moins1" ).on( "click", function() {
+	$(".volvol >  input[type=range]").val(6); // set value to 6
+});
 
 
 
