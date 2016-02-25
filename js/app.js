@@ -55,9 +55,6 @@ $(window).on('keydown', function(e){
 
 
 });
-
-    $( "#help" ).fadeIn('fast'); // Help
-    $( "#help" ).fadeOut('fast'); // Help
     
 
 });
