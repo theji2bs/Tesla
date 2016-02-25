@@ -19,7 +19,7 @@
 	<div class="nav-mail inactive">
 		<img src="assets/img/menu/Mails.svg" class="imgtaille marge">
 	</div>
-	<hr class="hrr">
+	<p class="hrr_blue"></p>
 	<div class="nav-warning inactive">
 		<img src="assets/img/tool.svg" class="imgtaille marge">
 	</div>

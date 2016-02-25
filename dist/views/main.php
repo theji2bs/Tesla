@@ -86,9 +86,9 @@
 <div class="ok">	
 <div class="sidebar">
 
-	<img src="assets/img/favoris.svg" class="imgsidebar">
-		<img src="assets/img/move.svg" class="imgsidebar">
-		<img src="assets/img/number.svg" class="imgsidebar">
+	<img src="assets/img/favoris_orange.svg" class="imgsidebar">
+		<img src="assets/img/move_orange.svg" class="imgsidebar">
+		<img src="assets/img/number_orange.svg" class="imgsidebar">
 
 </div>
 
@@ -104,8 +104,7 @@
 </div>
 
 <div class="numpad">
-	<p>... ... ... ... ...</p> 
-	<div id="barprogress"></div>
+	<p>... ... ... ... ... ...</p> 
 </div>
 <span class="del-phone-number delete">	&#xD7;</span>
 
@@ -161,7 +160,7 @@
 	
 	<div class="contact">
 		<div class="los">
-	<img src="assets/img/menu/Bryce.png" class="losange">
+	<img src="assets/img/menu/Bryce.png" class="losange1">
 		</div>
 	<div class="cont">
 	<p class="strong">Bryce Dallas Ho</p>
@@ -175,7 +174,6 @@
 
 	</div>
 <br>
-<hr class="barhr">
 	<div class="contact">
 		<div class="los">
 	<img src="assets/img/menu/Prat.png" class="losange">
@@ -192,7 +190,7 @@
 
 	</div>
 	<br>
-<hr class="barhr">
+
 
 	<div class="contact">
 		<div class="los">
@@ -210,7 +208,6 @@
 
 	</div>
 	<br>
-	<hr class="barhr">
 
 	<div class="contact">
 		<div class="los">
@@ -228,7 +225,6 @@
 
 	</div>
 	<br>
-	<hr class="barhr">
 
 	<div class="contact">
 		<div class="los">

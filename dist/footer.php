@@ -6,6 +6,12 @@
     <p class="p_car">Controls</p>
     </div>
 
+    <div class="onofff">
+    <div class="roundmove"></div>
+    <p id="put_on">On</p>
+    <p id="put_off">Off</p>
+    </div>
+
 	
 	<div id="iconefoot">
 		<div class="listeicone">
@@ -55,7 +61,7 @@
 
 <div class="volvol">
 <div class="moins1">-</div>
-	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+	<input type="range" value="50" max="100" min="0" step="10" class="monbouton mapos1" name="temp_seat_1">
 <div class="plus1">+</div>
 </div>
 
@@ -69,7 +75,7 @@
 
 <div class="volvol1">
 <div class="moins1">-</div>
-	<input type="range" value="12" max="100" min="0" step="2" class="monbouton mapos1">
+	<input type="range" value="50" max="100" min="0" step="10" class="monbouton mapos1" name="temp_seat_2">
 <div class="plus1">+</div>
 </div>
 
