@@ -35,7 +35,7 @@
 	.sidebar2{
 			
 
-        width: 66px;
+    width: 66px;
     height: 374px;
     background-color: rgba(0, 0, 255, 0.05);
     background: #111B3B;
@@ -96,6 +96,7 @@ p{
 
 
 	.mid-right{
+	position:relative;
 	background-color: transparent;
     width: 593px;
     margin-bottom: 10px;
@@ -108,8 +109,8 @@ p{
 
 
 .sidebar2{
-		       margin-left: 10px;
-    margin-top: 10px;
+	margin-left: 10px;
+    margin-top: 9px;
     width: 70px;
     height: 375px;
     background-color: rgba(0, 0, 255, 0.05);
@@ -132,6 +133,7 @@ p{
 
 
 		.bplayer{
+			position:relative;
 		    display: flex;
 		    background: url("../assets/img/pochette.jpg") no-repeat;
 		    background-position: 60% 50%;
@@ -143,8 +145,32 @@ p{
 
 		}
 		.bluechelou{
+			margin-top: 5px;
 			color:#2E3554;
 		}
+
+		.timer{
+			position:absolute;
+			margin-top: 10px;
+			margin-left: 180px;
+		}
+
+		.progressmusic{
+			width: 320px;
+			height:7px;
+			background:#FFF;
+			position:absolute;
+			margin-top:15px;
+			margin-left: -155px;
+			border-radius:7px;
+		}
+		.intobar{
+			width:0px;
+			height:7px;
+			border-radius:7px;
+			background:#47D7F5;
+		}
+
 		.previous_action{}
 		.next_action{}
 		.play{
@@ -161,21 +187,15 @@ p{
 		}
 		.next{
 			margin-left: 90px;
-
 			width: 25px;
 			height: 25px;
 			
 		}
 		.prev{
-		
-
 			width: 25px;
 			height: 25px;
 			margin-left: 20px;
 			margin-right: 50px;
-		
-
-
 
 		}
 
@@ -200,8 +220,8 @@ margin-top: 23px;
 }
 
 .musiclec{
-	margin-left: -250px;
-	margin-top: 330px;
+	margin-left: -230px;
+	margin-top: 320px;
 	text-align: center;
 }
 
