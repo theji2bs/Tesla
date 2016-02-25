@@ -66,6 +66,15 @@ $(window).on('keydown', function(e){
 		}
 
 
+		if ( e.keyCode == 27 ){
+				
+			hideTirix()		
+			$( '.nav-tirix' ).removeClass("active").addClass("inactive");
+		
+		}
+		
+
+
 
 });
 
@@ -102,7 +111,11 @@ $( ".containerlogo" ).on( "click", function() {
 	useTirix()
 });
 
+$( ".steak > .triximg2" ).on( "click", function() {
+	console.log('ok');
+	$( ".steak" ).removeClass("active").addClass("desactive");
 
+});
 		
 
 	
