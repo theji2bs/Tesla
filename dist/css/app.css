@@ -1522,10 +1522,10 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     margin-left: -36px;
     transform: translate(-50%); }
   #tirix .contenu .active {
-    border: solid 3px #F1304E;
+    border: solid 3px #00D8EF;
     background: #1E2749; }
   #tirix .contenu .desactive {
-    border: solid 3px #00D8EF;
+    border: solid 3px #F1304E;
     background: #1E2749; }
   #tirix .contenu .texttrex1 {
     position: absolute;
