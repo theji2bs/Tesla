@@ -155,14 +155,21 @@
     });
 
     function widgetPlay() {
-    
+        var myDiv = $('.intobar');
+        myDiv.animate({width: '320px'}, 99000);
         $( ".play" ).css( "diplay", "none" );
         $( ".pause" ).fadeIn('slow');
+        myDiv.queue(function() {
+            var that = $( this );
+            that.dequeue();
+        });
     }
     function widgetPause() {
+        var myDiv = $('.intobar');
         $( ".pause" ).css( "diplay", "none" );
         $( ".play" ).fadeIn('slow');
-        
+        myDiv.clearQueue();
+        myDiv.stop()
     }
     $( ".play" ).on( "click", widgetPlay );
     $( ".pause" ).on( "click", widgetPause );

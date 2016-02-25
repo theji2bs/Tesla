@@ -30,8 +30,7 @@
 </div>
 
 	
-	<div id="jp_container_1" class="mid-right playeur">
-		
+<div id="jp_container_1" class="mid-right playeur">
 
 <div class="sidebar2">
 
@@ -40,15 +39,13 @@
 		<img src="assets/img/number.svg" class="imgsidebar2">
 
 </div>
-
 <div class="txtpad2">
 	
 	<p class="blue">MUSIC</p> &nbsp; &nbsp;  &nbsp;  &nbsp;
 	<p>Jurassic World</p>
 
 </div>
-
-	<div class="bplayer playeur">
+<div class="bplayer playeur">
 		<div class="previous_action">
 			<img src="assets/img/previous-button.svg" class="prev">
 		</div>
@@ -59,18 +56,17 @@
 		<div class="next_action">
 			<img src="assets/img/next-button.svg" class="next">
 		</div>
-
-
-
-
 </div>
 <div class="musiclec">
 	
-	<p>Jurassic Wordl</p>
+	<p>Jurassic World</p>
 	<p class="bluechelou"> Jurassic</p> 
-	<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
-</div>
+	<div class="jp-current-time timer" role="timer" aria-label="time">00:00</div>
+	<div class="progressmusic">
+		<div class="intobar"></div>
 	</div>
+</div>
+</div>
 
 
 
