@@ -30,6 +30,34 @@ $(document).ready(function(){
     //$( "nav" ).fadeIn('slow'); // Header
     //$( "footer" ).fadeIn('slow'); // Header
     //$( "#dash" ).fadeIn('slow'); // Dashboard
+
+$(window).on('keydown', function(e){
+    
+    //console.log(e.keyCode);
+        
+        // H
+        if ( e.keyCode == 72 ){
+            
+            if (route === 'help'){
+                $( "#help" ).fadeOut('fast'); // Help 
+                route = '';
+                  console.log('off');
+            }else{
+                $( "#help" ).fadeIn('fast'); // Help 
+                route = 'help'; 
+                console.log('on');  
+            }
+                 
+        
+        }
+
+
+
+
+});
+
+    $( "#help" ).fadeIn('fast'); // Help
+    $( "#help" ).fadeOut('fast'); // Help
     
 
 });

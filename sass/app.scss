@@ -957,6 +957,27 @@ background-color:#272F4E;
 	padding-top: 30%;
 }
 
+#help{
+    background-color: rgba(1, 11, 44, 0.8);
+    z-index: 80;
+    position: absolute;
+	display: none;
+    top:-100px;
+    width:100%;
+    height:100%;
+
+    .box{
+    	background-color: rgba(0, 0, 0, 0.3);
+    	margin-top: 530px;
+        border: solid 2px #FFFFFF;
+        padding: 25px;
+    	height: 450px;
+    	width: 820px;
+    	margin-left: 175px;
+    	margin-right: 100px;
+            
+    }
+}
 
 
 

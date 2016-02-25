@@ -27,6 +27,8 @@
 		<?php include 'menu.php'; ?>
 		</nav>
 
+
+
 		<?php include 'views/auth.php'; ?>
 
 		<?php include 'views/main.php'; ?>
@@ -46,6 +48,26 @@
 		<?php include 'views/mail.php'; ?>
 
 		<?php include 'views/settings.php'; ?>
+
+		<div id="help">
+			<div class="box">
+				<center><h1>Helps commands</h1></center>
+				<br /><br /><br /><br />
+				<h4>On General :</h4>
+				<br />
+				<ul>
+					<li><b>W</b> : Warning T-Rex and Locking car</li>
+					<li><b>H</b> : Help page (this screen)</li>
+				</ul>
+				<br /><br /><br /><br />
+				<h4>On Tirix page:</h4>
+				<br />
+				<ul>
+					<li><b>T</b> : Anim Tirix Circles</li>
+					<li><b>I</b> : Interactions</li>
+				</ul>
+			</div>
+		</div>
 
 	</div>
 

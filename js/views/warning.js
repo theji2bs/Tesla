@@ -24,6 +24,26 @@ function hideWarning() {
         $( "nav > .nav-warning" ).removeClass("active").addClass("inactive");
 }
 
+$(window).on('keydown', function(e){
+	
+	//console.log(e.keyCode);
+		
+		// W
+		if ( e.keyCode == 87 ){
+			
+			showWarning();			
+		
+		}
+
+		if ( e.keyCode == 27 ){
+				
+			hideWarning()		
+		
+		}
+
+
+});
+
 $( ".nav-warning" ).on( "click", function() {
 
 
@@ -35,19 +55,6 @@ $( ".nav-warning" ).on( "click", function() {
   else{
 	  	$( this ).removeClass("inactive").addClass("active");
 	  	showWarning()
-	  	$(window).on('keydown', function(e){
-			
-			//console.log(e.keyCode);
-
-				// Echap
-				if ( e.keyCode == 27 ){
-						
-					hideWarning()		
-				
-				}
-
-
-		});
 	  	
   }
 
