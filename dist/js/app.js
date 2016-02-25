@@ -175,6 +175,10 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
 	  	showCellphone()
 	  	route = 'cellphone';
 
+  }
+
+});
+
       $( ".appeler > .cercle" ).on( "click", function() {
                 $( ".body > .pad" ).fadeOut( "fast" , function(){
                     $( ".body > .appel" ).fadeIn( "slow" );
@@ -192,12 +196,6 @@ $( "nav > .nav-cellphone" ).on( "click", function() {
                 chronoReset()
       });
 
-  }
-
-});
-
-
-
 $( "#content-1 > .contact" ).on( "click", function() {
 
     //$( this ).removeClass("active").addClass("inactive");
@@ -208,6 +206,19 @@ $( "#content-1 > .contact" ).on( "click", function() {
                 chronoStart()
 
 });
+
+$( ".callerphone" ).on( "click", function() {
+
+                showCellphone()
+
+                $( ".body > .pad" ).fadeOut( "fast" , function(){
+                    $( ".body > .appel" ).fadeIn( "slow" );
+                });
+                chronoStart()
+
+});
+
+
 
 
 // Phone widget
@@ -243,6 +254,8 @@ var currentNumb = [];
             }
         });
     });
+
+//$("input[type=range]").val(6); // set value to 6
 
 // Base router
 

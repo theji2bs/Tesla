@@ -999,7 +999,6 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     width: 100%;
     margin-bottom: 10px;
     height: 618px;
-    border-bottom: 2px solid #2E3658;
     background-size: 100%; }
   #dash .graph {
     display: flex;
@@ -1275,7 +1274,6 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       margin-left: 30px; }
 
 #tirix {
-  background: url("../assets/img/Background.png");
   z-index: 20;
   position: absolute;
   margin-left: 90px;
@@ -1301,18 +1299,18 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     font-weight: 700;
     letter-spacing: 2pt;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -28px;
     transform: translate(-50%); }
   #tirix .containerlogo {
     width: 1100px;
     height: 500px;
-    margin-left: -50px;
+    margin-left: -35px;
     margin-top: 70px; }
     #tirix .containerlogo .inactive img {
       width: 20%;
       position: absolute;
-      margin-left: 416px;
-      margin-top: 41px; }
+      margin-left: 423px;
+      margin-top: 47px; }
     #tirix .containerlogo .inactive .ball {
       background-color: transparent;
       border: 5px solid rgba(0, 183, 229, 0);
@@ -1355,8 +1353,8 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     #tirix .containerlogo .active img {
       width: 20%;
       position: absolute;
-      margin-left: 416px;
-      margin-top: 41px; }
+      margin-left: 422px;
+      margin-top: 46px; }
     #tirix .containerlogo .active .ball {
       background-color: transparent;
       border: 5px solid rgba(0, 183, 229, 0.9);
@@ -1451,7 +1449,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     border-radius: 50%;
     bottom: 50px;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -36px;
     transform: translate(-50%); }
   #tirix .contenu .active {
     border: solid 3px #F1304E;
@@ -1463,7 +1461,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
     position: absolute;
     bottom: 160px;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -35px;
     transform: translate(-50%); }
   #tirix .contenu .triximg2 {
     width: 70px;
@@ -1757,7 +1755,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel .info {
         float: left;
         height: 100%;
-        width: 517px;
+        width: 500px;
         padding: 5px; }
         #cellphone .recent .appel .info .duree {
           width: 200px;
@@ -1810,7 +1808,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel1 .info {
         float: left;
         height: 100%;
-        width: 517px;
+        width: 500px;
         padding: 5px; }
         #cellphone .recent .appel1 .info .duree {
           width: 200px;
@@ -1862,7 +1860,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel2 .info {
         float: left;
         height: 100%;
-        width: 517px;
+        width: 500px;
         padding: 5px; }
         #cellphone .recent .appel2 .info .duree {
           width: 200px;
@@ -1914,7 +1912,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel3 .info {
         float: left;
         height: 100%;
-        width: 517px;
+        width: 500px;
         padding: 5px; }
         #cellphone .recent .appel3 .info .duree {
           width: 200px;
@@ -1967,7 +1965,7 @@ input[type=range].monbouton:focus::-ms-fill-upper {
       #cellphone .recent .appel4 .info {
         float: left;
         height: 100%;
-        width: 517px;
+        width: 500px;
         padding: 5px; }
         #cellphone .recent .appel4 .info .duree {
           width: 200px;
